@@ -196,6 +196,9 @@ h1,h2,h3{text-wrap:balance}
 (function(){
 const DATA = JSON.parse(document.getElementById('data').textContent);
 const DAYS = DATA.days, EXTRAS = DATA.extras;
+let PODS = {};
+const busca = d => 'https://open.spotify.com/search/' + encodeURIComponent('palestra espírita ' + d.tema.replace(/&amp;/g,'&')) + '/episodes';
+fetch('podcasts.json', {cache:'no-store'}).then(r => r.ok ? r.json() : {}).then(j => { PODS = j || {}; if (typeof render === 'function') render(false); }).catch(() => {});
 const MESES=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
 const SEM=['domingo','segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sábado'];
 const AURAS=[['15% 20%','85% 35%','45% 95%'],['80% 15%','10% 60%','70% 90%'],['30% 85%','90% 70%','20% 10%'],['60% 10%','5% 40%','95% 95%'],['10% 90%','75% 25%','40% 40%'],['90% 85%','25% 20%','55% 60%']];
@@ -278,7 +281,7 @@ function vHoje(){
       <div class="meta">${alvo.q} · ≈ ${alvo.mins} min de leitura</div>
       <div class="row"><a class="btn" href="#dia-${alvo.n}">Ler agora</a></div>
       <div class="row">
-        <a class="chip" href="${alvo.podUrl}" target="_blank" rel="noopener">${dot('fone')}<span><b>Podcast</b> · ${alvo.podLabel}</span></a>
+        ${PODS[alvo.n] ? `<a class="chip" href="${esc(PODS[alvo.n].url)}" target="_blank" rel="noopener">${dot('fone')}<span><b>Podcast</b> · ${esc(PODS[alvo.n].nome)}</span></a>` : `<a class="chip" href="${busca(alvo)}" target="_blank" rel="noopener">${dot('fone')}<span><b>Podcast</b> · palestras sobre o tema</span></a>`}
         <a class="chip" href="${alvo.musUrl}" target="_blank" rel="noopener">${dot('nota')}<span><b>Música</b> · ${alvo.mus} – ${alvo.art}</span></a>
       </div></section>`;
     if (hoje && lidos.has(hoje.n) && alvo.n!==hoje.n) o += `<p class="note">A leitura de hoje (Dia ${hoje.n}) já está feita ♡</p>`;
@@ -312,6 +315,11 @@ function semana(alvo){
   return o + '</div>';
 }
 
+function podBlk(d){
+  const p = PODS[d.n];
+  if (p) return `<p><a href="${esc(p.url)}" target="_blank" rel="noopener"><strong>${esc(p.nome)}</strong></a></p><p class="ref">${esc(p.programa||'')}${p.min?` · ${esc(p.min)} min`:''}</p>${p.por?`<p>${esc(p.por)}</p>`:''}`;
+  return `<p>A palestra do dia aparece aqui de manhã cedo.</p><p><a href="${busca(d)}" target="_blank" rel="noopener">Procurar palestras sobre “${d.tema}” no Spotify</a></p>`;
+}
 function vDia(n){
   const d = byN(n); if (!d) return vHoje();
   const lido = lidos.has(n), p = byN(n-1), nx = byN(n+1);
@@ -328,7 +336,7 @@ function vDia(n){
       <div class="blk"><div class="bh">${dot('flor')}<span>pra hoje</span></div><p>${d.hoje}</p></div>
       ${d.ese?`<div class="blk"><div class="bh">${dot('livro')}<span>no Evangelho</span></div><p class="ref">O Evangelho segundo o Espiritismo · ${d.ese}</p><p>${d.liga}</p></div>`:''}
       <div class="blk"><div class="bh">${dot('biblia')}<span>na Bíblia</span></div><p class="vs">“${d.bib}”</p><p class="ref">${d.bref} · Bíblia Livre</p></div>
-      <div class="blk"><div class="bh">${dot('fone')}<span>podcast do dia</span></div>${d.pod}</div>
+      <div class="blk"><div class="bh">${dot('fone')}<span>podcast do dia</span></div>${podBlk(d)}</div>
       <div class="blk"><div class="bh">${dot('nota')}<span>música do dia</span></div><p><a href="${d.musUrl}" target="_blank" rel="noopener"><strong>${d.mus}</strong> – ${d.art}</a> <span class="tag">${d.gen}</span></p>
         <p class="ref">Também na <a href="https://open.spotify.com/playlist/3bJwoEHzmIxIKBF4450uU3" target="_blank" rel="noopener">sua playlist do devocional</a>.</p></div>
     </section>
@@ -379,7 +387,7 @@ function vSobre(){
   return `<div class="ph"><span class="k">antes de começar</span><h1>Como <i>usar</i></h1></div>
   <div class="stack" style="margin-top:0">
   <section class="card"><div class="steps">
-    <div class="step"><div class="sn">1</div><div><b>De manhã, o podcast.</b> No carro, ouça o episódio indicado em cada dia. Cada um tem de 18 a 30 minutos.</div></div>
+    <div class="step"><div class="sn">1</div><div><b>De manhã, o podcast.</b> Uma palestra ou conversa sobre o tema do dia, trazendo o Evangelho e um olhar diferente. A indicação aparece no dia, de manhã cedo.</div></div>
     <div class="step"><div class="sn">2</div><div><b>À noite, a leitura.</b> O texto original do livro: perguntas de Kardec, respostas dos Espíritos (com a linha rosa) e comentários de Kardec (nos quadros lilás).</div></div>
     <div class="step"><div class="sn">3</div><div><b>Pra fechar.</b> Uma ideia pra hoje, a ligação com <i>O Evangelho segundo o Espiritismo</i>, um trecho da Bíblia e a música do dia.</div></div>
     <div class="step"><div class="sn">4</div><div><b>Ficou difícil?</b> No fim de cada dia tem a explicação simples, com as ideias principais em linguagem do dia a dia.</div></div>

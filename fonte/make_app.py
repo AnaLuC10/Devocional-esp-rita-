@@ -47,7 +47,7 @@ for d in B.days:
     hoje, ese, liga = D[n]
     bref, btxt = biblia.verso(n)
     t, ar, g, tid = M[n-1]
-    pu, pl = pod_link(d)
+
     q = (f"Q. {B.qint(d['q'][0])}–{B.qint(d['q'][1])}" if d['q'][0] != d['q'][1] else f"Q. {B.qint(d['q'][0])}") if d['q'] else 'Conclusão'
     out.append(dict(
         n=n, date=d['date'], mins=max(1, round(d['words']/200)), done=bool(d.get('done')),
@@ -58,7 +58,7 @@ for d in B.days:
         ese=(f'cap. {ese[0]} – <em>{B.esc(ESE_TIT[ese[0]])}</em> · {"itens" if re.search(r"[-–,e]", ese[1]) else "item"} {ese[1]} ({B.esc(ese[2])})' if ese else ''),
         liga=B.esc(liga) if ese else '',
         bib=B.esc(btxt), bref=B.esc(bref),
-        pod=B.podcast_html(d), podUrl=pu, podLabel=B.esc(pl),
+        tema=B.esc(re.split(r'\s*\+\s*|\s*&\s*', short_title(d))[0].strip()),
         mus=B.esc(t), art=B.esc(ar), gen=g, musUrl='https://open.spotify.com/track/' + tid,
         simples=''.join(f'<p>{B.inline(x)}</p>' for x in EXPL[n].strip().split('\n') if x.strip()),
     ))
