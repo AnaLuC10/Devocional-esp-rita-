@@ -177,6 +177,24 @@ h1,h2,h3{text-wrap:balance}
 .nmrow input{flex:1;min-width:0;border:1px solid var(--line);border-radius:999px;padding:11px 16px;font:16px var(--f-ui);background:var(--bg);color:var(--ink)}
 .sync{display:flex;align-items:center;gap:8px;font-size:13.5px}
 
+/* jornada (cartões semanais) */
+.jor{display:grid;gap:14px}
+.jc{background:var(--surface);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.jc .top{padding:18px 18px 16px}
+.jc .top .k{color:var(--plum);opacity:.8}
+.jc .top h3{font:500 22px/1.2 var(--f-disp);margin:4px 0 4px}
+.jc .top p{margin:0;font-size:14.5px}
+.jc .bd{padding:14px 18px 16px;display:flex;flex-direction:column;gap:14px;font-size:14.5px}
+.jc .pp{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.jc .pp div{background:var(--bg);border-radius:14px;padding:9px 11px;line-height:1.35}
+.jc .pp b{display:block;font:500 15px var(--f-disp);color:var(--plum);margin-bottom:2px}
+.jc .pp span{font-size:12.5px;color:var(--muted)}
+.jc .fr{font:italic 400 17px/1.45 var(--f-read);color:var(--plum);margin:0}
+.jc .id{background:linear-gradient(135deg,var(--s1),var(--s2) 55%,var(--s3));border-radius:16px;padding:12px 14px}
+.jc .hd{font:700 10.5px var(--f-ui);letter-spacing:.16em;text-transform:uppercase;color:var(--lav);margin-bottom:6px}
+.trava{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1.5px dashed var(--line);border-radius:20px;color:var(--muted);font-size:14px}
+.trava svg{width:22px;height:22px;flex:none}
+
 /* guia */
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
 .chips a{padding:7px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:13px}
@@ -450,8 +468,24 @@ function vSobre(){
 
 function diaDaQ(q){ return DAYS.find(d => { const m = String(d.q).match(/(\d+)(?:[–-](\d+))?/); return m && q >= +m[1] && q <= +(m[2]||m[1]); }); }
 const qlink = (q, txt) => { const d = diaDaQ(q); return d ? `<a href="#dia-${d.n}">${txt||'Q. '+q} · Dia ${d.n} ›</a>` : `<span class="ref">${txt||'Q. '+q}</span>`; };
+let JOR = [];
+fetch('jornada.json', {cache:'no-store'}).then(r => r.ok ? r.json() : {}).then(j => { JOR = (j && j.semanas) || []; if (/^#guia/.test(location.hash)) render(false); }).catch(() => {});
+function vJornada(){
+  const sem = JOR.slice().sort((a,b)=>a.de-b.de);
+  const abertas = sem.filter(w => lidos.has(w.ate)), prox = sem.find(w => !lidos.has(w.ate));
+  const lock = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg>';
+  const card = (w,k) => `<article class="jc"><div class="top aura" style="${aura(k+1)};border-radius:0"><span class="k">semana ${k+1} · dias ${w.de} a ${w.ate} · ${esc(w.q)}</span><h3>${esc(w.titulo)}</h3><p>${esc(w.resumo)}</p></div>
+    <div class="bd">
+      ${w.conceitos&&w.conceitos.length?`<div><div class="hd">o que aprendemos</div><div class="pp">${w.conceitos.map(c=>`<div><b>${esc(c[0])}</b><span>${esc(c[1])}</span></div>`).join('')}</div></div>`:''}
+      ${w.frase?`<div><div class="hd">pra guardar</div><p class="fr">“${esc(w.frase[0])}”</p><p class="ref" style="margin:4px 0 0">${esc(w.frase[1])}</p></div>`:''}
+      ${w.evangelho?`<div class="id"><div class="hd">no Evangelho</div>${esc(w.evangelho)}</div>`:''}
+    </div></article>`;
+  return `<section class="sec" id="g-jornada"><h2>Sua <i>jornada</i></h2><p class="sub">A cada semana de estudo, um cartão novo com o que vocês aprenderam. Ele abre quando você marca a última leitura da semana.</p>
+    <div class="jor">${abertas.slice().reverse().map(w=>card(w, sem.indexOf(w))).join('')}
+    ${prox ? `<div class="trava">${lock}<span>${abertas.length?'Próximo cartão':'O primeiro cartão'} abre quando você terminar o <a href="#dia-${prox.ate}">Dia ${prox.ate}</a>.</span></div>` : ''}</div></section>`;
+}
 function vGuia(){
-  const ch = [['tempo','Linha do tempo'],['livros','Os 5 livros'],['lembrar','Pra sempre lembrar'],['mapa','O mapa do livro'],['escala','A escala espírita']];
+  const ch = [['jornada','Sua jornada'],['tempo','Linha do tempo'],['livros','Os 5 livros'],['lembrar','Pra sempre lembrar'],['mapa','O mapa do livro'],['escala','A escala espírita']];
   const TL = [
     ['1804','Nasce Rivail','Hippolyte Léon Denizard Rivail nasce em Lyon, na França. Vira professor e escreve livros de educação.'],
     ['1848','As batidas de Hydesville','Nos Estados Unidos, as irmãs Fox se comunicam por batidas com um Espírito. É o começo do movimento moderno.'],
@@ -492,6 +526,7 @@ function vGuia(){
   const COR = {'1':'rgb(240,150,178)','2':'rgb(178,152,232)','3':'rgb(247,184,150)','4':'rgb(214,170,232)','5':'rgb(150,136,226)'};
   return `<div class="ph"><span class="k">pra entender o Espiritismo</span><h1>Gui<i>a</i></h1><p>O básico pra se localizar no estudo.</p></div>
   <nav class="chips" aria-label="Seções do guia">${ch.map(([id,t])=>`<a href="#guia-${id}">${t}</a>`).join('')}</nav>
+  ${vJornada()}
 
   <section class="sec" id="g-tempo"><h2>Linha do <i>tempo</i></h2><p class="sub">Do nascimento de Kardec a Chico Xavier.</p>
     <div class="card tl">${TL.map(e=>(e[0]==='1884'?'<div class="meio">No Brasil</div>':'')+`<div class="ev ${e[3]||''}"><div class="when">${e[0]}</div><h3>${e[1]}</h3><p>${e[2]}</p></div>`).join('')}</div></section>
