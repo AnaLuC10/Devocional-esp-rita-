@@ -1,6 +1,6 @@
 # App Bíblia (na visão espírita)
 
-Site: https://analuc10.github.io/devocional-esp-rita-/biblia/
+Site: https://analuc10.github.io/Devocional-esp-rita-/biblia/
 
 - A Bíblia inteira em 292 dias úteis (16/11/2026 a 13/01/2028), de 9 a 15 minutos por dia, alternando blocos do Novo e do Antigo Testamento (ordem em `cronograma.py`, lista FASES).
 - Sem leitura em fins de semana e feriados nacionais (lista FER em `cronograma.py`).
