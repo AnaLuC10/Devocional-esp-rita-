@@ -4,13 +4,9 @@
    "de": 1,
    "ate": 4,
    "titulo": "Jesus chega",
-   "ref": "Mateus 1–6",
-   "resumo": "Do nascimento em Belém ao começo do Sermão do Monte: o batismo, a tentação, os primeiros discípulos, as bem-aventuranças e o Pai-Nosso.",
+   "ref": "Mateus 1–11",
+   "resumo": "Do nascimento em Belém ao convite \"vinde a mim\": o batismo, a tentação, o Sermão do Monte, as primeiras curas e o envio dos doze.",
    "personagens": [
-    [
-     "Jesus",
-     "nasce em Belém e começa a ensinar"
-    ],
     [
      "Maria e José",
      "José é guiado por sonhos o tempo todo"
@@ -20,16 +16,20 @@
      "estrangeiros que vêm do Oriente pra adorar o menino"
     ],
     [
-     "Herodes",
-     "o rei que manda matar os meninos de Belém"
-    ],
-    [
      "João Batista",
-     "prega o arrependimento e batiza Jesus"
+     "prega o arrependimento, batiza Jesus e depois manda perguntar se ele é o esperado"
     ],
     [
      "Pedro e André",
      "pescadores, os primeiros chamados"
+    ],
+    [
+     "O centurião",
+     "estrangeiro com uma fé que impressiona Jesus"
+    ],
+    [
+     "Mateus",
+     "cobrador de impostos chamado pra seguir Jesus"
     ]
    ],
    "lugares": [
@@ -42,10 +42,6 @@
      "a fuga da família pra escapar de Herodes"
     ],
     [
-     "Nazaré",
-     "onde Jesus cresce"
-    ],
-    [
      "Rio Jordão",
      "o batismo"
     ],
@@ -56,69 +52,15 @@
     [
      "O monte",
      "o Sermão do Monte"
+    ],
+    [
+     "Cafarnaum e o mar da Galileia",
+     "as curas e a tempestade acalmada"
     ]
    ],
-   "espirita": "Jesus é o Espírito mais elevado que já veio à Terra e traz a lei de Deus pra dentro do coração: a intenção vale tanto quanto o ato.",
-   "evangelica": "Jesus é o Emanuel, Deus conosco, que veio salvar o seu povo dos pecados e chama cada um a segui-lo.",
+   "espirita": "Jesus é o Espírito mais elevado que já veio à Terra: leva a lei de Deus pra dentro do coração, cura por leis que ainda não conhecemos e mostra em João Batista o Elias que voltou.",
+   "evangelica": "Jesus é o Emanuel, Deus conosco, que veio salvar o seu povo dos pecados, mostra que o Reino chegou com curas e libertação e chama cada um a segui-lo.",
    "chave": "Mateus 5:3-10"
-  },
-  {
-   "de": 5,
-   "ate": 9,
-   "titulo": "O Reino começa a crescer",
-   "ref": "Mateus 7–13",
-   "resumo": "O fim do Sermão do Monte, muitas curas, o envio dos doze, o convite \"vinde a mim\" e as parábolas do Reino.",
-   "personagens": [
-    [
-     "O centurião",
-     "estrangeiro com uma fé que impressiona Jesus"
-    ],
-    [
-     "Mateus",
-     "cobrador de impostos chamado pra seguir Jesus"
-    ],
-    [
-     "Os doze",
-     "enviados pra anunciar o Reino"
-    ],
-    [
-     "João Batista",
-     "na prisão, manda perguntar se Jesus é o esperado"
-    ],
-    [
-     "Os fariseus",
-     "discutem com Jesus sobre o sábado e Belzebu"
-    ],
-    [
-     "O semeador",
-     "o personagem da parábola mais famosa"
-    ]
-   ],
-   "lugares": [
-    [
-     "Cafarnaum",
-     "a cidade onde Jesus mora e cura muita gente"
-    ],
-    [
-     "Mar da Galileia",
-     "a tempestade acalmada"
-    ],
-    [
-     "Terra dos gadarenos",
-     "os dois homens libertos"
-    ],
-    [
-     "As cidades da Galileia",
-     "Corazim, Betsaida e Cafarnaum, que não se arrependeram"
-    ],
-    [
-     "Nazaré",
-     "onde Jesus é rejeitado no fim do capítulo 13"
-    ]
-   ],
-   "espirita": "As curas mostram a força de um Espírito puro agindo por leis naturais, e João Batista é o Elias que voltou.",
-   "evangelica": "As curas e libertações mostram que o Reino de Deus chegou, e o convite é entregar a vida a Jesus e descansar nele.",
-   "chave": "Mateus 11:28-30"
   }
  ]
 }

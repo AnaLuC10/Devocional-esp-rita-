@@ -37,9 +37,9 @@ def limpa(v):
     return v
 def cw(b, c): return sum(len(v.split()) for v in B[b][c])
 
-ALVO, MAX, MIN = 1000, 1750, 450   # ~5 min de texto (200 palavras/min), 1 a 2 capítulos
+ALVO, MAX, MIN = 1600, 2600, 800   # ~8 min de texto (200 palavras/min), 2 a 3 capítulos
 PEQ = 1200   # livro "pequeno" (Filemom, 2 e 3 João, Judas, Obadias…): pode dividir a leitura com outro livro
-MANUAL = {}  # cortes manuais por tema (início de cada leitura), se precisar
+MANUAL = {'Mateus': [1, 5, 7, 9, 12, 14, 16, 18, 20, 22, 24, 26, 27]}  # cortes por tema no início (início de cada leitura)
 def particiona(items):
     """items: lista de (livro, cap, palavras). Programação dinâmica: dias perto de ALVO, nunca acima de MAX,
     e só mistura livros pequenos."""
@@ -55,7 +55,7 @@ def particiona(items):
             if it[0] in MANUAL and j < n and items[j][0] == it[0] and items[j][1] not in MANUAL[it[0]]: continue
             ncap = j - i + 1
             c = best[i - 1] + (w - ALVO) ** 2 + (4 * (MIN - w) ** 2 if w < MIN else 0) \
-                + (10 ** 7 * (ncap - 2) if ncap > 2 and w > 1300 else 0)   # no máximo 2 capítulos (salvo salmos curtos)
+                + (10 ** 7 * (ncap - 3) if ncap > 3 and w > 1900 else 0)   # no máximo 3 capítulos (salvo salmos curtos)
             if c < best[j]: best[j] = c; prev[j] = i - 1
     out = []; j = n
     while j > 0:
