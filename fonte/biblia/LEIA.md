@@ -13,7 +13,7 @@ Site: https://analuc10.github.io/Devocional-esp-rita-/biblia/
 - `/biblia/comentarios.json`: a visão espírita de cada dia, lida pelo app na hora. Para acrescentar dias, basta editar esse arquivo (não precisa rodar nada).
   Formato: `{"15": {"titulo": "...", "chave": "Lucas 2:52", "kardec": "...", "explicacao": "parágrafos separados por \n, **negrito**, termina em **Resumindo:** ...", "hoje": "..."}}`.
   - `chave` é o versículo-chave: "Livro cap:v" ou "Livro cap:v-v", com o nome do livro igual ao do app (ex.: Oseias, Cânticos). Precisa estar dentro da leitura do dia.
-  - Um parágrafo que começa com `**Pra conversar:**` vira um quadro: como as igrejas evangélicas costumam ler o trecho e como o Espiritismo lê, com respeito.
+  - Um parágrafo que começa com `**Pra conversar:**` vira um quadro: como as igrejas evangélicas costumam ler o trecho e como o Espiritismo lê, com respeito. A Ana pediu esse quadro em TODAS as leituras (16/11/2026). Quando o trecho não tem divergência forte, o quadro mostra em que os dois concordam e onde está a pequena diferença.
 - `comentarios_mateus_marcos.py`: os Dias 1–14 (Mateus e Marcos).
 
 ## Cartões de etapa ("Sua jornada", na aba Guia)
@@ -24,3 +24,6 @@ Site: https://analuc10.github.io/Devocional-esp-rita-/biblia/
 ## Devocional d'O Livro dos Espíritos: cartões semanais
 - Ficam em `/jornada.json` (raiz do site): `{"semanas": [{"de": 1, "ate": 4, "titulo": "...", "q": "Q. 1 a 36", "resumo": "...", "conceitos": [["termo", "explicação curta"], ...], "frase": ["trecho literal do livro", "Q. 1"], "evangelho": "ligação com o Evangelho"}]}`.
 - Uma semana = os dias do cronograma (com data) de segunda a sexta da mesma semana do calendário. O cartão aparece pra quem marcou o dia `ate`.
+
+## Devocional: quadro "pra conversar" no versículo do dia
+- Fica em `/conversar.json` (raiz): `{"10": "texto"}`, chave = número do dia do devocional. 3 a 5 frases: como as igrejas evangélicas costumam ler o versículo do dia (o trecho da Bíblia Livre de cada dia está em `fonte/biblia.py`, REFS, e no campo `bref`/`bib` do JSON do index.html), como o Espiritismo lê, e em que os dois concordam. Com respeito, sem ridicularizar ninguém.

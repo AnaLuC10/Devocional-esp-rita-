@@ -10,6 +10,7 @@ C = {
 Repara quantas vezes **José recebe orientação em sonho**. Pro Espiritismo, isso é algo bem conhecido: durante o sono o Espírito fica mais livre e pode receber avisos dos bons Espíritos. O "anjo do Senhor" é um **Espírito mensageiro** de Deus.
 João Batista prepara o caminho com uma palavra só: **arrependimento**, que é mudar de rumo por dentro. E no deserto Jesus é tentado. Na leitura espírita, o "diabo" não é um ser criado pro mal eterno: representa as **más influências e os apelos da matéria** (poder, fama, conforto) que todo Espírito encarnado enfrenta. Jesus vence com firmeza moral, e mostra que dá pra vencer.
 Pro Espiritismo, Jesus é **o Espírito mais elevado que já esteve na Terra**, o guia e modelo que Deus nos deu. Não veio pra ser adorado de longe, mas pra ser seguido de perto.
+**Pra conversar:** pra maioria dos evangélicos, o diabo é um ser real, um anjo que se rebelou e que tenta as pessoas, e a tentação no deserto foi um confronto direto com ele. O Espiritismo entende que Deus não criaria um ser destinado ao mal pra sempre. O "diabo" representa os **Espíritos ainda imperfeitos** e as nossas próprias más tendências, que um dia também vão melhorar. Os dois lados concordam no principal: Jesus venceu, e dá pra vencer como ele.
 **Resumindo:** Deus fala com a gente por muitos caminhos, inclusive os sonhos; e a tentação não é desculpa, é prova que dá pra vencer, como Jesus venceu.""",
  hoje="Antes de dormir, faça uma prece curta pedindo orientação pra alguma decisão que está pendente. Amanhã, repare no que vier à mente com calma."),
 2: dict(
@@ -20,6 +21,7 @@ Pro Espiritismo, Jesus é **o Espírito mais elevado que já esteve na Terra**, 
 As **bem-aventuranças** viram a lógica do mundo de cabeça pra baixo: felizes os aflitos, os mansos, os misericordiosos. Como alguém que sofre pode ser feliz? Pra quem entende que a vida continua, **a aflição de hoje é passageira** e serve pra crescer; o consolo vem, nesta vida ou na próxima.
 Depois Jesus aprofunda a lei: não basta não matar, é preciso não cultivar a raiva; não basta não trair, é preciso cuidar do pensamento. É a **moral por dentro**, que começa na intenção. E pede o mais difícil: **amar os inimigos**.
 No capítulo 6 vêm a caridade discreta, o **Pai-Nosso** e a confiança ("olhai as aves do céu"). No 7, a **regra de ouro**: fazer aos outros o que gostaríamos que nos fizessem. Os Espíritos dizem que esse é o critério da verdadeira justiça.
+**Pra conversar:** muitos evangélicos leem o Sermão do Monte como um padrão tão alto que ninguém consegue cumprir sozinho, e isso mostraria que todos precisam da graça de Jesus. Pra eles, o "sede perfeitos" se realiza pela justiça de Cristo dada a quem crê. O Espiritismo concorda que ninguém é perfeito agora, mas lê o Sermão como um **programa de transformação**: a perfeição é real e é alcançada aos poucos, em muitas existências, com esforço e com a ajuda de Deus.
 **Resumindo:** o que vale é o que vai no coração, e a medida de tudo é tratar o outro como você quer ser tratada.""",
  hoje="Antes de responder alguém hoje (no trabalho ou no WhatsApp), pergunte: “eu gostaria de receber essa resposta assim?”."),
 3: dict(
@@ -31,6 +33,7 @@ Pro Espiritismo, **milagre não é quebrar as leis da natureza**. Kardec explica
 Repara que quase sempre Jesus diz "**a tua fé te salvou**". A pessoa participa da cura: confiança e vontade abrem caminho.
 Os "endemoninhados" de Gadara, pela leitura espírita, são casos de **obsessão**: Espíritos inferiores dominando pessoas. Jesus não luta com eles, ele manda, porque tem autoridade moral.
 No capítulo 10 ele envia os discípulos e dá uma regra que vale até hoje: **"de graça recebestes, de graça dai"**. Por isso nos centros espíritas o passe, a orientação e a mediunidade nunca são cobrados.
+**Pra conversar:** pros evangélicos, os demônios são anjos caídos, e eles são expulsos em nome de Jesus, no que muitas igrejas chamam de libertação. O Espiritismo entende esses casos como **obsessão**: Espíritos de pessoas que já viveram, ainda presos ao mal, agindo sobre alguém. Por isso o tratamento espírita é a prece, a mudança moral de quem sofre e o esclarecimento do próprio Espírito obsessor, que também é visto como alguém que precisa de ajuda. Nos dois casos, a cura vem pela força do bem, e não por fórmula.
 **Resumindo:** os milagres são leis naturais nas mãos de um Espírito superior, e o dom que vem de Deus é pra servir, não pra vender.""",
  hoje="Faça uma prece de alguns minutos por alguém que está doente ou passando por um momento difícil. Mentalize essa pessoa bem."),
 4: dict(
@@ -64,6 +67,7 @@ Por fim, a fé do tamanho de um **grão de mostarda**. Kardec explica que a "mon
 Pedro pergunta se perdoar sete vezes basta, e a resposta é **setenta vezes sete**, ou seja, sempre. A parábola do servo que teve a dívida enorme perdoada e não perdoou uma dívida pequena mostra o porquê: **todo mundo deve muito**. Pro Espiritismo, perdoar também é libertar a si mesma: a mágoa prende os dois Espíritos um ao outro, às vezes por mais de uma vida.
 O jovem rico cumpria os mandamentos, mas não conseguiu largar o apego. O problema não é ter dinheiro, é **o dinheiro ter a gente**. Kardec diz que a riqueza é uma das provas mais difíceis justamente por isso.
 E na parábola dos **trabalhadores da última hora**, quem chegou no fim recebe o mesmo que quem trabalhou o dia todo. Parece injusto, mas pela visão espírita faz sentido: **ninguém está atrasado pra Deus**. Um Espírito pode passar muitas vidas parado e, quando decide trabalhar de verdade, é acolhido sem rancor.
+**Pra conversar:** no capítulo 18 Jesus fala em "fogo eterno". Pra maioria dos evangélicos, isso é o inferno, uma separação de Deus que não acaba. O Espiritismo entende que o sofrimento depois da morte é real, mas **dura enquanto a pessoa não se arrepende e não repara o mal**. Kardec lembra que a palavra "eterno" muitas vezes indica algo muito longo, e que um Deus que pede perdão "setenta vezes sete" não fecharia a porta pra sempre. Os dois concordam que as escolhas daqui têm consequências sérias.
 **Resumindo:** humildade, perdão sem conta e desapego, e a certeza de que sempre dá tempo de começar.""",
  hoje="Pense numa mágoa pequena que você ainda carrega e faça uma prece pela pessoa. Não precisa falar com ela; comece por dentro."),
 7: dict(
@@ -107,6 +111,7 @@ Na cruz, Jesus grita **"Deus meu, por que me desamparaste?"**, que é o começo 
 Muitas cenas você já viu em Mateus, então vale reparar nos detalhes. O paralítico descido pelo **telhado** por quatro amigos: a fé dos amigos conta. E Jesus primeiro diz "**teus pecados estão perdoados**" e só depois cura o corpo. Pro Espiritismo, isso mostra a ligação entre a **saúde da alma e a do corpo**: muita doença tem raiz em causas morais, desta vida ou de outras.
 Quando criticam Jesus por comer com cobradores de impostos, ele responde: **"não vim chamar os justos, mas os pecadores"**. Ninguém é caso perdido; o médico vai justamente até quem precisa.
 Nas parábolas do capítulo 4 aparecem a **candeia**, que não se esconde debaixo da cama, e a **semente que cresce sozinha** enquanto o lavrador dorme. O progresso espiritual é assim: a gente planta e cuida, mas o crescimento tem o tempo de Deus.
+**Pra conversar:** em 3:28-29 Jesus diz que quem blasfemar contra o Espírito Santo "ficará sem perdão para sempre". Pros evangélicos, esse é o pecado imperdoável, geralmente entendido como rejeitar Jesus até o fim da vida. O Espiritismo lê assim: **enquanto a pessoa se fecha ao bem, ela mesma impede o perdão**, porque não quer mudar. Mas, como não existe pena eterna, no dia em que ela se arrepender o caminho volta a se abrir, nesta vida ou em outra.
 **Resumindo:** fé que movimenta, cura que começa por dentro, e ninguém está longe demais pra ser alcançado.""",
  hoje="Seja um dos “quatro amigos” hoje: ajude alguém a chegar perto de algo bom (um conselho, uma carona, uma indicação)."),
 11: dict(
@@ -117,6 +122,7 @@ Nas parábolas do capítulo 4 aparecem a **candeia**, que não se esconde debaix
 Na casa de Jairo, Jesus diz **"a menina não morreu, está dormindo"**, e todos riem. Kardec, em A Gênese, levanta a possibilidade de ela estar num estado de **morte aparente**, que Jesus percebeu e reverteu. Pra ele, isso não diminui nada: mostra que Jesus via o que os outros não viam.
 Jesus é rejeitado em **Nazaré**, a própria cidade: "nenhum profeta é aceito na sua terra". Quem nos conhece desde sempre às vezes tem mais dificuldade de ver a nossa mudança.
 E no capítulo 7, a discussão sobre lavar as mãos vira uma lição enorme: **não é o que entra que suja a pessoa, é o que sai do coração** (maldade, inveja, orgulho). A pureza que importa é a moral.
+**Pra conversar:** pros evangélicos, a filha de Jairo morreu de verdade e Jesus a ressuscitou, como sinal do poder de Deus sobre a morte. Kardec levanta a hipótese de **morte aparente**, um estado em que a pessoa parece morta mas o Espírito ainda está ligado ao corpo. Pros espíritas, isso não diminui Jesus: mostra que ele percebia o que ninguém via. E nos dois casos, o "Legião" que entra nos porcos é lido de jeito diferente: demônios pros evangélicos, Espíritos inferiores pros espíritas.
 **Resumindo:** o mal mais perigoso não vem de fora, sai de dentro; por isso é lá dentro que a cura começa.""",
  hoje="Observe hoje o que “sai” de você: palavras, comentários, pensamentos. Troque uma crítica por um elogio sincero."),
 12: dict(
@@ -128,6 +134,7 @@ Jesus pergunta **"de que adianta ganhar o mundo inteiro e perder a alma?"**. Pra
 Depois da transfiguração, um menino sofre com um Espírito que o derruba. Os discípulos não conseguem ajudar, e Jesus explica: esse tipo **só sai com oração**. Não tem fórmula: tem preparo moral.
 João conta, todo orgulhoso, que proibiram um homem de fazer o bem em nome de Jesus porque ele "não era do grupo". Jesus corrige: **"quem não é contra nós é por nós"**. É uma lição perfeita pra hoje: **o bem não tem dono nem igreja**. Kardec diz a mesma coisa quando afirma que o que salva é a caridade, seja qual for a crença.
 Tiago e João pedem os primeiros lugares, e Jesus ensina que **ser grande é servir**.
+**Pra conversar:** sobre o divórcio (10:2-12), muitas igrejas evangélicas ensinam que o casamento só pode ser desfeito em casos graves, como o adultério, e algumas não aceitam um novo casamento. Kardec, n'O Evangelho segundo o Espiritismo, diz que **o que Deus une é o amor**, e que a lei humana pode separar o que, na prática, já está separado. Os dois concordam que o casamento é sério e que separar nunca deve ser feito por capricho.
 **Resumindo:** o que importa é a alma que a gente constrói, e o bem feito por qualquer pessoa, de qualquer religião, vem de Deus.""",
  hoje="Reconheça e elogie hoje o bem que alguém de outra religião ou de outra igreja faz, de preferência falando com essa pessoa."),
 13: dict(
@@ -138,6 +145,7 @@ Tiago e João pedem os primeiros lugares, e Jesus ensina que **ser grande é ser
 Logo depois, Jesus ensina sobre a prece: **"tudo que pedirdes orando, crede que recebereis"**. Mas ele amarra uma condição: **perdoar antes de orar**. Não dá pra pedir a Deus com o coração cheio de rancor.
 Na arca do templo, os ricos jogam muito do que sobra e uma **viúva pobre joga duas moedinhas**. Jesus diz que ela deu mais que todos. Pra Kardec, a caridade se mede pelo **sacrifício e pela intenção**, e não pelo valor. Quem tem pouco também pode dar, inclusive tempo, atenção e paciência.
 O capítulo 13 repete o discurso dos sinais que você leu em Mateus, com o mesmo conselho no fim: **vigiai**.
+**Pra conversar:** quando Jesus diz que Deus "não é Deus de mortos, mas de vivos" (12:27), evangélicos e espíritas concordam: **quem morreu continua vivo pra Deus**. A diferença está no depois. Pra muitos evangélicos, os mortos aguardam a ressurreição no fim dos tempos, ou já estão com Cristo, mas não se comunicam com a gente. Pro Espiritismo, eles seguem ativos no mundo espiritual, continuam aprendendo e podem se comunicar quando Deus permite.
 **Resumindo:** fruto vale mais que folha, perdão vem antes da prece, e na caridade conta o coração, não a quantia.""",
  hoje="Dê hoje algo que custe um pouco pra você, nem que seja tempo: uma hora de atenção de verdade pra alguém."),
 14: dict(
