@@ -11,9 +11,9 @@ Leitura em casal (pedido de 16/11/2026): a Ana lê no app e o namorado lê na B�
 
 ## Arquivos
 - `cronograma.py`: divide a Bíblia e gera `dias.json` e `textos/NNN.json`. `app_biblia.html`: o app. `make_biblia.py` gera `/biblia/`.
-- `/biblia/comentarios.json`: o conteúdo de cada dia, lido pelo app na hora (pra acrescentar dias, basta editar esse arquivo). Modelo de estilo, tamanho e tom: `comentarios_inicio.py` (Dias 1–6). Campos:
+- `/biblia/comentarios.json`: o conteúdo de cada dia, lido pelo app na hora (pra acrescentar dias, basta editar esse arquivo). Modelo de estilo, tamanho e tom: `comentarios_inicio.py` (Dias 1–6) e `comentarios_mes1.py` (Dias 7–22). Frases entre aspas citadas da Bíblia seguem a redação da Bíblia Livre. Campos:
   - `titulo`; `chave` (versículo-chave "Livro cap:v" ou "Livro cap:v-v", com o nome do livro igual ao do app e dentro da leitura); `resumo` (o que acontece, neutro, 1–2 frases);
-  - `espirita` e `evangelica` (4 a 6 parágrafos curtos cada, separados por \n, uns 160 a 230 palavras cada, **negrito** nas ideias principais, cada visão explicada por dentro, como quem acredita nela explicaria);
+  - `espirita` e `evangelica` (4 a 6 parágrafos curtos cada, separados por \n, uns 130 a 230 palavras cada, **negrito** nas ideias principais, cada visão explicada por dentro, como quem acredita nela explicaria);
   - `comum` (o que as duas têm em comum, 1–3 frases); `hoje` (aplicação pros dois); `marcar` ([[referência, o que é]], 3 ou 4 passagens ligadas); `kardec` (aprofundar espírita); `estudo` (aprofundar evangélica).
 - `/biblia/guia-semanal.json`: cartões "Sua jornada", um por semana do calendário: `{"semanas": [{"de", "ate", "titulo", "ref", "resumo", "personagens": [[nome, quem é]], "lugares": [[lugar, o que acontece]], "espirita", "evangelica", "chave"}]}`. O cartão aparece pra quem marcou como lido o dia `ate`.
 
