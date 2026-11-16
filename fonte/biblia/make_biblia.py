@@ -8,11 +8,23 @@ os.makedirs(OUT, exist_ok=True)
 dias = json.load(open(os.path.join(AQUI, 'dias.json')))
 days = [{k: d[k] for k in ('n', 'date', 'fase', 'faseNome', 'ref', 'mins')} for d in dias]
 fases = [[f, ', '.join(C.nm(x) for x in l)] for f, l in C.FASES]
-data = json.dumps({'days': days, 'fases': fases}, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+# índice da Bíblia inteira (ordem dos livros da Bíblia) e arquivo de busca
+dia_de = {}
+for d in dias:
+    for sg in d['segs']:
+        for c in range(sg['de'], sg['ate'] + 1): dia_de[(sg['livro'], c)] = d['n']
+livros, busca = [], []
+for b in C.D[1:]:
+    nome = b['nome']; caps = C.B[nome]
+    livros.append([C.nm(nome), b['abrev'].lower(), len(caps), 'AT' if b['periodo'].startswith('Antigo') else 'NT',
+                   [dia_de[(nome, c + 1)] for c in range(len(caps))]])
+    for c in range(len(caps)): busca.append([len(livros) - 1, c + 1, [C.limpa(v) for v in caps[c]]])
+data = json.dumps({'days': days, 'fases': fases, 'livros': livros}, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
 html = open(os.path.join(AQUI, 'app_biblia.html')).read().replace('__DATA__', data)
 open(os.path.join(OUT, 'index.html'), 'w').write(html)
 if os.path.exists(os.path.join(OUT, 'textos')): shutil.rmtree(os.path.join(OUT, 'textos'))
 shutil.copytree(os.path.join(AQUI, 'textos'), os.path.join(OUT, 'textos'))
+json.dump(busca, open(os.path.join(OUT, 'busca.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
 if not os.path.exists(os.path.join(OUT, 'comentarios.json')): open(os.path.join(OUT, 'comentarios.json'), 'w').write('{}')
 
 # ícone: aura terracota / azul / trigo com um livro aberto em branco

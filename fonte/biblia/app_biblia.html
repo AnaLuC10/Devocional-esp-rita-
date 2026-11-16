@@ -49,7 +49,7 @@ h1,h2,h3{text-wrap:balance}
 .tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:color-mix(in srgb,var(--surface) 88%,transparent);
   backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);
   padding:6px max(16px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
-.tabs nav{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.tabs nav{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
 .tabs a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 0;text-decoration:none;color:var(--muted);font-size:11.5px;font-weight:500;border-radius:14px}
 .tabs a svg{width:22px;height:22px}
 .tabs a[aria-current="page"]{color:var(--accent)}
@@ -148,6 +148,23 @@ h1,h2,h3{text-wrap:balance}
 .it.lido .what{color:var(--muted)}
 .fase{display:flex;align-items:baseline;gap:8px;margin:26px 4px 2px;font:600 12px var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--lav)}
 
+/* bíblia inteira */
+.busca{display:flex;gap:8px;margin:0 0 6px}
+.busca input{flex:1;min-width:0;border:1px solid var(--line);border-radius:999px;padding:12px 16px;font:16px var(--f-ui);background:var(--surface);color:var(--ink)}
+.dica{font-size:12.5px;color:var(--muted);margin:0 6px 4px}
+.tst{font:italic 400 18px var(--f-disp);color:var(--rose);margin:22px 4px 10px}
+.bks{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px}
+.bks a{display:flex;align-items:center;justify-content:center;text-align:center;min-height:46px;padding:8px 6px;border-radius:14px;background:var(--surface);border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:13.5px;line-height:1.2}
+.caps{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:8px;margin-top:8px}
+.caps a{display:grid;place-items:center;height:48px;border-radius:14px;background:var(--surface);border:1px solid var(--line);color:var(--ink);text-decoration:none;font:500 16px var(--f-disp)}
+.caps a.lido{background:var(--lav-bg);border-color:transparent;color:var(--lav-ink)}
+.res{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.res a{display:block;padding:12px 16px;border-top:1px solid var(--line);text-decoration:none;color:var(--ink);font:15px/1.5 var(--f-read)}
+.res a:first-child{border-top:0}
+.res a b{display:block;font:700 12px var(--f-ui);letter-spacing:.06em;color:var(--rose);margin-bottom:2px}
+.res mark{background:color-mix(in srgb,var(--a3) 45%,transparent);color:inherit;border-radius:3px;padding:0 1px}
+.ponte{display:flex;flex-direction:column;gap:4px;margin-top:22px}
+
 /* como usar */
 .steps{display:flex;flex-direction:column;gap:14px}
 .step{display:grid;grid-template-columns:30px 1fr;gap:10px;font-size:14.5px}
@@ -171,7 +188,8 @@ h1,h2,h3{text-wrap:balance}
 <div class="tabs"><nav aria-label="Seções">
   <a href="#hoje" data-tab="hoje"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.8v2M12 19.2v2M2.8 12h2M19.2 12h2M5.5 5.5l1.4 1.4M17.1 17.1l1.4 1.4M5.5 18.5l1.4-1.4M17.1 6.9l1.4-1.4"/></svg>Hoje</a>
   <a href="#cronograma" data-tab="cronograma"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Cronograma</a>
-  <a href="#sobre" data-tab="sobre"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5C10 5 7 4.6 3.5 5v13.5c3.5-.4 6.5 0 8.5 1.5 2-1.5 5-1.9 8.5-1.5V5C17 4.6 14 5 12 6.5z"/><path d="M12 6.5V20"/></svg>Como usar</a>
+  <a href="#livros" data-tab="livros"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5C10 5 7 4.6 3.5 5v13.5c3.5-.4 6.5 0 8.5 1.5 2-1.5 5-1.9 8.5-1.5V5C17 4.6 14 5 12 6.5z"/><path d="M12 6.5V20"/></svg>Bíblia</a>
+  <a href="#sobre" data-tab="sobre"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.2M12 7.6v.2"/></svg>Como usar</a>
 </nav></div>
 <div class="toast" id="toast" role="status"></div>
 
@@ -179,7 +197,7 @@ h1,h2,h3{text-wrap:balance}
 <script>
 (function(){
 const DATA = JSON.parse(document.getElementById('data').textContent);
-const DAYS = DATA.days, FASES = DATA.fases;
+const DAYS = DATA.days, FASES = DATA.fases, LIVROS = DATA.livros;  // livro: [nome, abrev, capítulos, AT/NT, dia de cada capítulo]
 let COM = {};                       // comentários: comentarios.json (atualizado toda semana)
 const TXT = {};                     // textos já baixados
 const MESES=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
@@ -349,7 +367,8 @@ function vSobre(){
     <div class="step"><div class="sn">1</div><div><b>Leia o texto do dia.</b> São de 9 a 15 minutos, com os capítulos inteiros. O versículo-chave aparece marcado.</div></div>
     <div class="step"><div class="sn">2</div><div><b>Leia a visão espírita.</b> Uma explicação simples do que você leu à luz da Doutrina Espírita, com as ideias principais em negrito. Quando o trecho é lido de outro jeito pelas igrejas evangélicas, tem um quadro “pra conversar”.</div></div>
     <div class="step"><div class="sn">3</div><div><b>Leve pra vida.</b> O “pra hoje” é uma aplicação prática. Em “pra aprofundar” estão os livros de Kardec que falam do assunto.</div></div>
-    <div class="step"><div class="sn">4</div><div><b>Toque no ♡.</b> Marca a leitura como lida. A aba Hoje sempre abre na próxima leitura.</div></div>
+    <div class="step"><div class="sn">4</div><div><b>Quer achar alguma coisa?</b> Na aba Bíblia dá pra abrir qualquer livro e capítulo ou pesquisar uma palavra ou referência, como “João 3:16” ou “nascer de novo”. Cada trecho mostra em que dia do cronograma ele está, pra você ler a explicação.</div></div>
+    <div class="step"><div class="sn">5</div><div><b>Toque no ♡.</b> Marca a leitura como lida. A aba Hoje sempre abre na próxima leitura.</div></div>
   </div></section>
   <section class="card"><span class="k">a ordem da leitura</span>
     <p style="margin:8px 0 10px;font-size:14px">A Bíblia inteira, alternando o Novo e o Antigo Testamento pra não ficar pesado. Começa por Jesus.</p>
@@ -362,6 +381,101 @@ function vSobre(){
   </div>`;
 }
 
+/* ---------- Bíblia inteira: livros, capítulos e busca ---------- */
+const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[.]/g,'').replace(/\s+/g,' ').trim();
+const ALIAS = {};
+LIVROS.forEach((b,i) => { [b[0], b[1]].forEach(x => { ALIAS[norm(x)] = i; ALIAS[norm(x).replace(/ /g,'')] = i; }); });
+Object.assign(ALIAS, {'salmo':18,'sal':18,'cantares':21,'cantico':21,'canticos':21,'cantico dos canticos':21,'oseias':27,'apoc':65,'ex':1,'jo':42});
+function acharLivro(raw){
+  const r = raw.toLowerCase().replace(/[.]/g,'').trim();
+  if (r==='jó' || r==='jo\u0301') return 17;
+  const n = norm(r); if (n in ALIAS) return ALIAS[n]; if (n.replace(/ /g,'') in ALIAS) return ALIAS[n.replace(/ /g,'')];
+  if (n.length < 2) return -1;
+  const c = LIVROS.map((b,i)=>[norm(b[0]),i]).filter(([x]) => x.startsWith(n) || x.replace(/ /g,'').startsWith(n.replace(/ /g,'')));
+  return c.length ? c[0][1] : -1;
+}
+// "joão 3:16", "1co 13", "salmo 23", "gn 1:1-3"
+function lerRef(q){
+  const m = q.trim().match(/^([1-3]?\s*[^\d:]+?)\s*(\d+)?(?:\s*[:.,]\s*(\d+)(?:\s*[-–]\s*(\d+))?)?$/);
+  if (!m) return null; const i = acharLivro(m[1]); if (i<0) return null;
+  if (LIVROS[i][2]===1 && m[2] && !m[3]) return {i, c:1, a:+m[2], z:+m[2], exato:true};   // Judas 3 = versículo 3
+  const c = m[2] ? Math.min(+m[2], LIVROS[i][2]) : 0;
+  const exato = norm(m[1]) in ALIAS || LIVROS.some(x => norm(x[0])===norm(m[1]));
+  return {i, c, a: m[3]?+m[3]:0, z: m[4]?+m[4]:(m[3]?+m[3]:0), exato};
+}
+function caminho(r){ return r.c ? `#ler-${r.i}-${r.c}${r.a?'-'+r.a+(r.z!==r.a?'-'+r.z:''):''}` : `#livro-${r.i}`; }
+
+function formBusca(q=''){
+  return `<form class="busca" id="buscaForm" role="search"><input id="buscaIn" type="search" enterkeyhint="search" placeholder="João 3:16 ou uma palavra" value="${esc(q)}" aria-label="Pesquisar na Bíblia"><button class="btn" type="submit">Buscar</button></form>`;
+}
+function vLivros(){
+  const grupo = t => `<div class="bks">${LIVROS.map((b,i)=>b[3]===t?`<a href="#livro-${i}">${esc(b[0])}</a>`:'').join('')}</div>`;
+  return `<div class="ph"><span class="k">a Bíblia inteira</span><h1>Bí<i>blia</i></h1><p>Abra qualquer livro ou pesquise uma palavra ou referência.</p></div>
+    ${formBusca()}<p class="dica">Digite uma referência (João 3:16, 1 Co 13, Salmo 23) ou palavras (amar o próximo).</p>
+    <h2 class="tst">Antigo Testamento</h2>${grupo('AT')}<h2 class="tst">Novo Testamento</h2>${grupo('NT')}`;
+}
+function vLivro(i){
+  const b = LIVROS[i]; if (!b) return vLivros();
+  if (b[2]===1) { location.replace(`#ler-${i}-1`); return ''; }
+  return `<div class="rbar"><div class="in"><a class="ib" href="#livros" aria-label="Voltar aos livros"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></a><div class="t">${esc(b[0])}</div><span class="ib"></span></div></div>
+    <div class="ph" style="margin-top:4px"><span class="k">${b[3]==='AT'?'Antigo':'Novo'} Testamento · ${b[2]} ${b[0]==='Salmos'?'salmos':'capítulos'}</span><h1>${esc(b[0])}</h1></div>
+    <div class="caps">${Array.from({length:b[2]},(_,c)=>`<a href="#ler-${i}-${c+1}" class="${lidos.has(b[4][c])?'lido':''}">${c+1}</a>`).join('')}</div>
+    <p class="note">Os capítulos em azul já foram lidos no cronograma.</p>`;
+}
+function capHtml(k, a, z){
+  return `${k.s?`<p class="sobre">${esc(k.s)}</p>`:''}<p class="vv">${k.v.map((v,j)=>{ const on = a && j+1>=a && j+1<=z;
+    return `<sup${j+1===a?' id="alvo"':''}>${j+1}</sup>${on?'<span class="vk">':''}${esc(v)}${on?'</span>':''}`; }).join(' ')}</p>`;
+}
+function vLer(i, c, a, z){
+  const b = LIVROS[i]; if (!b || c<1 || c>b[2]) return vLivros();
+  const n = b[4][c-1], d = byN(n), com = COM[n];
+  const prev = c>1 ? [i,c-1] : (i>0 ? [i-1, LIVROS[i-1][2]] : null), next = c<b[2] ? [i,c+1] : (i<LIVROS.length-1 ? [i+1,1] : null);
+  const nomeCap = (j,k) => LIVROS[j][2]===1 ? LIVROS[j][0] : `${LIVROS[j][0]} ${k}`;
+  texto(n).then(caps => { const k = caps.find(x => x.l===b[0] && x.c===c); const el = document.getElementById('txt');
+    if (!el || !k) return; el.innerHTML = capHtml(k, a, z||a); onScroll();
+    const al = document.getElementById('alvo'); if (al) al.scrollIntoView({block:'center'}); })
+    .catch(() => { const el=document.getElementById('txt'); if (el) el.innerHTML='<p class="loading">Não deu pra carregar o texto agora. Confira a internet e abra de novo.</p>'; });
+  return `<div class="rbar"><div class="in">
+      <a class="ib" href="${b[2]>1?'#livro-'+i:'#livros'}" aria-label="Voltar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></a>
+      <div class="t">${esc(nomeCap(i,c))}</div><button class="ib" id="fsBtn" aria-label="Tamanho da letra">Aa</button></div><div class="rprog"><i id="rp"></i></div></div>
+    <h1 class="dt" style="margin-top:8px">${esc(b[0])}${b[2]>1?` <i style="color:var(--rose);font-weight:400">${c}</i>`:''}</h1><div class="dm">${b[0]==='Salmos'?'Salmo '+c:''}</div>
+    <article class="reader" id="txt"><p class="loading">Carregando o texto…</p></article>
+    <section class="card ponte"><div class="bh">${dot('trigo')}<span>no cronograma</span></div>
+      <p style="margin:4px 0 0;font-size:14.5px">Este trecho está no <a href="#dia-${n}">Dia ${n}</a> (${curto(d.date)}${lidos.has(n)?', já lido ♡':''})${com&&com.titulo?`: “${esc(com.titulo)}”`:''}.${com&&com.explicacao?' Lá tem a explicação na visão espírita.':''}</p></section>
+    <nav class="pager" aria-label="Outros capítulos">
+      ${prev?`<a href="#ler-${prev[0]}-${prev[1]}"><small>‹ anterior</small><span>${esc(nomeCap(...prev))}</span></a>`:'<span></span>'}
+      ${next?`<a class="nx" href="#ler-${next[0]}-${next[1]}"><small>próximo ›</small><span>${esc(nomeCap(...next))}</span></a>`:'<span></span>'}
+    </nav>`;
+}
+let BUSCA = null;
+function carregaBusca(){ return BUSCA ? Promise.resolve(BUSCA) : fetch('busca.json').then(r=>r.json()).then(j => (BUSCA = j.map(([i,c,vs]) => [i,c,vs,vs.map(norm)]))); }
+const ACENTO = {a:'[aáàâã]',e:'[eéèê]',i:'[iíì]',o:'[oóòôõ]',u:'[uúùü]',c:'[cç]'};
+function vBusca(q){
+  const r = lerRef(q);
+  if (r && /\d/.test(q)) { location.replace(caminho(r)); return ''; }
+  const PARAR = new Set(['de','da','do','das','dos','a','o','as','os','e','que','em','no','na','nos','nas','um','uma','para','pra','por','se','com','ao','aos','é']);
+  const ws0 = norm(q).split(' ').filter(w=>w.length>1), ws = ws0.filter(w=>!PARAR.has(w)).length ? ws0.filter(w=>!PARAR.has(w)) : ws0;
+  setTimeout(() => {
+    if (!ws.length) { document.getElementById('res').innerHTML = '<p class="note">Digite pelo menos uma palavra.</p>'; return; }
+    carregaBusca().then(B => {
+      let hits = [], parecidos = false;
+      for (const [i,c,vs,ns] of B) ns.forEach((x,j) => { if (ws.every(w => x.includes(w))) hits.push([i,c,j+1,vs[j]]); });
+      if (!hits.length && ws.length > 1) {   // nenhum versículo com todas as palavras: mostra os que têm mais delas
+        const sc = []; for (const [i,c,vs,ns] of B) ns.forEach((x,j) => { const k = ws.filter(w => x.includes(w)).length; if (k) sc.push([k,i,c,j+1,vs[j]]); });
+        const mx = Math.max(0, ...sc.map(x=>x[0])); hits = sc.filter(x=>x[0]===mx).map(x=>x.slice(1)); parecidos = hits.length>0;
+      }
+      const re = new RegExp('(' + ws.map(w => w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/[aeiouc]/g, ch => ACENTO[ch])).join('|') + ')', 'gi');
+      const el = document.getElementById('res'); if (!el) return;
+      const livroAchado = r && !/\d/.test(q) ? `<p class="note" style="margin-top:0">Quer abrir o livro? <a href="#livro-${r.i}">${esc(LIVROS[r.i][0])}</a></p>` : '';
+      el.innerHTML = livroAchado + (hits.length ? `<p class="note" style="margin:0 4px 10px">${parecidos?'Nenhum versículo tem todas essas palavras (a tradução pode usar outras, tipo “voltar a nascer” em vez de “nascer de novo”). Os mais parecidos: ':''}${hits.length} versículo${hits.length>1?'s':''}${hits.length>300?' (mostrando os 300 primeiros)':''}</p><div class="res">` +
+        hits.slice(0,300).map(([i,c,v,t]) => `<a href="#ler-${i}-${c}-${v}"><b>${esc(LIVROS[i][0])} ${c}:${v}</b>${esc(t).replace(re,'<mark>$1</mark>')}</a>`).join('') + '</div>'
+        : '<p class="note">Nada encontrado. Tente outra palavra ou só o começo dela.</p>');
+    }).catch(() => { const el=document.getElementById('res'); if (el) el.innerHTML='<p class="note">Não deu pra carregar a busca agora. Confira a internet.</p>'; });
+  });
+  return `<div class="rbar"><div class="in"><a class="ib" href="#livros" aria-label="Voltar aos livros"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></a><div class="t">Busca</div><span class="ib"></span></div></div>
+    ${formBusca(q)}<div id="res" style="margin-top:12px"><p class="loading" style="margin:8px 6px">Procurando na Bíblia inteira…</p></div>`;
+}
+
 /* ---------- roteador ---------- */
 let lastView = '';
 function render(scroll=true){
@@ -369,6 +483,10 @@ function render(scroll=true){
   let html, tab='hoje', m;
   if ((m=h.match(/^dia-(\d+)$/))) { html=vDia(+m[1]); tab='cronograma'; }
   else if (h==='cronograma') { html=vCrono(); tab='cronograma'; }
+  else if (h==='livros') { html=vLivros(); tab='livros'; }
+  else if ((m=h.match(/^livro-(\d+)$/))) { html=vLivro(+m[1]); tab='livros'; }
+  else if ((m=h.match(/^ler-(\d+)-(\d+)(?:-(\d+)(?:-(\d+))?)?$/))) { html=vLer(+m[1],+m[2],m[3]?+m[3]:0,m[4]?+m[4]:0); tab='livros'; }
+  else if ((m=h.match(/^busca=(.*)$/))) { html=vBusca(decodeURIComponent(m[1])); tab='livros'; }
   else if (h==='sobre') { html=vSobre(); tab='sobre'; }
   else html=vHoje();
   const y = window.scrollY;
@@ -400,6 +518,9 @@ function onScroll(){
   rp.style.width = (p*100).toFixed(1)+'%';
 }
 window.addEventListener('scroll', onScroll, {passive:true});
+$app.addEventListener('submit', e => { if (e.target.id!=='buscaForm') return; e.preventDefault();
+  const q = document.getElementById('buscaIn').value.trim(); if (!q) return; document.getElementById('buscaIn').blur();
+  const r = lerRef(q); location.hash = (r && (/\d/.test(q) || r.exato)) ? caminho(r) : 'busca=' + encodeURIComponent(q); });
 $app.addEventListener('submit', e => { if (e.target.id!=='nmForm') return; e.preventDefault(); const v=document.getElementById('nmIn').value.trim(); if (!v) return; state.nome=v.slice(0,30); persist(); render(false); toast('Prazer, '+state.nome+' ♡'); });
 $app.addEventListener('click', e => { const a=e.target.closest('a[href^="http"]'); if (a) { a.target='_blank'; a.rel='noopener'; } }, true);
 render(true);
