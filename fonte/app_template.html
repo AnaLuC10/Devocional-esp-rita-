@@ -402,7 +402,7 @@ function vDia(n){
       <div class="blk"><div class="bh">${dot('flor')}<span>pra hoje</span></div><p>${d.hoje}</p></div>
       ${d.ese?`<div class="blk"><div class="bh">${dot('livro')}<span>no Evangelho</span></div><p class="ref">O Evangelho segundo o Espiritismo · ${d.ese}</p><p>${d.liga}</p></div>`:''}
       <div class="blk"><div class="bh">${dot('biblia')}<span>na Bíblia</span></div><p class="vs">“${d.bib}”</p><p class="ref">${d.bref} · Bíblia Livre</p></div>
-      ${CONV[d.n]?`<div class="blk"><div class="bh">${dot('biblia')}<span>pra conversar</span></div><p style="font-size:14.5px">${esc(CONV[d.n])}</p><p class="ref">Como as igrejas evangélicas costumam ler esse versículo e como o Espiritismo lê.</p></div>`:''}
+      ${CONV[d.n]?`<div class="blk"><div class="bh">${dot('biblia')}<span>outros olhares</span></div><p style="font-size:14.5px">${esc(CONV[d.n])}</p><p class="ref">Como outras tradições cristãs costumam ler esse versículo e como o Espiritismo lê.</p></div>`:''}
       <div class="blk"><div class="bh">${dot('fone')}<span>podcast do dia</span></div>${podBlk(d)}</div>
       <div class="blk"><div class="bh">${dot('nota')}<span>música do dia</span></div><p><a href="${d.musUrl}" target="_blank" rel="noopener"><strong>${d.mus}</strong> – ${d.art}</a> <span class="tag">${d.gen}</span></p>
         <p class="ref">Também na <a href="https://open.spotify.com/playlist/3bJwoEHzmIxIKBF4450uU3" target="_blank" rel="noopener">sua playlist do devocional</a>.</p></div>

@@ -25,5 +25,5 @@ Site: https://analuc10.github.io/Devocional-esp-rita-/biblia/
 - Ficam em `/jornada.json` (raiz do site): `{"semanas": [{"de": 1, "ate": 4, "titulo": "...", "q": "Q. 1 a 36", "resumo": "...", "conceitos": [["termo", "explicação curta"], ...], "frase": ["trecho literal do livro", "Q. 1"], "evangelho": "ligação com o Evangelho"}]}`.
 - Uma semana = os dias do cronograma (com data) de segunda a sexta da mesma semana do calendário. O cartão aparece pra quem marcou o dia `ate`.
 
-## Devocional: quadro "pra conversar" no versículo do dia
-- Fica em `/conversar.json` (raiz): `{"10": "texto"}`, chave = número do dia do devocional. 3 a 5 frases: como as igrejas evangélicas costumam ler o versículo do dia (o trecho da Bíblia Livre de cada dia está em `fonte/biblia.py`, REFS, e no campo `bref`/`bib` do JSON do index.html), como o Espiritismo lê, e em que os dois concordam. Com respeito, sem ridicularizar ninguém.
+## Devocional: quadro "outros olhares" no versículo do dia
+- Fica em `/conversar.json` (raiz): `{"10": "texto"}`, chave = número do dia do devocional. 3 a 5 frases: como outras tradições cristãs em geral (sem citar uma igreja específica) costumam ler o versículo do dia (campos `bib`/`bref` do JSON do index.html), como o Espiritismo lê, e em que todos concordam. O devocional é usado pela família toda: o tom é de estudo, não de debate.
