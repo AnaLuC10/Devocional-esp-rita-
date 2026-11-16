@@ -53,7 +53,7 @@ h1,h2,h3{text-wrap:balance}
 .tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:color-mix(in srgb,var(--surface) 88%,transparent);
   backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);
   padding:6px max(16px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
-.tabs nav{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.tabs nav{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
 .tabs a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 0;text-decoration:none;color:var(--muted);font-size:11.5px;font-weight:500;border-radius:14px}
 .tabs a svg{width:22px;height:22px}
 .tabs a[aria-current="page"]{color:var(--accent)}
@@ -177,6 +177,52 @@ h1,h2,h3{text-wrap:balance}
 .nmrow input{flex:1;min-width:0;border:1px solid var(--line);border-radius:999px;padding:11px 16px;font:16px var(--f-ui);background:var(--bg);color:var(--ink)}
 .sync{display:flex;align-items:center;gap:8px;font-size:13.5px}
 
+/* guia */
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
+.chips a{padding:7px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:13px}
+.sec{scroll-margin-top:calc(16px + env(safe-area-inset-top,0px));margin-top:28px}
+.sec > h2{font:400 24px/1.15 var(--f-disp);color:var(--plum);margin:0 4px 4px}
+.sec > h2 i{color:var(--rose)}
+.sec > p.sub{margin:0 4px 12px;color:var(--muted);font-size:14px}
+.tl{position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;border-radius:2px;background:linear-gradient(var(--a1),var(--a2) 50%,var(--a3))}
+.tl .ev{position:relative;padding:0 0 16px}
+.tl .ev::before{content:"";position:absolute;left:-23px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2.5px solid var(--rose)}
+.tl .ev.br::before{border-color:var(--lav)}
+.tl .ev.top::before{background:var(--rose)}
+.tl .when{font:700 11px var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.tl h3{font:500 18px/1.25 var(--f-disp);color:var(--plum);margin:2px 0 3px}
+.tl p{margin:0;font-size:14.5px}
+.tl .meio{margin:2px 0 16px -26px;padding:8px 12px;border-radius:12px;background:var(--lav-bg);color:var(--lav-ink);font:600 12px var(--f-ui);letter-spacing:.08em;text-transform:uppercase;text-align:center}
+.lv{display:grid;gap:10px}
+.lv .card{display:grid;grid-template-columns:54px 1fr;gap:12px;align-items:start;padding:14px 16px}
+.lv .yr{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font:500 15px var(--f-disp);color:#2B1D25}
+.lv h3{font:500 17px/1.25 var(--f-disp);color:var(--plum);margin:0 0 3px}
+.lv p{margin:0;font-size:14px}
+.lv .st{display:inline-block;margin-top:6px;font:700 10.5px var(--f-ui);letter-spacing:.1em;text-transform:uppercase;color:var(--lav);border:1px solid var(--line);border-radius:8px;padding:2px 7px}
+.lv .st.now{background:var(--accent);color:var(--on-accent);border-color:transparent}
+.lem{display:grid;gap:10px}
+.lem .card{padding:14px 16px}
+.lem h3{font:500 17px/1.25 var(--f-disp);color:var(--plum);margin:0 0 4px}
+.lem p{margin:0 0 6px;font-size:14.5px}
+.lem a{font-size:13px;font-weight:600}
+.mapa .bar2{display:flex;height:16px;border-radius:8px;overflow:hidden;gap:2px;margin:4px 0 14px}
+.mapa .bar2 i{position:relative;background:var(--line);overflow:hidden}
+.mapa .bar2 i b{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,var(--rose),var(--lav))}
+.mapa .pt{display:grid;grid-template-columns:14px 1fr;gap:10px;padding:12px 0;border-top:1px solid var(--line)}
+.mapa .pt:first-of-type{border-top:0}
+.mapa .pt > i{width:14px;height:14px;border-radius:4px;margin-top:4px}
+.mapa h3{font:500 17px/1.25 var(--f-disp);color:var(--plum);margin:0 0 2px}
+.mapa p{margin:0 0 3px;font-size:14px}
+.mapa q{font-style:italic;color:var(--muted);font-size:13.5px}
+.esc{display:flex;flex-direction:column;gap:10px}
+.esc .o{border-radius:20px;padding:14px 16px;color:var(--plum)}
+.esc .o h3{font:500 18px var(--f-disp);margin:0 0 2px}
+.esc .o p{margin:0 0 8px;font-size:14px}
+.esc .cls{display:flex;flex-wrap:wrap;gap:6px}
+.esc .cls span{padding:5px 10px;border-radius:999px;background:color-mix(in srgb,var(--surface) 75%,transparent);font-size:13px}
+.esc .seta{text-align:center;font:600 12px var(--f-ui);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
 .toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(8px);background:var(--plum);color:var(--bg);
   padding:10px 16px;border-radius:999px;font-size:14px;opacity:0;transition:opacity .2s,transform .2s;pointer-events:none;z-index:40;white-space:nowrap}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
@@ -187,6 +233,7 @@ h1,h2,h3{text-wrap:balance}
 <div class="tabs"><nav aria-label="Seções">
   <a href="#hoje" data-tab="hoje"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.8v2M12 19.2v2M2.8 12h2M19.2 12h2M5.5 5.5l1.4 1.4M17.1 17.1l1.4 1.4M5.5 18.5l1.4-1.4M17.1 6.9l1.4-1.4"/></svg>Hoje</a>
   <a href="#cronograma" data-tab="cronograma"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Cronograma</a>
+  <a href="#guia" data-tab="guia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.4 5.2 5.6.6-4.2 3.8 1.2 5.5L12 15.8l-5 2.8 1.2-5.5L4 9.3l5.6-.6z"/></svg>Guia</a>
   <a href="#sobre" data-tab="sobre"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 20s-7.5-4.4-7.5-10A4.3 4.3 0 0 1 12 7.6 4.3 4.3 0 0 1 19.5 10c0 5.6-7.5 10-7.5 10z"/></svg>Como usar</a>
 </nav></div>
 <div class="toast" id="toast" role="status"></div>
@@ -401,6 +448,75 @@ function vSobre(){
   </div>`;
 }
 
+function diaDaQ(q){ return DAYS.find(d => { const m = String(d.q).match(/(\d+)(?:[–-](\d+))?/); return m && q >= +m[1] && q <= +(m[2]||m[1]); }); }
+const qlink = (q, txt) => { const d = diaDaQ(q); return d ? `<a href="#dia-${d.n}">${txt||'Q. '+q} · Dia ${d.n} ›</a>` : `<span class="ref">${txt||'Q. '+q}</span>`; };
+function vGuia(){
+  const ch = [['tempo','Linha do tempo'],['livros','Os 5 livros'],['lembrar','Pra sempre lembrar'],['mapa','O mapa do livro'],['escala','A escala espírita']];
+  const TL = [
+    ['1804','Nasce Rivail','Hippolyte Léon Denizard Rivail nasce em Lyon, na França. Vira professor e escreve livros de educação.'],
+    ['1848','As batidas de Hydesville','Nos Estados Unidos, as irmãs Fox se comunicam por batidas com um Espírito. É o começo do movimento moderno.'],
+    ['1853–1855','As mesas girantes','Mesas que se mexem e respondem perguntas viram moda na Europa. Em 1855 Rivail começa a estudar o fenômeno a sério.'],
+    ['1857','O Livro dos Espíritos','18 de abril. Rivail assina como Allan Kardec, nome que, segundo os Espíritos, ele teve numa vida passada.','top'],
+    ['1858','A Revista Espírita','Kardec lança a revista e funda a Sociedade Parisiense de Estudos Espíritas.'],
+    ['1861','O Livro dos Médiuns','A parte prática: como funciona a mediunidade.','top'],
+    ['1864','O Evangelho segundo o Espiritismo','A moral de Jesus explicada pela Doutrina.','top'],
+    ['1865','O Céu e o Inferno','A justiça de Deus e relatos de Espíritos depois da morte.','top'],
+    ['1868','A Gênese','Criação, milagres e profecias à luz da ciência e do Espiritismo.','top'],
+    ['1869','Kardec desencarna','31 de março, em Paris, aos 64 anos.'],
+    ['1884','Nasce a FEB','A Federação Espírita Brasileira é fundada no Rio de Janeiro.','br'],
+    ['1910','Nasce Chico Xavier','Em Pedro Leopoldo (MG). Vira o médium mais conhecido do Brasil.','br'],
+    ['1932','Parnaso de Além-Túmulo','O primeiro livro psicografado por Chico: poemas assinados por poetas já falecidos.','br'],
+    ['1944','Nosso Lar','O romance de André Luiz, psicografado por Chico, sobre a vida numa colônia espiritual.','br'],
+    ['2002','Chico desencarna','30 de junho, em Uberaba (MG), depois de mais de 400 livros psicografados.','br'],
+  ];
+  const LV = [
+    ['O Livro dos Espíritos','1857','rgb(240,150,178)','A base de tudo: 1.019 perguntas sobre Deus, os Espíritos, as leis morais e a vida futura.','lendo agora','now'],
+    ['O Evangelho segundo o Espiritismo','1864','rgb(244,201,120)','Os ensinos morais de Jesus explicados, com mensagens dos Espíritos.','próximo · março/2027',''],
+    ['O Livro dos Médiuns','1861','rgb(150,136,226)','Como os Espíritos se comunicam, os tipos de mediunidade e os cuidados.','3º no estudo',''],
+    ['O Céu e o Inferno','1865','rgb(140,190,236)','A justiça de Deus, sem penas eternas, com relatos de quem já morreu.','4º no estudo',''],
+    ['A Gênese','1868','rgb(160,200,160)','A criação, os milagres e as profecias do Evangelho vistos pela ciência e pelo Espiritismo.','5º no estudo',''],
+  ];
+  const LEM = [
+    ['Deus existe','É a inteligência suprema, causa primária de todas as coisas. Justo e bom.',1],
+    ['A alma é imortal','A gente é Espírito. O corpo morre e o Espírito continua, com sua individualidade.',149],
+    ['Reencarnação','O Espírito volta em vários corpos pra aprender e reparar erros. É a justiça de Deus em ação.',166],
+    ['Tudo progride','Ninguém foi criado mau nem perfeito: todos começam simples e ignorantes e chegam lá um dia.',114],
+    ['Muitos mundos','A Terra não é o único mundo habitado. Cada mundo serve a um grau de evolução.',55],
+    ['Os Espíritos se comunicam','Eles estão ao nosso redor, influenciam pensamentos e podem se comunicar pelos médiuns.',459],
+    ['Livre-arbítrio','A gente escolhe, e responde pelas escolhas. Não existe destino fatal pros atos morais.',843],
+    ['Caridade','Benevolência com todos, indulgência com os defeitos dos outros, perdão das ofensas. “Fora da caridade não há salvação.”',886],
+  ];
+  const nl = d => lidos.has(d.n);
+  const partes = ['1','2','3','4','5'].map(k => { const ds = DAYS.filter(d=>d.part===k); return {k, ds, lid: ds.filter(nl).length}; });
+  const QS = {'1':'Q. 1 a 75','2':'Q. 76 a 613','3':'Q. 614 a 919','4':'Q. 920 a 1019','5':'itens I a IX'};
+  const COR = {'1':'rgb(240,150,178)','2':'rgb(178,152,232)','3':'rgb(247,184,150)','4':'rgb(214,170,232)','5':'rgb(150,136,226)'};
+  return `<div class="ph"><span class="k">pra entender o Espiritismo</span><h1>Gui<i>a</i></h1><p>O básico pra se localizar no estudo.</p></div>
+  <nav class="chips" aria-label="Seções do guia">${ch.map(([id,t])=>`<a href="#guia-${id}">${t}</a>`).join('')}</nav>
+
+  <section class="sec" id="g-tempo"><h2>Linha do <i>tempo</i></h2><p class="sub">Do nascimento de Kardec a Chico Xavier.</p>
+    <div class="card tl">${TL.map(e=>(e[0]==='1884'?'<div class="meio">No Brasil</div>':'')+`<div class="ev ${e[3]||''}"><div class="when">${e[0]}</div><h3>${e[1]}</h3><p>${e[2]}</p></div>`).join('')}</div></section>
+
+  <section class="sec" id="g-livros"><h2>Os 5 livros de <i>Kardec</i></h2><p class="sub">As obras básicas, na ordem em que vocês vão estudar.</p>
+    <div class="lv">${LV.map(l=>`<div class="card"><div class="yr" style="background:${l[2]}">${l[1]}</div><div><h3>${l[0]}</h3><p>${l[3]}</p><span class="st ${l[5]}">${l[4]}</span></div></div>`).join('')}</div></section>
+
+  <section class="sec" id="g-lembrar"><h2>Pra sempre <i>lembrar</i></h2><p class="sub">Os princípios que sustentam a Doutrina. Toque pra ir ao dia em que ele aparece.</p>
+    <div class="lem">${LEM.map(e=>`<div class="card"><h3>${e[0]}</h3><p>${e[1]}</p>${qlink(e[2])}</div>`).join('')}</div></section>
+
+  <section class="sec" id="g-mapa"><h2>O mapa do <i>livro</i></h2><p class="sub">As partes d'O Livro dos Espíritos. A barra mostra o tamanho de cada uma e quanto você já leu.</p>
+    <div class="card mapa"><div class="bar2" aria-hidden="true">${partes.map(p=>`<i style="flex:${p.ds.length}"><b style="width:${p.ds.length?Math.round(p.lid/p.ds.length*100):0}%"></b></i>`).join('')}</div>
+    ${partes.map(p=>{ const nome = DATA.parts[p.k]; const f = p.ds[0]; return `<div class="pt"><i style="background:${COR[p.k]}"></i><div><h3>${nome[0]}${nome[1]?' · '+nome[1]:''}</h3><p>${QS[p.k]} · Dias ${f.n} a ${p.ds[p.ds.length-1].n} · ${p.lid} de ${p.ds.length} lidos</p>${DATA.epi&&DATA.epi[p.k]?`<q>${DATA.epi[p.k].replace(/^“|”.*$/g,'')}</q>`:''}</div></div>`; }).join('')}</div></section>
+
+  <section class="sec" id="g-escala"><h2>A escala <i>espírita</i></h2><p class="sub">Todos os Espíritos estão subindo a mesma escada, cada um num degrau.</p>
+    <div class="esc">
+      <div class="o aura" style="${aura(0)}"><h3>1ª ordem · Espíritos puros</h3><p>Já chegaram à perfeição. Não reencarnam mais.</p><div class="cls"><span>1ª classe – classe única</span></div></div>
+      <div class="seta">↑ progresso</div>
+      <div class="o aura" style="${aura(1)}"><h3>2ª ordem · Bons Espíritos</h3><p>O desejo do bem predomina.</p><div class="cls"><span>2ª – superiores</span><span>3ª – de sabedoria</span><span>4ª – sábios</span><span>5ª – benévolos</span></div></div>
+      <div class="seta">↑ progresso</div>
+      <div class="o aura" style="${aura(2)}"><h3>3ª ordem · Espíritos imperfeitos</h3><p>A matéria e o egoísmo ainda mandam.</p><div class="cls"><span>6ª – batedores e perturbadores</span><span>7ª – neutros</span><span>8ª – pseudo-sábios</span><span>9ª – levianos</span><span>10ª – impuros</span></div></div>
+      <p class="note" style="margin-top:2px">${qlink(100,'Escala espírita, Q. 100 a 113')}</p>
+    </div></section>`;
+}
+
 /* ---------- roteador ---------- */
 let lastView = '';
 function render(scroll=true){
@@ -410,10 +526,12 @@ function render(scroll=true){
   else if ((m=h.match(/^extra-(\d+)$/))) { html=vExtra(+m[1]); tab='cronograma'; }
   else if (h==='cronograma') { html=vCrono(); tab='cronograma'; }
   else if (h==='sobre') { html=vSobre(); tab='sobre'; }
+  else if (h==='guia' || /^guia-/.test(h)) { html=vGuia(); tab='guia'; }
   else html=vHoje();
   const y = window.scrollY;
   $app.innerHTML = html;
   document.querySelectorAll('.tabs a').forEach(a=>{ if(a.dataset.tab===tab) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
+  if ((m=h.match(/^guia-(\w+)$/))) { const el=document.getElementById('g-'+m[1]); if (el) { el.scrollIntoView(); lastView=h; return; } }
   if (scroll && h!==lastView) {
     if (h==='cronograma') { const p=plan(); const el=p.alvo && document.getElementById('c'+p.alvo.n); window.scrollTo(0, el ? Math.max(0, el.getBoundingClientRect().top + window.scrollY - 160) : 0); }
     else window.scrollTo(0,0);
