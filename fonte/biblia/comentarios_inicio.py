@@ -186,10 +186,10 @@ C = {int(k): v for k, v in C.items()}
 SEMANAS = [
  {
   "de": 1,
-  "ate": 4,
+  "ate": 5,
   "titulo": "Jesus chega",
-  "ref": "Mateus 1–11",
-  "resumo": "Do nascimento em Belém ao convite \"vinde a mim\": o batismo, a tentação, o Sermão do Monte, as primeiras curas e o envio dos doze.",
+  "ref": "Mateus 1–13",
+  "resumo": "Do nascimento em Belém às parábolas do Reino: o batismo, a tentação, o Sermão do Monte, as primeiras curas, o envio dos doze e o convite \"vinde a mim\".",
   "personagens": [
    [
     "Maria e José",

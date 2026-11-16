@@ -1,7 +1,7 @@
 [
 {
 "n": 1,
-"date": "2026-11-16",
+"date": "2026-11-13",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Mateus 1–4",
@@ -17,7 +17,7 @@
 },
 {
 "n": 2,
-"date": "2026-11-17",
+"date": "2026-11-16",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Mateus 5–6",
@@ -33,7 +33,7 @@
 },
 {
 "n": 3,
-"date": "2026-11-18",
+"date": "2026-11-17",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Mateus 7–8",
@@ -49,7 +49,7 @@
 },
 {
 "n": 4,
-"date": "2026-11-19",
+"date": "2026-11-18",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Mateus 9–11",
@@ -65,7 +65,7 @@
 },
 {
 "n": 5,
-"date": "2026-11-23",
+"date": "2026-11-19",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Mateus 12–13",
@@ -81,7 +81,7 @@
 },
 {
 "n": 6,
-"date": "2026-11-24",
+"date": "2026-11-23",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Mateus 14–15",
@@ -97,7 +97,7 @@
 },
 {
 "n": 7,
-"date": "2026-11-25",
+"date": "2026-11-24",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Mateus 16–17",
@@ -113,7 +113,7 @@
 },
 {
 "n": 8,
-"date": "2026-11-26",
+"date": "2026-11-25",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Mateus 18–19",
@@ -129,7 +129,7 @@
 },
 {
 "n": 9,
-"date": "2026-11-27",
+"date": "2026-11-26",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Mateus 20–21",
@@ -145,7 +145,7 @@
 },
 {
 "n": 10,
-"date": "2026-11-30",
+"date": "2026-11-27",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Mateus 22–23",
@@ -161,7 +161,7 @@
 },
 {
 "n": 11,
-"date": "2026-12-01",
+"date": "2026-11-30",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Mateus 24–25",
@@ -177,7 +177,7 @@
 },
 {
 "n": 12,
-"date": "2026-12-02",
+"date": "2026-12-01",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Mateus 26",
@@ -193,7 +193,7 @@
 },
 {
 "n": 13,
-"date": "2026-12-03",
+"date": "2026-12-02",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Mateus 27–28",
@@ -209,7 +209,7 @@
 },
 {
 "n": 14,
-"date": "2026-12-04",
+"date": "2026-12-03",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Marcos 1–3",
@@ -225,7 +225,7 @@
 },
 {
 "n": 15,
-"date": "2026-12-07",
+"date": "2026-12-04",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Marcos 4–5",
@@ -241,7 +241,7 @@
 },
 {
 "n": 16,
-"date": "2026-12-08",
+"date": "2026-12-07",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Marcos 6–7",
@@ -257,7 +257,7 @@
 },
 {
 "n": 17,
-"date": "2026-12-09",
+"date": "2026-12-08",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Marcos 8–9",
@@ -273,7 +273,7 @@
 },
 {
 "n": 18,
-"date": "2026-12-10",
+"date": "2026-12-09",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Marcos 10–11",
@@ -289,7 +289,7 @@
 },
 {
 "n": 19,
-"date": "2026-12-11",
+"date": "2026-12-10",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Marcos 12–13",
@@ -305,7 +305,7 @@
 },
 {
 "n": 20,
-"date": "2026-12-14",
+"date": "2026-12-11",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Marcos 14",
@@ -321,7 +321,7 @@
 },
 {
 "n": 21,
-"date": "2026-12-15",
+"date": "2026-12-14",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Marcos 15–16",
@@ -337,7 +337,7 @@
 },
 {
 "n": 22,
-"date": "2026-12-16",
+"date": "2026-12-15",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Lucas 1",
@@ -353,7 +353,7 @@
 },
 {
 "n": 23,
-"date": "2026-12-17",
+"date": "2026-12-16",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Lucas 2–3",
@@ -369,7 +369,7 @@
 },
 {
 "n": 24,
-"date": "2026-12-18",
+"date": "2026-12-17",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Lucas 4–5",
@@ -385,7 +385,7 @@
 },
 {
 "n": 25,
-"date": "2026-12-21",
+"date": "2026-12-18",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Lucas 6–7",
@@ -401,7 +401,7 @@
 },
 {
 "n": 26,
-"date": "2026-12-22",
+"date": "2026-12-21",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Lucas 8",
@@ -417,7 +417,7 @@
 },
 {
 "n": 27,
-"date": "2026-12-23",
+"date": "2026-12-22",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Lucas 9",
@@ -433,7 +433,7 @@
 },
 {
 "n": 28,
-"date": "2026-12-24",
+"date": "2026-12-23",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Lucas 10–11",
@@ -449,7 +449,7 @@
 },
 {
 "n": 29,
-"date": "2026-12-28",
+"date": "2026-12-24",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Lucas 12–13",
@@ -465,7 +465,7 @@
 },
 {
 "n": 30,
-"date": "2026-12-29",
+"date": "2026-12-28",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Lucas 14–15",
@@ -481,7 +481,7 @@
 },
 {
 "n": 31,
-"date": "2026-12-30",
+"date": "2026-12-29",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Lucas 16–17",
@@ -497,7 +497,7 @@
 },
 {
 "n": 32,
-"date": "2026-12-31",
+"date": "2026-12-30",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Lucas 18–19",
@@ -513,7 +513,7 @@
 },
 {
 "n": 33,
-"date": "2027-01-04",
+"date": "2026-12-31",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Lucas 20–21",
@@ -529,7 +529,7 @@
 },
 {
 "n": 34,
-"date": "2027-01-05",
+"date": "2027-01-04",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Lucas 22",
@@ -545,7 +545,7 @@
 },
 {
 "n": 35,
-"date": "2027-01-06",
+"date": "2027-01-05",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "Lucas 23–24",
@@ -561,7 +561,7 @@
 },
 {
 "n": 36,
-"date": "2027-01-07",
+"date": "2027-01-06",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "João 1–3",
@@ -577,7 +577,7 @@
 },
 {
 "n": 37,
-"date": "2027-01-08",
+"date": "2027-01-07",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "João 4–5",
@@ -593,7 +593,7 @@
 },
 {
 "n": 38,
-"date": "2027-01-11",
+"date": "2027-01-08",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "João 6",
@@ -609,7 +609,7 @@
 },
 {
 "n": 39,
-"date": "2027-01-12",
+"date": "2027-01-11",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "João 7–8",
@@ -625,7 +625,7 @@
 },
 {
 "n": 40,
-"date": "2027-01-13",
+"date": "2027-01-12",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "João 9–10",
@@ -641,7 +641,7 @@
 },
 {
 "n": 41,
-"date": "2027-01-14",
+"date": "2027-01-13",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "João 11–12",
@@ -657,7 +657,7 @@
 },
 {
 "n": 42,
-"date": "2027-01-15",
+"date": "2027-01-14",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "João 13–14",
@@ -673,7 +673,7 @@
 },
 {
 "n": 43,
-"date": "2027-01-18",
+"date": "2027-01-15",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "João 15–17",
@@ -689,7 +689,7 @@
 },
 {
 "n": 44,
-"date": "2027-01-19",
+"date": "2027-01-18",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "João 18–19",
@@ -705,7 +705,7 @@
 },
 {
 "n": 45,
-"date": "2027-01-20",
+"date": "2027-01-19",
 "fase": 1,
 "faseNome": "Os Evangelhos",
 "ref": "João 20–21",
@@ -721,7 +721,7 @@
 },
 {
 "n": 46,
-"date": "2027-01-21",
+"date": "2027-01-20",
 "fase": 2,
 "faseNome": "Os primeiros cristãos",
 "ref": "Atos 1–2",
@@ -737,7 +737,7 @@
 },
 {
 "n": 47,
-"date": "2027-01-22",
+"date": "2027-01-21",
 "fase": 2,
 "faseNome": "Os primeiros cristãos",
 "ref": "Atos 3–4",
@@ -753,7 +753,7 @@
 },
 {
 "n": 48,
-"date": "2027-01-25",
+"date": "2027-01-22",
 "fase": 2,
 "faseNome": "Os primeiros cristãos",
 "ref": "Atos 5–6",
@@ -769,7 +769,7 @@
 },
 {
 "n": 49,
-"date": "2027-01-26",
+"date": "2027-01-25",
 "fase": 2,
 "faseNome": "Os primeiros cristãos",
 "ref": "Atos 7",
@@ -785,7 +785,7 @@
 },
 {
 "n": 50,
-"date": "2027-01-27",
+"date": "2027-01-26",
 "fase": 2,
 "faseNome": "Os primeiros cristãos",
 "ref": "Atos 8–9",
@@ -801,7 +801,7 @@
 },
 {
 "n": 51,
-"date": "2027-01-28",
+"date": "2027-01-27",
 "fase": 2,
 "faseNome": "Os primeiros cristãos",
 "ref": "Atos 10–11",
@@ -817,7 +817,7 @@
 },
 {
 "n": 52,
-"date": "2027-01-29",
+"date": "2027-01-28",
 "fase": 2,
 "faseNome": "Os primeiros cristãos",
 "ref": "Atos 12–13",
@@ -833,7 +833,7 @@
 },
 {
 "n": 53,
-"date": "2027-02-01",
+"date": "2027-01-29",
 "fase": 2,
 "faseNome": "Os primeiros cristãos",
 "ref": "Atos 14–15",
@@ -849,7 +849,7 @@
 },
 {
 "n": 54,
-"date": "2027-02-02",
+"date": "2027-02-01",
 "fase": 2,
 "faseNome": "Os primeiros cristãos",
 "ref": "Atos 16–17",
@@ -865,7 +865,7 @@
 },
 {
 "n": 55,
-"date": "2027-02-03",
+"date": "2027-02-02",
 "fase": 2,
 "faseNome": "Os primeiros cristãos",
 "ref": "Atos 18–19",
@@ -881,7 +881,7 @@
 },
 {
 "n": 56,
-"date": "2027-02-04",
+"date": "2027-02-03",
 "fase": 2,
 "faseNome": "Os primeiros cristãos",
 "ref": "Atos 20–21",
@@ -897,7 +897,7 @@
 },
 {
 "n": 57,
-"date": "2027-02-05",
+"date": "2027-02-04",
 "fase": 2,
 "faseNome": "Os primeiros cristãos",
 "ref": "Atos 22–23",
@@ -913,7 +913,7 @@
 },
 {
 "n": 58,
-"date": "2027-02-10",
+"date": "2027-02-05",
 "fase": 2,
 "faseNome": "Os primeiros cristãos",
 "ref": "Atos 24–26",
@@ -929,7 +929,7 @@
 },
 {
 "n": 59,
-"date": "2027-02-11",
+"date": "2027-02-10",
 "fase": 2,
 "faseNome": "Os primeiros cristãos",
 "ref": "Atos 27–28",
@@ -945,7 +945,7 @@
 },
 {
 "n": 60,
-"date": "2027-02-12",
+"date": "2027-02-11",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 1–3",
@@ -961,7 +961,7 @@
 },
 {
 "n": 61,
-"date": "2027-02-15",
+"date": "2027-02-12",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 4–6",
@@ -977,7 +977,7 @@
 },
 {
 "n": 62,
-"date": "2027-02-16",
+"date": "2027-02-15",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 7–9",
@@ -993,7 +993,7 @@
 },
 {
 "n": 63,
-"date": "2027-02-17",
+"date": "2027-02-16",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 10–12",
@@ -1009,7 +1009,7 @@
 },
 {
 "n": 64,
-"date": "2027-02-18",
+"date": "2027-02-17",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 13–15",
@@ -1025,7 +1025,7 @@
 },
 {
 "n": 65,
-"date": "2027-02-19",
+"date": "2027-02-18",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 16–18",
@@ -1041,7 +1041,7 @@
 },
 {
 "n": 66,
-"date": "2027-02-22",
+"date": "2027-02-19",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 19–20",
@@ -1057,7 +1057,7 @@
 },
 {
 "n": 67,
-"date": "2027-02-23",
+"date": "2027-02-22",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 21–23",
@@ -1073,7 +1073,7 @@
 },
 {
 "n": 68,
-"date": "2027-02-24",
+"date": "2027-02-23",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 24",
@@ -1089,7 +1089,7 @@
 },
 {
 "n": 69,
-"date": "2027-02-25",
+"date": "2027-02-24",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 25–26",
@@ -1105,7 +1105,7 @@
 },
 {
 "n": 70,
-"date": "2027-02-26",
+"date": "2027-02-25",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 27–28",
@@ -1121,7 +1121,7 @@
 },
 {
 "n": 71,
-"date": "2027-03-01",
+"date": "2027-02-26",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 29–30",
@@ -1137,7 +1137,7 @@
 },
 {
 "n": 72,
-"date": "2027-03-02",
+"date": "2027-03-01",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 31–32",
@@ -1153,7 +1153,7 @@
 },
 {
 "n": 73,
-"date": "2027-03-03",
+"date": "2027-03-02",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 33–35",
@@ -1169,7 +1169,7 @@
 },
 {
 "n": 74,
-"date": "2027-03-04",
+"date": "2027-03-03",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 36–37",
@@ -1185,7 +1185,7 @@
 },
 {
 "n": 75,
-"date": "2027-03-05",
+"date": "2027-03-04",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 38–39",
@@ -1201,7 +1201,7 @@
 },
 {
 "n": 76,
-"date": "2027-03-08",
+"date": "2027-03-05",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 40–41",
@@ -1217,7 +1217,7 @@
 },
 {
 "n": 77,
-"date": "2027-03-09",
+"date": "2027-03-08",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 42–43",
@@ -1233,7 +1233,7 @@
 },
 {
 "n": 78,
-"date": "2027-03-10",
+"date": "2027-03-09",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 44–45",
@@ -1249,7 +1249,7 @@
 },
 {
 "n": 79,
-"date": "2027-03-11",
+"date": "2027-03-10",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 46–47",
@@ -1265,7 +1265,7 @@
 },
 {
 "n": 80,
-"date": "2027-03-12",
+"date": "2027-03-11",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Gênesis 48–50",
@@ -1281,7 +1281,7 @@
 },
 {
 "n": 81,
-"date": "2027-03-15",
+"date": "2027-03-12",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 1–3",
@@ -1297,7 +1297,7 @@
 },
 {
 "n": 82,
-"date": "2027-03-16",
+"date": "2027-03-15",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 4–6",
@@ -1313,7 +1313,7 @@
 },
 {
 "n": 83,
-"date": "2027-03-17",
+"date": "2027-03-16",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 7–8",
@@ -1329,7 +1329,7 @@
 },
 {
 "n": 84,
-"date": "2027-03-18",
+"date": "2027-03-17",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 9–10",
@@ -1345,7 +1345,7 @@
 },
 {
 "n": 85,
-"date": "2027-03-19",
+"date": "2027-03-18",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 11–12",
@@ -1361,7 +1361,7 @@
 },
 {
 "n": 86,
-"date": "2027-03-22",
+"date": "2027-03-19",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 13–14",
@@ -1377,7 +1377,7 @@
 },
 {
 "n": 87,
-"date": "2027-03-23",
+"date": "2027-03-22",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 15–16",
@@ -1393,7 +1393,7 @@
 },
 {
 "n": 88,
-"date": "2027-03-24",
+"date": "2027-03-23",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 17–19",
@@ -1409,7 +1409,7 @@
 },
 {
 "n": 89,
-"date": "2027-03-25",
+"date": "2027-03-24",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 20–21",
@@ -1425,7 +1425,7 @@
 },
 {
 "n": 90,
-"date": "2027-03-29",
+"date": "2027-03-25",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 22–24",
@@ -1441,7 +1441,7 @@
 },
 {
 "n": 91,
-"date": "2027-03-30",
+"date": "2027-03-29",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 25–26",
@@ -1457,7 +1457,7 @@
 },
 {
 "n": 92,
-"date": "2027-03-31",
+"date": "2027-03-30",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 27–28",
@@ -1473,7 +1473,7 @@
 },
 {
 "n": 93,
-"date": "2027-04-01",
+"date": "2027-03-31",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 29–30",
@@ -1489,7 +1489,7 @@
 },
 {
 "n": 94,
-"date": "2027-04-02",
+"date": "2027-04-01",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 31–32",
@@ -1505,7 +1505,7 @@
 },
 {
 "n": 95,
-"date": "2027-04-05",
+"date": "2027-04-02",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 33–34",
@@ -1521,7 +1521,7 @@
 },
 {
 "n": 96,
-"date": "2027-04-06",
+"date": "2027-04-05",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 35–36",
@@ -1537,7 +1537,7 @@
 },
 {
 "n": 97,
-"date": "2027-04-07",
+"date": "2027-04-06",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 37–38",
@@ -1553,7 +1553,7 @@
 },
 {
 "n": 98,
-"date": "2027-04-08",
+"date": "2027-04-07",
 "fase": 3,
 "faseNome": "O começo de tudo",
 "ref": "Êxodo 39–40",
@@ -1569,7 +1569,7 @@
 },
 {
 "n": 99,
-"date": "2027-04-09",
+"date": "2027-04-08",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "Romanos 1–3",
@@ -1585,7 +1585,7 @@
 },
 {
 "n": 100,
-"date": "2027-04-12",
+"date": "2027-04-09",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "Romanos 4–6",
@@ -1601,7 +1601,7 @@
 },
 {
 "n": 101,
-"date": "2027-04-13",
+"date": "2027-04-12",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "Romanos 7–9",
@@ -1617,7 +1617,7 @@
 },
 {
 "n": 102,
-"date": "2027-04-14",
+"date": "2027-04-13",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "Romanos 10–13",
@@ -1633,7 +1633,7 @@
 },
 {
 "n": 103,
-"date": "2027-04-15",
+"date": "2027-04-14",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "Romanos 14–16",
@@ -1649,7 +1649,7 @@
 },
 {
 "n": 104,
-"date": "2027-04-16",
+"date": "2027-04-15",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "1 Coríntios 1–3",
@@ -1665,7 +1665,7 @@
 },
 {
 "n": 105,
-"date": "2027-04-19",
+"date": "2027-04-16",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "1 Coríntios 4–6",
@@ -1681,7 +1681,7 @@
 },
 {
 "n": 106,
-"date": "2027-04-20",
+"date": "2027-04-19",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "1 Coríntios 7–9",
@@ -1697,7 +1697,7 @@
 },
 {
 "n": 107,
-"date": "2027-04-22",
+"date": "2027-04-20",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "1 Coríntios 10–11",
@@ -1713,7 +1713,7 @@
 },
 {
 "n": 108,
-"date": "2027-04-23",
+"date": "2027-04-22",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "1 Coríntios 12–14",
@@ -1729,7 +1729,7 @@
 },
 {
 "n": 109,
-"date": "2027-04-26",
+"date": "2027-04-23",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "1 Coríntios 15–16",
@@ -1745,7 +1745,7 @@
 },
 {
 "n": 110,
-"date": "2027-04-27",
+"date": "2027-04-26",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "2 Coríntios 1–3",
@@ -1761,7 +1761,7 @@
 },
 {
 "n": 111,
-"date": "2027-04-28",
+"date": "2027-04-27",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "2 Coríntios 4–7",
@@ -1777,7 +1777,7 @@
 },
 {
 "n": 112,
-"date": "2027-04-29",
+"date": "2027-04-28",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "2 Coríntios 8–10",
@@ -1793,7 +1793,7 @@
 },
 {
 "n": 113,
-"date": "2027-04-30",
+"date": "2027-04-29",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "2 Coríntios 11–13",
@@ -1809,7 +1809,7 @@
 },
 {
 "n": 114,
-"date": "2027-05-03",
+"date": "2027-04-30",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "Gálatas 1–3",
@@ -1825,7 +1825,7 @@
 },
 {
 "n": 115,
-"date": "2027-05-04",
+"date": "2027-05-03",
 "fase": 4,
 "faseNome": "As cartas de Paulo I",
 "ref": "Gálatas 4–6",
@@ -1841,7 +1841,7 @@
 },
 {
 "n": 116,
-"date": "2027-05-05",
+"date": "2027-05-04",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Levítico 1–3",
@@ -1857,7 +1857,7 @@
 },
 {
 "n": 117,
-"date": "2027-05-06",
+"date": "2027-05-05",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Levítico 4–5",
@@ -1873,7 +1873,7 @@
 },
 {
 "n": 118,
-"date": "2027-05-07",
+"date": "2027-05-06",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Levítico 6–7",
@@ -1889,7 +1889,7 @@
 },
 {
 "n": 119,
-"date": "2027-05-10",
+"date": "2027-05-07",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Levítico 8–9",
@@ -1905,7 +1905,7 @@
 },
 {
 "n": 120,
-"date": "2027-05-11",
+"date": "2027-05-10",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Levítico 10–12",
@@ -1921,7 +1921,7 @@
 },
 {
 "n": 121,
-"date": "2027-05-12",
+"date": "2027-05-11",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Levítico 13",
@@ -1937,7 +1937,7 @@
 },
 {
 "n": 122,
-"date": "2027-05-13",
+"date": "2027-05-12",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Levítico 14",
@@ -1953,7 +1953,7 @@
 },
 {
 "n": 123,
-"date": "2027-05-14",
+"date": "2027-05-13",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Levítico 15–16",
@@ -1969,7 +1969,7 @@
 },
 {
 "n": 124,
-"date": "2027-05-17",
+"date": "2027-05-14",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Levítico 17–19",
@@ -1985,7 +1985,7 @@
 },
 {
 "n": 125,
-"date": "2027-05-18",
+"date": "2027-05-17",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Levítico 20–21",
@@ -2001,7 +2001,7 @@
 },
 {
 "n": 126,
-"date": "2027-05-19",
+"date": "2027-05-18",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Levítico 22–23",
@@ -2017,7 +2017,7 @@
 },
 {
 "n": 127,
-"date": "2027-05-20",
+"date": "2027-05-19",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Levítico 24–25",
@@ -2033,7 +2033,7 @@
 },
 {
 "n": 128,
-"date": "2027-05-21",
+"date": "2027-05-20",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Levítico 26–27",
@@ -2049,7 +2049,7 @@
 },
 {
 "n": 129,
-"date": "2027-05-24",
+"date": "2027-05-21",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 1–2",
@@ -2065,7 +2065,7 @@
 },
 {
 "n": 130,
-"date": "2027-05-25",
+"date": "2027-05-24",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 3",
@@ -2081,7 +2081,7 @@
 },
 {
 "n": 131,
-"date": "2027-05-26",
+"date": "2027-05-25",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 4",
@@ -2097,7 +2097,7 @@
 },
 {
 "n": 132,
-"date": "2027-05-28",
+"date": "2027-05-26",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 5–6",
@@ -2113,7 +2113,7 @@
 },
 {
 "n": 133,
-"date": "2027-05-31",
+"date": "2027-05-28",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 7",
@@ -2129,7 +2129,7 @@
 },
 {
 "n": 134,
-"date": "2027-06-01",
+"date": "2027-05-31",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 8–10",
@@ -2145,7 +2145,7 @@
 },
 {
 "n": 135,
-"date": "2027-06-02",
+"date": "2027-06-01",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 11–13",
@@ -2161,7 +2161,7 @@
 },
 {
 "n": 136,
-"date": "2027-06-03",
+"date": "2027-06-02",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 14–15",
@@ -2177,7 +2177,7 @@
 },
 {
 "n": 137,
-"date": "2027-06-04",
+"date": "2027-06-03",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 16–17",
@@ -2193,7 +2193,7 @@
 },
 {
 "n": 138,
-"date": "2027-06-07",
+"date": "2027-06-04",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 18–20",
@@ -2209,7 +2209,7 @@
 },
 {
 "n": 139,
-"date": "2027-06-08",
+"date": "2027-06-07",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 21–22",
@@ -2225,7 +2225,7 @@
 },
 {
 "n": 140,
-"date": "2027-06-09",
+"date": "2027-06-08",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 23–25",
@@ -2241,7 +2241,7 @@
 },
 {
 "n": 141,
-"date": "2027-06-10",
+"date": "2027-06-09",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 26–27",
@@ -2257,7 +2257,7 @@
 },
 {
 "n": 142,
-"date": "2027-06-11",
+"date": "2027-06-10",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 28–29",
@@ -2273,7 +2273,7 @@
 },
 {
 "n": 143,
-"date": "2027-06-14",
+"date": "2027-06-11",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 30–31",
@@ -2289,7 +2289,7 @@
 },
 {
 "n": 144,
-"date": "2027-06-15",
+"date": "2027-06-14",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 32–33",
@@ -2305,7 +2305,7 @@
 },
 {
 "n": 145,
-"date": "2027-06-16",
+"date": "2027-06-15",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Números 34–36",
@@ -2321,7 +2321,7 @@
 },
 {
 "n": 146,
-"date": "2027-06-17",
+"date": "2027-06-16",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Deuteronômio 1–2",
@@ -2337,7 +2337,7 @@
 },
 {
 "n": 147,
-"date": "2027-06-18",
+"date": "2027-06-17",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Deuteronômio 3–4",
@@ -2353,7 +2353,7 @@
 },
 {
 "n": 148,
-"date": "2027-06-21",
+"date": "2027-06-18",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Deuteronômio 5–7",
@@ -2369,7 +2369,7 @@
 },
 {
 "n": 149,
-"date": "2027-06-22",
+"date": "2027-06-21",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Deuteronômio 8–10",
@@ -2385,7 +2385,7 @@
 },
 {
 "n": 150,
-"date": "2027-06-23",
+"date": "2027-06-22",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Deuteronômio 11–12",
@@ -2401,7 +2401,7 @@
 },
 {
 "n": 151,
-"date": "2027-06-24",
+"date": "2027-06-23",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Deuteronômio 13–15",
@@ -2417,7 +2417,7 @@
 },
 {
 "n": 152,
-"date": "2027-06-25",
+"date": "2027-06-24",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Deuteronômio 16–18",
@@ -2433,7 +2433,7 @@
 },
 {
 "n": 153,
-"date": "2027-06-28",
+"date": "2027-06-25",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Deuteronômio 19–21",
@@ -2449,7 +2449,7 @@
 },
 {
 "n": 154,
-"date": "2027-06-29",
+"date": "2027-06-28",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Deuteronômio 22–24",
@@ -2465,7 +2465,7 @@
 },
 {
 "n": 155,
-"date": "2027-06-30",
+"date": "2027-06-29",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Deuteronômio 25–27",
@@ -2481,7 +2481,7 @@
 },
 {
 "n": 156,
-"date": "2027-07-01",
+"date": "2027-06-30",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Deuteronômio 28",
@@ -2497,7 +2497,7 @@
 },
 {
 "n": 157,
-"date": "2027-07-02",
+"date": "2027-07-01",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Deuteronômio 29–31",
@@ -2513,7 +2513,7 @@
 },
 {
 "n": 158,
-"date": "2027-07-05",
+"date": "2027-07-02",
 "fase": 5,
 "faseNome": "A Lei de Moisés",
 "ref": "Deuteronômio 32–34",
@@ -2529,7 +2529,7 @@
 },
 {
 "n": 159,
-"date": "2027-07-06",
+"date": "2027-07-05",
 "fase": 6,
 "faseNome": "As cartas de Paulo II",
 "ref": "Efésios 1–3",
@@ -2545,7 +2545,7 @@
 },
 {
 "n": 160,
-"date": "2027-07-07",
+"date": "2027-07-06",
 "fase": 6,
 "faseNome": "As cartas de Paulo II",
 "ref": "Efésios 4–6",
@@ -2561,7 +2561,7 @@
 },
 {
 "n": 161,
-"date": "2027-07-08",
+"date": "2027-07-07",
 "fase": 6,
 "faseNome": "As cartas de Paulo II",
 "ref": "Filipenses 1–2",
@@ -2577,7 +2577,7 @@
 },
 {
 "n": 162,
-"date": "2027-07-09",
+"date": "2027-07-08",
 "fase": 6,
 "faseNome": "As cartas de Paulo II",
 "ref": "Filipenses 3–4",
@@ -2593,7 +2593,7 @@
 },
 {
 "n": 163,
-"date": "2027-07-12",
+"date": "2027-07-09",
 "fase": 6,
 "faseNome": "As cartas de Paulo II",
 "ref": "Colossenses 1–4",
@@ -2609,7 +2609,7 @@
 },
 {
 "n": 164,
-"date": "2027-07-13",
+"date": "2027-07-12",
 "fase": 6,
 "faseNome": "As cartas de Paulo II",
 "ref": "1 Tessalonicenses 1–5",
@@ -2625,7 +2625,7 @@
 },
 {
 "n": 165,
-"date": "2027-07-14",
+"date": "2027-07-13",
 "fase": 6,
 "faseNome": "As cartas de Paulo II",
 "ref": "2 Tessalonicenses 1–3 · Filemom",
@@ -2646,7 +2646,7 @@
 },
 {
 "n": 166,
-"date": "2027-07-15",
+"date": "2027-07-14",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Josué 1–2",
@@ -2662,7 +2662,7 @@
 },
 {
 "n": 167,
-"date": "2027-07-16",
+"date": "2027-07-15",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Josué 3–5",
@@ -2678,7 +2678,7 @@
 },
 {
 "n": 168,
-"date": "2027-07-19",
+"date": "2027-07-16",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Josué 6–7",
@@ -2694,7 +2694,7 @@
 },
 {
 "n": 169,
-"date": "2027-07-20",
+"date": "2027-07-19",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Josué 8–9",
@@ -2710,7 +2710,7 @@
 },
 {
 "n": 170,
-"date": "2027-07-21",
+"date": "2027-07-20",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Josué 10–11",
@@ -2726,7 +2726,7 @@
 },
 {
 "n": 171,
-"date": "2027-07-22",
+"date": "2027-07-21",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Josué 12–14",
@@ -2742,7 +2742,7 @@
 },
 {
 "n": 172,
-"date": "2027-07-23",
+"date": "2027-07-22",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Josué 15–17",
@@ -2758,7 +2758,7 @@
 },
 {
 "n": 173,
-"date": "2027-07-26",
+"date": "2027-07-23",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Josué 18–20",
@@ -2774,7 +2774,7 @@
 },
 {
 "n": 174,
-"date": "2027-07-27",
+"date": "2027-07-26",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Josué 21–22",
@@ -2790,7 +2790,7 @@
 },
 {
 "n": 175,
-"date": "2027-07-28",
+"date": "2027-07-27",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Josué 23–24",
@@ -2806,7 +2806,7 @@
 },
 {
 "n": 176,
-"date": "2027-07-29",
+"date": "2027-07-28",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Juízes 1–2",
@@ -2822,7 +2822,7 @@
 },
 {
 "n": 177,
-"date": "2027-07-30",
+"date": "2027-07-29",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Juízes 3–4",
@@ -2838,7 +2838,7 @@
 },
 {
 "n": 178,
-"date": "2027-08-02",
+"date": "2027-07-30",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Juízes 5–6",
@@ -2854,7 +2854,7 @@
 },
 {
 "n": 179,
-"date": "2027-08-03",
+"date": "2027-08-02",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Juízes 7–8",
@@ -2870,7 +2870,7 @@
 },
 {
 "n": 180,
-"date": "2027-08-04",
+"date": "2027-08-03",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Juízes 9",
@@ -2886,7 +2886,7 @@
 },
 {
 "n": 181,
-"date": "2027-08-05",
+"date": "2027-08-04",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Juízes 10–11",
@@ -2902,7 +2902,7 @@
 },
 {
 "n": 182,
-"date": "2027-08-06",
+"date": "2027-08-05",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Juízes 12–14",
@@ -2918,7 +2918,7 @@
 },
 {
 "n": 183,
-"date": "2027-08-09",
+"date": "2027-08-06",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Juízes 15–17",
@@ -2934,7 +2934,7 @@
 },
 {
 "n": 184,
-"date": "2027-08-10",
+"date": "2027-08-09",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Juízes 18–19",
@@ -2950,7 +2950,7 @@
 },
 {
 "n": 185,
-"date": "2027-08-11",
+"date": "2027-08-10",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Juízes 20–21",
@@ -2966,7 +2966,7 @@
 },
 {
 "n": 186,
-"date": "2027-08-12",
+"date": "2027-08-11",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Rute 1–2",
@@ -2982,7 +2982,7 @@
 },
 {
 "n": 187,
-"date": "2027-08-13",
+"date": "2027-08-12",
 "fase": 7,
 "faseNome": "A terra prometida",
 "ref": "Rute 3–4",
@@ -2998,7 +2998,7 @@
 },
 {
 "n": 188,
-"date": "2027-08-16",
+"date": "2027-08-13",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Jó 1–4",
@@ -3014,7 +3014,7 @@
 },
 {
 "n": 189,
-"date": "2027-08-17",
+"date": "2027-08-16",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Jó 5–8",
@@ -3030,7 +3030,7 @@
 },
 {
 "n": 190,
-"date": "2027-08-18",
+"date": "2027-08-17",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Jó 9–12",
@@ -3046,7 +3046,7 @@
 },
 {
 "n": 191,
-"date": "2027-08-19",
+"date": "2027-08-18",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Jó 13–16",
@@ -3062,7 +3062,7 @@
 },
 {
 "n": 192,
-"date": "2027-08-20",
+"date": "2027-08-19",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Jó 17–20",
@@ -3078,7 +3078,7 @@
 },
 {
 "n": 193,
-"date": "2027-08-23",
+"date": "2027-08-20",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Jó 21–24",
@@ -3094,7 +3094,7 @@
 },
 {
 "n": 194,
-"date": "2027-08-24",
+"date": "2027-08-23",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Jó 25–29",
@@ -3110,7 +3110,7 @@
 },
 {
 "n": 195,
-"date": "2027-08-25",
+"date": "2027-08-24",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Jó 30–32",
@@ -3126,7 +3126,7 @@
 },
 {
 "n": 196,
-"date": "2027-08-26",
+"date": "2027-08-25",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Jó 33–35",
@@ -3142,7 +3142,7 @@
 },
 {
 "n": 197,
-"date": "2027-08-27",
+"date": "2027-08-26",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Jó 36–38",
@@ -3158,7 +3158,7 @@
 },
 {
 "n": 198,
-"date": "2027-08-30",
+"date": "2027-08-27",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Jó 39–42",
@@ -3174,7 +3174,7 @@
 },
 {
 "n": 199,
-"date": "2027-08-31",
+"date": "2027-08-30",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Provérbios 1–4",
@@ -3190,7 +3190,7 @@
 },
 {
 "n": 200,
-"date": "2027-09-01",
+"date": "2027-08-31",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Provérbios 5–8",
@@ -3206,7 +3206,7 @@
 },
 {
 "n": 201,
-"date": "2027-09-02",
+"date": "2027-09-01",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Provérbios 9–12",
@@ -3222,7 +3222,7 @@
 },
 {
 "n": 202,
-"date": "2027-09-03",
+"date": "2027-09-02",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Provérbios 13–15",
@@ -3238,7 +3238,7 @@
 },
 {
 "n": 203,
-"date": "2027-09-06",
+"date": "2027-09-03",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Provérbios 16–19",
@@ -3254,7 +3254,7 @@
 },
 {
 "n": 204,
-"date": "2027-09-08",
+"date": "2027-09-06",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Provérbios 20–22",
@@ -3270,7 +3270,7 @@
 },
 {
 "n": 205,
-"date": "2027-09-09",
+"date": "2027-09-08",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Provérbios 23–25",
@@ -3286,7 +3286,7 @@
 },
 {
 "n": 206,
-"date": "2027-09-10",
+"date": "2027-09-09",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Provérbios 26–28",
@@ -3302,7 +3302,7 @@
 },
 {
 "n": 207,
-"date": "2027-09-13",
+"date": "2027-09-10",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Provérbios 29–31",
@@ -3318,7 +3318,7 @@
 },
 {
 "n": 208,
-"date": "2027-09-14",
+"date": "2027-09-13",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Eclesiastes 1–4",
@@ -3334,7 +3334,7 @@
 },
 {
 "n": 209,
-"date": "2027-09-15",
+"date": "2027-09-14",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Eclesiastes 5–8",
@@ -3350,7 +3350,7 @@
 },
 {
 "n": 210,
-"date": "2027-09-16",
+"date": "2027-09-15",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Eclesiastes 9–12",
@@ -3366,7 +3366,7 @@
 },
 {
 "n": 211,
-"date": "2027-09-17",
+"date": "2027-09-16",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Cânticos 1–4",
@@ -3382,7 +3382,7 @@
 },
 {
 "n": 212,
-"date": "2027-09-20",
+"date": "2027-09-17",
 "fase": 8,
 "faseNome": "Os livros de sabedoria",
 "ref": "Cânticos 5–8",
@@ -3398,7 +3398,7 @@
 },
 {
 "n": 213,
-"date": "2027-09-21",
+"date": "2027-09-20",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Samuel 1–2",
@@ -3414,7 +3414,7 @@
 },
 {
 "n": 214,
-"date": "2027-09-22",
+"date": "2027-09-21",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Samuel 3–5",
@@ -3430,7 +3430,7 @@
 },
 {
 "n": 215,
-"date": "2027-09-23",
+"date": "2027-09-22",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Samuel 6–8",
@@ -3446,7 +3446,7 @@
 },
 {
 "n": 216,
-"date": "2027-09-24",
+"date": "2027-09-23",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Samuel 9–10",
@@ -3462,7 +3462,7 @@
 },
 {
 "n": 217,
-"date": "2027-09-27",
+"date": "2027-09-24",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Samuel 11–13",
@@ -3478,7 +3478,7 @@
 },
 {
 "n": 218,
-"date": "2027-09-28",
+"date": "2027-09-27",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Samuel 14",
@@ -3494,7 +3494,7 @@
 },
 {
 "n": 219,
-"date": "2027-09-29",
+"date": "2027-09-28",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Samuel 15–16",
@@ -3510,7 +3510,7 @@
 },
 {
 "n": 220,
-"date": "2027-09-30",
+"date": "2027-09-29",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Samuel 17",
@@ -3526,7 +3526,7 @@
 },
 {
 "n": 221,
-"date": "2027-10-01",
+"date": "2027-09-30",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Samuel 18–19",
@@ -3542,7 +3542,7 @@
 },
 {
 "n": 222,
-"date": "2027-10-04",
+"date": "2027-10-01",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Samuel 20–21",
@@ -3558,7 +3558,7 @@
 },
 {
 "n": 223,
-"date": "2027-10-05",
+"date": "2027-10-04",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Samuel 22–23",
@@ -3574,7 +3574,7 @@
 },
 {
 "n": 224,
-"date": "2027-10-06",
+"date": "2027-10-05",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Samuel 24–25",
@@ -3590,7 +3590,7 @@
 },
 {
 "n": 225,
-"date": "2027-10-07",
+"date": "2027-10-06",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Samuel 26–28",
@@ -3606,7 +3606,7 @@
 },
 {
 "n": 226,
-"date": "2027-10-08",
+"date": "2027-10-07",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Samuel 29–31",
@@ -3622,7 +3622,7 @@
 },
 {
 "n": 227,
-"date": "2027-10-11",
+"date": "2027-10-08",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Samuel 1–2",
@@ -3638,7 +3638,7 @@
 },
 {
 "n": 228,
-"date": "2027-10-13",
+"date": "2027-10-11",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Samuel 3–4",
@@ -3654,7 +3654,7 @@
 },
 {
 "n": 229,
-"date": "2027-10-14",
+"date": "2027-10-13",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Samuel 5–7",
@@ -3670,7 +3670,7 @@
 },
 {
 "n": 230,
-"date": "2027-10-15",
+"date": "2027-10-14",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Samuel 8–10",
@@ -3686,7 +3686,7 @@
 },
 {
 "n": 231,
-"date": "2027-10-18",
+"date": "2027-10-15",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Samuel 11–12",
@@ -3702,7 +3702,7 @@
 },
 {
 "n": 232,
-"date": "2027-10-19",
+"date": "2027-10-18",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Samuel 13–14",
@@ -3718,7 +3718,7 @@
 },
 {
 "n": 233,
-"date": "2027-10-20",
+"date": "2027-10-19",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Samuel 15–16",
@@ -3734,7 +3734,7 @@
 },
 {
 "n": 234,
-"date": "2027-10-21",
+"date": "2027-10-20",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Samuel 17–18",
@@ -3750,7 +3750,7 @@
 },
 {
 "n": 235,
-"date": "2027-10-22",
+"date": "2027-10-21",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Samuel 19–20",
@@ -3766,7 +3766,7 @@
 },
 {
 "n": 236,
-"date": "2027-10-25",
+"date": "2027-10-22",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Samuel 21–22",
@@ -3782,7 +3782,7 @@
 },
 {
 "n": 237,
-"date": "2027-10-26",
+"date": "2027-10-25",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Samuel 23–24",
@@ -3798,7 +3798,7 @@
 },
 {
 "n": 238,
-"date": "2027-10-27",
+"date": "2027-10-26",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Reis 1",
@@ -3814,7 +3814,7 @@
 },
 {
 "n": 239,
-"date": "2027-10-28",
+"date": "2027-10-27",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Reis 2",
@@ -3830,7 +3830,7 @@
 },
 {
 "n": 240,
-"date": "2027-10-29",
+"date": "2027-10-28",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Reis 3–4",
@@ -3846,7 +3846,7 @@
 },
 {
 "n": 241,
-"date": "2027-11-01",
+"date": "2027-10-29",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Reis 5–6",
@@ -3862,7 +3862,7 @@
 },
 {
 "n": 242,
-"date": "2027-11-03",
+"date": "2027-11-01",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Reis 7",
@@ -3878,7 +3878,7 @@
 },
 {
 "n": 243,
-"date": "2027-11-04",
+"date": "2027-11-03",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Reis 8",
@@ -3894,7 +3894,7 @@
 },
 {
 "n": 244,
-"date": "2027-11-05",
+"date": "2027-11-04",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Reis 9–10",
@@ -3910,7 +3910,7 @@
 },
 {
 "n": 245,
-"date": "2027-11-08",
+"date": "2027-11-05",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Reis 11",
@@ -3926,7 +3926,7 @@
 },
 {
 "n": 246,
-"date": "2027-11-09",
+"date": "2027-11-08",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Reis 12–13",
@@ -3942,7 +3942,7 @@
 },
 {
 "n": 247,
-"date": "2027-11-10",
+"date": "2027-11-09",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Reis 14–15",
@@ -3958,7 +3958,7 @@
 },
 {
 "n": 248,
-"date": "2027-11-11",
+"date": "2027-11-10",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Reis 16–17",
@@ -3974,7 +3974,7 @@
 },
 {
 "n": 249,
-"date": "2027-11-12",
+"date": "2027-11-11",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Reis 18–19",
@@ -3990,7 +3990,7 @@
 },
 {
 "n": 250,
-"date": "2027-11-16",
+"date": "2027-11-12",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Reis 20–21",
@@ -4006,7 +4006,7 @@
 },
 {
 "n": 251,
-"date": "2027-11-17",
+"date": "2027-11-16",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "1 Reis 22",
@@ -4022,7 +4022,7 @@
 },
 {
 "n": 252,
-"date": "2027-11-18",
+"date": "2027-11-17",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Reis 1–3",
@@ -4038,7 +4038,7 @@
 },
 {
 "n": 253,
-"date": "2027-11-19",
+"date": "2027-11-18",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Reis 4–5",
@@ -4054,7 +4054,7 @@
 },
 {
 "n": 254,
-"date": "2027-11-22",
+"date": "2027-11-19",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Reis 6–7",
@@ -4070,7 +4070,7 @@
 },
 {
 "n": 255,
-"date": "2027-11-23",
+"date": "2027-11-22",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Reis 8–9",
@@ -4086,7 +4086,7 @@
 },
 {
 "n": 256,
-"date": "2027-11-24",
+"date": "2027-11-23",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Reis 10–11",
@@ -4102,7 +4102,7 @@
 },
 {
 "n": 257,
-"date": "2027-11-25",
+"date": "2027-11-24",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Reis 12–13",
@@ -4118,7 +4118,7 @@
 },
 {
 "n": 258,
-"date": "2027-11-26",
+"date": "2027-11-25",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Reis 14–15",
@@ -4134,7 +4134,7 @@
 },
 {
 "n": 259,
-"date": "2027-11-29",
+"date": "2027-11-26",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Reis 16–17",
@@ -4150,7 +4150,7 @@
 },
 {
 "n": 260,
-"date": "2027-11-30",
+"date": "2027-11-29",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Reis 18–19",
@@ -4166,7 +4166,7 @@
 },
 {
 "n": 261,
-"date": "2027-12-01",
+"date": "2027-11-30",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Reis 20–22",
@@ -4182,7 +4182,7 @@
 },
 {
 "n": 262,
-"date": "2027-12-02",
+"date": "2027-12-01",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Reis 23",
@@ -4198,7 +4198,7 @@
 },
 {
 "n": 263,
-"date": "2027-12-03",
+"date": "2027-12-02",
 "fase": 9,
 "faseNome": "Os reis de Israel",
 "ref": "2 Reis 24–25",
@@ -4214,7 +4214,7 @@
 },
 {
 "n": 264,
-"date": "2027-12-06",
+"date": "2027-12-03",
 "fase": 10,
 "faseNome": "As cartas de Paulo III",
 "ref": "1 Timóteo 1–3",
@@ -4230,7 +4230,7 @@
 },
 {
 "n": 265,
-"date": "2027-12-07",
+"date": "2027-12-06",
 "fase": 10,
 "faseNome": "As cartas de Paulo III",
 "ref": "1 Timóteo 4–6",
@@ -4246,7 +4246,7 @@
 },
 {
 "n": 266,
-"date": "2027-12-08",
+"date": "2027-12-07",
 "fase": 10,
 "faseNome": "As cartas de Paulo III",
 "ref": "2 Timóteo 1–4",
@@ -4262,7 +4262,7 @@
 },
 {
 "n": 267,
-"date": "2027-12-09",
+"date": "2027-12-08",
 "fase": 10,
 "faseNome": "As cartas de Paulo III",
 "ref": "Tito 1–3",
@@ -4278,7 +4278,7 @@
 },
 {
 "n": 268,
-"date": "2027-12-10",
+"date": "2027-12-09",
 "fase": 10,
 "faseNome": "As cartas de Paulo III",
 "ref": "Hebreus 1–4",
@@ -4294,7 +4294,7 @@
 },
 {
 "n": 269,
-"date": "2027-12-13",
+"date": "2027-12-10",
 "fase": 10,
 "faseNome": "As cartas de Paulo III",
 "ref": "Hebreus 5–8",
@@ -4310,7 +4310,7 @@
 },
 {
 "n": 270,
-"date": "2027-12-14",
+"date": "2027-12-13",
 "fase": 10,
 "faseNome": "As cartas de Paulo III",
 "ref": "Hebreus 9–10",
@@ -4326,7 +4326,7 @@
 },
 {
 "n": 271,
-"date": "2027-12-15",
+"date": "2027-12-14",
 "fase": 10,
 "faseNome": "As cartas de Paulo III",
 "ref": "Hebreus 11–13",
@@ -4342,7 +4342,7 @@
 },
 {
 "n": 272,
-"date": "2027-12-16",
+"date": "2027-12-15",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 1–8",
@@ -4358,7 +4358,7 @@
 },
 {
 "n": 273,
-"date": "2027-12-17",
+"date": "2027-12-16",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 9–17",
@@ -4374,7 +4374,7 @@
 },
 {
 "n": 274,
-"date": "2027-12-20",
+"date": "2027-12-17",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 18–21",
@@ -4390,7 +4390,7 @@
 },
 {
 "n": 275,
-"date": "2027-12-21",
+"date": "2027-12-20",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 22–27",
@@ -4406,7 +4406,7 @@
 },
 {
 "n": 276,
-"date": "2027-12-22",
+"date": "2027-12-21",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 28–33",
@@ -4422,7 +4422,7 @@
 },
 {
 "n": 277,
-"date": "2027-12-23",
+"date": "2027-12-22",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 34–37",
@@ -4438,7 +4438,7 @@
 },
 {
 "n": 278,
-"date": "2027-12-24",
+"date": "2027-12-23",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 38–43",
@@ -4454,7 +4454,7 @@
 },
 {
 "n": 279,
-"date": "2027-12-27",
+"date": "2027-12-24",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 44–49",
@@ -4470,7 +4470,7 @@
 },
 {
 "n": 280,
-"date": "2027-12-28",
+"date": "2027-12-27",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 50–55",
@@ -4486,7 +4486,7 @@
 },
 {
 "n": 281,
-"date": "2027-12-29",
+"date": "2027-12-28",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 56–62",
@@ -4502,7 +4502,7 @@
 },
 {
 "n": 282,
-"date": "2027-12-30",
+"date": "2027-12-29",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 63–68",
@@ -4518,7 +4518,7 @@
 },
 {
 "n": 283,
-"date": "2027-12-31",
+"date": "2027-12-30",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 69–72",
@@ -4534,7 +4534,7 @@
 },
 {
 "n": 284,
-"date": "2028-01-03",
+"date": "2027-12-31",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 73–77",
@@ -4550,7 +4550,7 @@
 },
 {
 "n": 285,
-"date": "2028-01-04",
+"date": "2028-01-03",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 78–80",
@@ -4566,7 +4566,7 @@
 },
 {
 "n": 286,
-"date": "2028-01-05",
+"date": "2028-01-04",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 81–87",
@@ -4582,7 +4582,7 @@
 },
 {
 "n": 287,
-"date": "2028-01-06",
+"date": "2028-01-05",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 88–91",
@@ -4598,7 +4598,7 @@
 },
 {
 "n": 288,
-"date": "2028-01-07",
+"date": "2028-01-06",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 92–99",
@@ -4614,7 +4614,7 @@
 },
 {
 "n": 289,
-"date": "2028-01-10",
+"date": "2028-01-07",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 100–104",
@@ -4630,7 +4630,7 @@
 },
 {
 "n": 290,
-"date": "2028-01-11",
+"date": "2028-01-10",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 105–106",
@@ -4646,7 +4646,7 @@
 },
 {
 "n": 291,
-"date": "2028-01-12",
+"date": "2028-01-11",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 107–110",
@@ -4662,7 +4662,7 @@
 },
 {
 "n": 292,
-"date": "2028-01-13",
+"date": "2028-01-12",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 111–118",
@@ -4678,7 +4678,7 @@
 },
 {
 "n": 293,
-"date": "2028-01-14",
+"date": "2028-01-13",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 119",
@@ -4694,7 +4694,7 @@
 },
 {
 "n": 294,
-"date": "2028-01-17",
+"date": "2028-01-14",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 120–135",
@@ -4710,7 +4710,7 @@
 },
 {
 "n": 295,
-"date": "2028-01-18",
+"date": "2028-01-17",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 136–142",
@@ -4726,7 +4726,7 @@
 },
 {
 "n": 296,
-"date": "2028-01-19",
+"date": "2028-01-18",
 "fase": 11,
 "faseNome": "Os Salmos",
 "ref": "Salmos 143–150",
@@ -4742,7 +4742,7 @@
 },
 {
 "n": 297,
-"date": "2028-01-20",
+"date": "2028-01-19",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "1 Crônicas 1–2",
@@ -4758,7 +4758,7 @@
 },
 {
 "n": 298,
-"date": "2028-01-21",
+"date": "2028-01-20",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "1 Crônicas 3–5",
@@ -4774,7 +4774,7 @@
 },
 {
 "n": 299,
-"date": "2028-01-24",
+"date": "2028-01-21",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "1 Crônicas 6–7",
@@ -4790,7 +4790,7 @@
 },
 {
 "n": 300,
-"date": "2028-01-25",
+"date": "2028-01-24",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "1 Crônicas 8–10",
@@ -4806,7 +4806,7 @@
 },
 {
 "n": 301,
-"date": "2028-01-26",
+"date": "2028-01-25",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "1 Crônicas 11–12",
@@ -4822,7 +4822,7 @@
 },
 {
 "n": 302,
-"date": "2028-01-27",
+"date": "2028-01-26",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "1 Crônicas 13–15",
@@ -4838,7 +4838,7 @@
 },
 {
 "n": 303,
-"date": "2028-01-28",
+"date": "2028-01-27",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "1 Crônicas 16–18",
@@ -4854,7 +4854,7 @@
 },
 {
 "n": 304,
-"date": "2028-01-31",
+"date": "2028-01-28",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "1 Crônicas 19–21",
@@ -4870,7 +4870,7 @@
 },
 {
 "n": 305,
-"date": "2028-02-01",
+"date": "2028-01-31",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "1 Crônicas 22–24",
@@ -4886,7 +4886,7 @@
 },
 {
 "n": 306,
-"date": "2028-02-02",
+"date": "2028-02-01",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "1 Crônicas 25–27",
@@ -4902,7 +4902,7 @@
 },
 {
 "n": 307,
-"date": "2028-02-03",
+"date": "2028-02-02",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "1 Crônicas 28–29",
@@ -4918,7 +4918,7 @@
 },
 {
 "n": 308,
-"date": "2028-02-04",
+"date": "2028-02-03",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "2 Crônicas 1–3",
@@ -4934,7 +4934,7 @@
 },
 {
 "n": 309,
-"date": "2028-02-07",
+"date": "2028-02-04",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "2 Crônicas 4–6",
@@ -4950,7 +4950,7 @@
 },
 {
 "n": 310,
-"date": "2028-02-08",
+"date": "2028-02-07",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "2 Crônicas 7–9",
@@ -4966,7 +4966,7 @@
 },
 {
 "n": 311,
-"date": "2028-02-09",
+"date": "2028-02-08",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "2 Crônicas 10–12",
@@ -4982,7 +4982,7 @@
 },
 {
 "n": 312,
-"date": "2028-02-10",
+"date": "2028-02-09",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "2 Crônicas 13–15",
@@ -4998,7 +4998,7 @@
 },
 {
 "n": 313,
-"date": "2028-02-11",
+"date": "2028-02-10",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "2 Crônicas 16–18",
@@ -5014,7 +5014,7 @@
 },
 {
 "n": 314,
-"date": "2028-02-14",
+"date": "2028-02-11",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "2 Crônicas 19–20",
@@ -5030,7 +5030,7 @@
 },
 {
 "n": 315,
-"date": "2028-02-15",
+"date": "2028-02-14",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "2 Crônicas 21–23",
@@ -5046,7 +5046,7 @@
 },
 {
 "n": 316,
-"date": "2028-02-16",
+"date": "2028-02-15",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "2 Crônicas 24–25",
@@ -5062,7 +5062,7 @@
 },
 {
 "n": 317,
-"date": "2028-02-17",
+"date": "2028-02-16",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "2 Crônicas 26–28",
@@ -5078,7 +5078,7 @@
 },
 {
 "n": 318,
-"date": "2028-02-18",
+"date": "2028-02-17",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "2 Crônicas 29–30",
@@ -5094,7 +5094,7 @@
 },
 {
 "n": 319,
-"date": "2028-02-21",
+"date": "2028-02-18",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "2 Crônicas 31–32",
@@ -5110,7 +5110,7 @@
 },
 {
 "n": 320,
-"date": "2028-02-22",
+"date": "2028-02-21",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "2 Crônicas 33–34",
@@ -5126,7 +5126,7 @@
 },
 {
 "n": 321,
-"date": "2028-02-23",
+"date": "2028-02-22",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "2 Crônicas 35–36",
@@ -5142,7 +5142,7 @@
 },
 {
 "n": 322,
-"date": "2028-02-24",
+"date": "2028-02-23",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "Esdras 1–3",
@@ -5158,7 +5158,7 @@
 },
 {
 "n": 323,
-"date": "2028-02-25",
+"date": "2028-02-24",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "Esdras 4–6",
@@ -5174,7 +5174,7 @@
 },
 {
 "n": 324,
-"date": "2028-03-01",
+"date": "2028-02-25",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "Esdras 7–8",
@@ -5190,7 +5190,7 @@
 },
 {
 "n": 325,
-"date": "2028-03-02",
+"date": "2028-03-01",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "Esdras 9–10",
@@ -5206,7 +5206,7 @@
 },
 {
 "n": 326,
-"date": "2028-03-03",
+"date": "2028-03-02",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "Neemias 1–3",
@@ -5222,7 +5222,7 @@
 },
 {
 "n": 327,
-"date": "2028-03-06",
+"date": "2028-03-03",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "Neemias 4–6",
@@ -5238,7 +5238,7 @@
 },
 {
 "n": 328,
-"date": "2028-03-07",
+"date": "2028-03-06",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "Neemias 7–8",
@@ -5254,7 +5254,7 @@
 },
 {
 "n": 329,
-"date": "2028-03-08",
+"date": "2028-03-07",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "Neemias 9",
@@ -5270,7 +5270,7 @@
 },
 {
 "n": 330,
-"date": "2028-03-09",
+"date": "2028-03-08",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "Neemias 10–11",
@@ -5286,7 +5286,7 @@
 },
 {
 "n": 331,
-"date": "2028-03-10",
+"date": "2028-03-09",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "Neemias 12–13",
@@ -5302,7 +5302,7 @@
 },
 {
 "n": 332,
-"date": "2028-03-13",
+"date": "2028-03-10",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "Ester 1–3",
@@ -5318,7 +5318,7 @@
 },
 {
 "n": 333,
-"date": "2028-03-14",
+"date": "2028-03-13",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "Ester 4–7",
@@ -5334,7 +5334,7 @@
 },
 {
 "n": 334,
-"date": "2028-03-15",
+"date": "2028-03-14",
 "fase": 12,
 "faseNome": "A volta do exílio",
 "ref": "Ester 8–10",
@@ -5350,7 +5350,7 @@
 },
 {
 "n": 335,
-"date": "2028-03-16",
+"date": "2028-03-15",
 "fase": 13,
 "faseNome": "As cartas de Tiago, Pedro, João e Judas",
 "ref": "Tiago 1–2",
@@ -5366,7 +5366,7 @@
 },
 {
 "n": 336,
-"date": "2028-03-17",
+"date": "2028-03-16",
 "fase": 13,
 "faseNome": "As cartas de Tiago, Pedro, João e Judas",
 "ref": "Tiago 3–5",
@@ -5382,7 +5382,7 @@
 },
 {
 "n": 337,
-"date": "2028-03-20",
+"date": "2028-03-17",
 "fase": 13,
 "faseNome": "As cartas de Tiago, Pedro, João e Judas",
 "ref": "1 Pedro 1–2",
@@ -5398,7 +5398,7 @@
 },
 {
 "n": 338,
-"date": "2028-03-21",
+"date": "2028-03-20",
 "fase": 13,
 "faseNome": "As cartas de Tiago, Pedro, João e Judas",
 "ref": "1 Pedro 3–5",
@@ -5414,7 +5414,7 @@
 },
 {
 "n": 339,
-"date": "2028-03-22",
+"date": "2028-03-21",
 "fase": 13,
 "faseNome": "As cartas de Tiago, Pedro, João e Judas",
 "ref": "2 Pedro 1–3",
@@ -5430,7 +5430,7 @@
 },
 {
 "n": 340,
-"date": "2028-03-23",
+"date": "2028-03-22",
 "fase": 13,
 "faseNome": "As cartas de Tiago, Pedro, João e Judas",
 "ref": "1 João 1–3",
@@ -5446,7 +5446,7 @@
 },
 {
 "n": 341,
-"date": "2028-03-24",
+"date": "2028-03-23",
 "fase": 13,
 "faseNome": "As cartas de Tiago, Pedro, João e Judas",
 "ref": "1 João 4–5",
@@ -5462,7 +5462,7 @@
 },
 {
 "n": 342,
-"date": "2028-03-27",
+"date": "2028-03-24",
 "fase": 13,
 "faseNome": "As cartas de Tiago, Pedro, João e Judas",
 "ref": "2 João · 3 João · Judas",
@@ -5488,7 +5488,7 @@
 },
 {
 "n": 343,
-"date": "2028-03-28",
+"date": "2028-03-27",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 1–3",
@@ -5504,7 +5504,7 @@
 },
 {
 "n": 344,
-"date": "2028-03-29",
+"date": "2028-03-28",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 4–6",
@@ -5520,7 +5520,7 @@
 },
 {
 "n": 345,
-"date": "2028-03-30",
+"date": "2028-03-29",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 7–9",
@@ -5536,7 +5536,7 @@
 },
 {
 "n": 346,
-"date": "2028-03-31",
+"date": "2028-03-30",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 10–12",
@@ -5552,7 +5552,7 @@
 },
 {
 "n": 347,
-"date": "2028-04-03",
+"date": "2028-03-31",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 13–15",
@@ -5568,7 +5568,7 @@
 },
 {
 "n": 348,
-"date": "2028-04-04",
+"date": "2028-04-03",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 16–19",
@@ -5584,7 +5584,7 @@
 },
 {
 "n": 349,
-"date": "2028-04-05",
+"date": "2028-04-04",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 20–23",
@@ -5600,7 +5600,7 @@
 },
 {
 "n": 350,
-"date": "2028-04-06",
+"date": "2028-04-05",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 24–27",
@@ -5616,7 +5616,7 @@
 },
 {
 "n": 351,
-"date": "2028-04-07",
+"date": "2028-04-06",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 28–29",
@@ -5632,7 +5632,7 @@
 },
 {
 "n": 352,
-"date": "2028-04-10",
+"date": "2028-04-07",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 30–32",
@@ -5648,7 +5648,7 @@
 },
 {
 "n": 353,
-"date": "2028-04-11",
+"date": "2028-04-10",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 33–36",
@@ -5664,7 +5664,7 @@
 },
 {
 "n": 354,
-"date": "2028-04-12",
+"date": "2028-04-11",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 37–38",
@@ -5680,7 +5680,7 @@
 },
 {
 "n": 355,
-"date": "2028-04-13",
+"date": "2028-04-12",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 39–41",
@@ -5696,7 +5696,7 @@
 },
 {
 "n": 356,
-"date": "2028-04-17",
+"date": "2028-04-13",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 42–43",
@@ -5712,7 +5712,7 @@
 },
 {
 "n": 357,
-"date": "2028-04-18",
+"date": "2028-04-17",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 44–46",
@@ -5728,7 +5728,7 @@
 },
 {
 "n": 358,
-"date": "2028-04-19",
+"date": "2028-04-18",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 47–49",
@@ -5744,7 +5744,7 @@
 },
 {
 "n": 359,
-"date": "2028-04-20",
+"date": "2028-04-19",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 50–53",
@@ -5760,7 +5760,7 @@
 },
 {
 "n": 360,
-"date": "2028-04-24",
+"date": "2028-04-20",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 54–57",
@@ -5776,7 +5776,7 @@
 },
 {
 "n": 361,
-"date": "2028-04-25",
+"date": "2028-04-24",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 58–60",
@@ -5792,7 +5792,7 @@
 },
 {
 "n": 362,
-"date": "2028-04-26",
+"date": "2028-04-25",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 61–64",
@@ -5808,7 +5808,7 @@
 },
 {
 "n": 363,
-"date": "2028-04-27",
+"date": "2028-04-26",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Isaías 65–66",
@@ -5824,7 +5824,7 @@
 },
 {
 "n": 364,
-"date": "2028-04-28",
+"date": "2028-04-27",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 1–2",
@@ -5840,7 +5840,7 @@
 },
 {
 "n": 365,
-"date": "2028-05-02",
+"date": "2028-04-28",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 3–4",
@@ -5856,7 +5856,7 @@
 },
 {
 "n": 366,
-"date": "2028-05-03",
+"date": "2028-05-02",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 5–6",
@@ -5872,7 +5872,7 @@
 },
 {
 "n": 367,
-"date": "2028-05-04",
+"date": "2028-05-03",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 7–8",
@@ -5888,7 +5888,7 @@
 },
 {
 "n": 368,
-"date": "2028-05-05",
+"date": "2028-05-04",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 9–10",
@@ -5904,7 +5904,7 @@
 },
 {
 "n": 369,
-"date": "2028-05-08",
+"date": "2028-05-05",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 11–13",
@@ -5920,7 +5920,7 @@
 },
 {
 "n": 370,
-"date": "2028-05-09",
+"date": "2028-05-08",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 14–16",
@@ -5936,7 +5936,7 @@
 },
 {
 "n": 371,
-"date": "2028-05-10",
+"date": "2028-05-09",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 17–19",
@@ -5952,7 +5952,7 @@
 },
 {
 "n": 372,
-"date": "2028-05-11",
+"date": "2028-05-10",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 20–22",
@@ -5968,7 +5968,7 @@
 },
 {
 "n": 373,
-"date": "2028-05-12",
+"date": "2028-05-11",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 23–24",
@@ -5984,7 +5984,7 @@
 },
 {
 "n": 374,
-"date": "2028-05-15",
+"date": "2028-05-12",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 25–26",
@@ -6000,7 +6000,7 @@
 },
 {
 "n": 375,
-"date": "2028-05-16",
+"date": "2028-05-15",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 27–29",
@@ -6016,7 +6016,7 @@
 },
 {
 "n": 376,
-"date": "2028-05-17",
+"date": "2028-05-16",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 30–31",
@@ -6032,7 +6032,7 @@
 },
 {
 "n": 377,
-"date": "2028-05-18",
+"date": "2028-05-17",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 32",
@@ -6048,7 +6048,7 @@
 },
 {
 "n": 378,
-"date": "2028-05-19",
+"date": "2028-05-18",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 33–34",
@@ -6064,7 +6064,7 @@
 },
 {
 "n": 379,
-"date": "2028-05-22",
+"date": "2028-05-19",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 35–36",
@@ -6080,7 +6080,7 @@
 },
 {
 "n": 380,
-"date": "2028-05-23",
+"date": "2028-05-22",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 37–39",
@@ -6096,7 +6096,7 @@
 },
 {
 "n": 381,
-"date": "2028-05-24",
+"date": "2028-05-23",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 40–42",
@@ -6112,7 +6112,7 @@
 },
 {
 "n": 382,
-"date": "2028-05-25",
+"date": "2028-05-24",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 43–45",
@@ -6128,7 +6128,7 @@
 },
 {
 "n": 383,
-"date": "2028-05-26",
+"date": "2028-05-25",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 46–48",
@@ -6144,7 +6144,7 @@
 },
 {
 "n": 384,
-"date": "2028-05-29",
+"date": "2028-05-26",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 49–50",
@@ -6160,7 +6160,7 @@
 },
 {
 "n": 385,
-"date": "2028-05-30",
+"date": "2028-05-29",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 51",
@@ -6176,7 +6176,7 @@
 },
 {
 "n": 386,
-"date": "2028-05-31",
+"date": "2028-05-30",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Jeremias 52",
@@ -6192,7 +6192,7 @@
 },
 {
 "n": 387,
-"date": "2028-06-01",
+"date": "2028-05-31",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Lamentações 1–2",
@@ -6208,7 +6208,7 @@
 },
 {
 "n": 388,
-"date": "2028-06-02",
+"date": "2028-06-01",
 "fase": 14,
 "faseNome": "Os grandes profetas I",
 "ref": "Lamentações 3–5",
@@ -6224,7 +6224,7 @@
 },
 {
 "n": 389,
-"date": "2028-06-05",
+"date": "2028-06-02",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 1–3",
@@ -6240,7 +6240,7 @@
 },
 {
 "n": 390,
-"date": "2028-06-06",
+"date": "2028-06-05",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 4–6",
@@ -6256,7 +6256,7 @@
 },
 {
 "n": 391,
-"date": "2028-06-07",
+"date": "2028-06-06",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 7–9",
@@ -6272,7 +6272,7 @@
 },
 {
 "n": 392,
-"date": "2028-06-08",
+"date": "2028-06-07",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 10–12",
@@ -6288,7 +6288,7 @@
 },
 {
 "n": 393,
-"date": "2028-06-09",
+"date": "2028-06-08",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 13–15",
@@ -6304,7 +6304,7 @@
 },
 {
 "n": 394,
-"date": "2028-06-12",
+"date": "2028-06-09",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 16",
@@ -6320,7 +6320,7 @@
 },
 {
 "n": 395,
-"date": "2028-06-13",
+"date": "2028-06-12",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 17–18",
@@ -6336,7 +6336,7 @@
 },
 {
 "n": 396,
-"date": "2028-06-14",
+"date": "2028-06-13",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 19–20",
@@ -6352,7 +6352,7 @@
 },
 {
 "n": 397,
-"date": "2028-06-16",
+"date": "2028-06-14",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 21–22",
@@ -6368,7 +6368,7 @@
 },
 {
 "n": 398,
-"date": "2028-06-19",
+"date": "2028-06-16",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 23–24",
@@ -6384,7 +6384,7 @@
 },
 {
 "n": 399,
-"date": "2028-06-20",
+"date": "2028-06-19",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 25–27",
@@ -6400,7 +6400,7 @@
 },
 {
 "n": 400,
-"date": "2028-06-21",
+"date": "2028-06-20",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 28–30",
@@ -6416,7 +6416,7 @@
 },
 {
 "n": 401,
-"date": "2028-06-22",
+"date": "2028-06-21",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 31–32",
@@ -6432,7 +6432,7 @@
 },
 {
 "n": 402,
-"date": "2028-06-23",
+"date": "2028-06-22",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 33–35",
@@ -6448,7 +6448,7 @@
 },
 {
 "n": 403,
-"date": "2028-06-26",
+"date": "2028-06-23",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 36–37",
@@ -6464,7 +6464,7 @@
 },
 {
 "n": 404,
-"date": "2028-06-27",
+"date": "2028-06-26",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 38–39",
@@ -6480,7 +6480,7 @@
 },
 {
 "n": 405,
-"date": "2028-06-28",
+"date": "2028-06-27",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 40",
@@ -6496,7 +6496,7 @@
 },
 {
 "n": 406,
-"date": "2028-06-29",
+"date": "2028-06-28",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 41–42",
@@ -6512,7 +6512,7 @@
 },
 {
 "n": 407,
-"date": "2028-06-30",
+"date": "2028-06-29",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 43–44",
@@ -6528,7 +6528,7 @@
 },
 {
 "n": 408,
-"date": "2028-07-03",
+"date": "2028-06-30",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 45–46",
@@ -6544,7 +6544,7 @@
 },
 {
 "n": 409,
-"date": "2028-07-04",
+"date": "2028-07-03",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Ezequiel 47–48",
@@ -6560,7 +6560,7 @@
 },
 {
 "n": 410,
-"date": "2028-07-05",
+"date": "2028-07-04",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Daniel 1–2",
@@ -6576,7 +6576,7 @@
 },
 {
 "n": 411,
-"date": "2028-07-06",
+"date": "2028-07-05",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Daniel 3–4",
@@ -6592,7 +6592,7 @@
 },
 {
 "n": 412,
-"date": "2028-07-07",
+"date": "2028-07-06",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Daniel 5–6",
@@ -6608,7 +6608,7 @@
 },
 {
 "n": 413,
-"date": "2028-07-10",
+"date": "2028-07-07",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Daniel 7–8",
@@ -6624,7 +6624,7 @@
 },
 {
 "n": 414,
-"date": "2028-07-11",
+"date": "2028-07-10",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Daniel 9–10",
@@ -6640,7 +6640,7 @@
 },
 {
 "n": 415,
-"date": "2028-07-12",
+"date": "2028-07-11",
 "fase": 15,
 "faseNome": "Os grandes profetas II",
 "ref": "Daniel 11–12",
@@ -6656,7 +6656,7 @@
 },
 {
 "n": 416,
-"date": "2028-07-13",
+"date": "2028-07-12",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Oseias 1–4",
@@ -6672,7 +6672,7 @@
 },
 {
 "n": 417,
-"date": "2028-07-14",
+"date": "2028-07-13",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Oseias 5–9",
@@ -6688,7 +6688,7 @@
 },
 {
 "n": 418,
-"date": "2028-07-17",
+"date": "2028-07-14",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Oseias 10–14",
@@ -6704,7 +6704,7 @@
 },
 {
 "n": 419,
-"date": "2028-07-18",
+"date": "2028-07-17",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Joel 1–3",
@@ -6720,7 +6720,7 @@
 },
 {
 "n": 420,
-"date": "2028-07-19",
+"date": "2028-07-18",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Amós 1–3",
@@ -6736,7 +6736,7 @@
 },
 {
 "n": 421,
-"date": "2028-07-20",
+"date": "2028-07-19",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Amós 4–6",
@@ -6752,7 +6752,7 @@
 },
 {
 "n": 422,
-"date": "2028-07-21",
+"date": "2028-07-20",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Amós 7–9",
@@ -6768,7 +6768,7 @@
 },
 {
 "n": 423,
-"date": "2028-07-24",
+"date": "2028-07-21",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Obadias · Jonas 1–4",
@@ -6789,7 +6789,7 @@
 },
 {
 "n": 424,
-"date": "2028-07-25",
+"date": "2028-07-24",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Miqueias 1–4",
@@ -6805,7 +6805,7 @@
 },
 {
 "n": 425,
-"date": "2028-07-26",
+"date": "2028-07-25",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Miqueias 5–7",
@@ -6821,7 +6821,7 @@
 },
 {
 "n": 426,
-"date": "2028-07-27",
+"date": "2028-07-26",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Naum 1–3",
@@ -6837,7 +6837,7 @@
 },
 {
 "n": 427,
-"date": "2028-07-28",
+"date": "2028-07-27",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Habacuque 1–3",
@@ -6853,7 +6853,7 @@
 },
 {
 "n": 428,
-"date": "2028-07-31",
+"date": "2028-07-28",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Sofonias 1–3",
@@ -6869,7 +6869,7 @@
 },
 {
 "n": 429,
-"date": "2028-08-01",
+"date": "2028-07-31",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Ageu 1–2",
@@ -6885,7 +6885,7 @@
 },
 {
 "n": 430,
-"date": "2028-08-02",
+"date": "2028-08-01",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Zacarias 1–4",
@@ -6901,7 +6901,7 @@
 },
 {
 "n": 431,
-"date": "2028-08-03",
+"date": "2028-08-02",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Zacarias 5–8",
@@ -6917,7 +6917,7 @@
 },
 {
 "n": 432,
-"date": "2028-08-04",
+"date": "2028-08-03",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Zacarias 9–11",
@@ -6933,7 +6933,7 @@
 },
 {
 "n": 433,
-"date": "2028-08-07",
+"date": "2028-08-04",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Zacarias 12–14",
@@ -6949,7 +6949,7 @@
 },
 {
 "n": 434,
-"date": "2028-08-08",
+"date": "2028-08-07",
 "fase": 16,
 "faseNome": "Os doze profetas menores",
 "ref": "Malaquias 1–4",
@@ -6965,7 +6965,7 @@
 },
 {
 "n": 435,
-"date": "2028-08-09",
+"date": "2028-08-08",
 "fase": 17,
 "faseNome": "O Apocalipse",
 "ref": "Apocalipse 1–2",
@@ -6981,7 +6981,7 @@
 },
 {
 "n": 436,
-"date": "2028-08-10",
+"date": "2028-08-09",
 "fase": 17,
 "faseNome": "O Apocalipse",
 "ref": "Apocalipse 3–6",
@@ -6997,7 +6997,7 @@
 },
 {
 "n": 437,
-"date": "2028-08-11",
+"date": "2028-08-10",
 "fase": 17,
 "faseNome": "O Apocalipse",
 "ref": "Apocalipse 7–10",
@@ -7013,7 +7013,7 @@
 },
 {
 "n": 438,
-"date": "2028-08-14",
+"date": "2028-08-11",
 "fase": 17,
 "faseNome": "O Apocalipse",
 "ref": "Apocalipse 11–13",
@@ -7029,7 +7029,7 @@
 },
 {
 "n": 439,
-"date": "2028-08-15",
+"date": "2028-08-14",
 "fase": 17,
 "faseNome": "O Apocalipse",
 "ref": "Apocalipse 14–16",
@@ -7045,7 +7045,7 @@
 },
 {
 "n": 440,
-"date": "2028-08-16",
+"date": "2028-08-15",
 "fase": 17,
 "faseNome": "O Apocalipse",
 "ref": "Apocalipse 17–19",
@@ -7061,7 +7061,7 @@
 },
 {
 "n": 441,
-"date": "2028-08-17",
+"date": "2028-08-16",
 "fase": 17,
 "faseNome": "O Apocalipse",
 "ref": "Apocalipse 20–22",

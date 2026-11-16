@@ -4,7 +4,7 @@ Site: https://analuc10.github.io/Devocional-esp-rita-/biblia/
 
 Leitura em casal (pedido de 16/11/2026): a Ana lê no app e o namorado lê na Bíblia de papel dele, marcando. Cada dia mostra a passagem em destaque e as duas visões, a espírita e a evangélica, do mesmo tamanho e com o mesmo cuidado. A visão evangélica segue a leitura evangélica mais comum, com atenção às igrejas em células e pentecostais (ele é da Igreja Videira, de Goiânia).
 
-- A Bíblia inteira em 441 leituras (2 a 3 capítulos, ~8 min de texto, pra ler antes de dormir), uma por dia útil, de 16/11/2026 a 17/08/2028, sem fins de semana e feriados nacionais (lista FER em `cronograma.py`). A ordem alterna blocos do Novo e do Antigo Testamento (lista FASES).
+- A Bíblia inteira em 441 leituras (2 a 3 capítulos, ~8 min de texto, pra ler antes de dormir), uma por dia útil, de 13/11/2026 a 16/08/2028 (o Dia 1 ficou em 13/11 porque a Ana já tinha lido Mateus 1–4), sem fins de semana e feriados nacionais (lista FER em `cronograma.py`). A ordem alterna blocos do Novo e do Antigo Testamento (lista FASES).
 - Texto: Bíblia Livre (BLIVRE, CC BY 3.0 BR), github.com/eversondeveloper/bibialivrejson, arquivo biblialivre.json. Quem lê no papel pode esconder o texto no app.
 - Aba "Bíblia": todos os livros e capítulos, com resumo de cada livro, e busca por referência ou palavras. A busca lê `/biblia/busca.json`.
 - Aba "Guia": como ler, a biblioteca, linha do tempo, pra sempre lembrar, pra conversar, cartões semanais e como usar (conteúdo fixo em `guia_biblia.py`).
