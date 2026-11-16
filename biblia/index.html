@@ -1,0 +1,407 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Bíblia"><meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#FBF7F2">
+<link rel="apple-touch-icon" href="icone-180.png"><link rel="icon" href="icone-180.png"><link rel="manifest" href="manifest.webmanifest">
+<title>Bíblia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,500&family=Lora:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* Bíblia na visão espírita. App de leitura de uma coluna (máx. 640px), abas fixas embaixo,
+   cabeçalhos em "aura" (degradê terracota, azul do mar da Galileia e trigo). Mesmo estilo do Devocional Espírita. */
+:root{
+  --bg:#FBF7F2; --surface:#FFFFFF; --ink:#33251F; --muted:#7D6A60; --plum:#4A2C22;
+  --rose:#B5583A; --rose-l:#F1CDBD; --lav:#3D7393; --lav-bg:#E8F0F6; --lav-ink:#2B4A5E;
+  --line:#EEE3DA; --accent:#A9502F; --on-accent:#FFFFFF; --ok:#4F86A8;
+  --a1:rgba(226,150,120,.95); --a2:rgba(130,178,206,.95); --a3:rgba(238,204,140,.95); --aw:rgba(255,255,255,.55); --abase:#F0E2D6;
+  --s1:#FBE8DF; --s2:#E6F0F6; --s3:#FBF1DD;
+  --shadow:0 1px 2px rgba(74,44,34,.06),0 8px 24px rgba(74,44,34,.07);
+  --f-disp:'Fraunces',Georgia,'Times New Roman',serif;
+  --f-read:'Lora',Georgia,'Times New Roman',serif;
+  --f-ui:'DM Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --fs:17px;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#16110F; --surface:#211915; --ink:#F3EAE4; --muted:#BBA79C; --plum:#F6D6C7;
+  --rose:#EE9B7C; --rose-l:#6A3B2C; --lav:#9CC4DE; --lav-bg:#1F2A33; --lav-ink:#CFE3F0;
+  --line:#36291F; --accent:#EE9B7C; --on-accent:#2A140C; --ok:#9CC4DE;
+  --a1:rgba(190,100,70,.5); --a2:rgba(80,130,165,.5); --a3:rgba(190,150,80,.45); --aw:rgba(255,255,255,.06); --abase:#2A1D17;
+  --s1:#2E1E17; --s2:#1C2830; --s3:#2D2617;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25); color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--lav);outline-offset:2px;border-radius:6px}
+main{max-width:640px;margin:0 auto;padding-block:calc(18px + env(safe-area-inset-top,0px)) calc(96px + env(safe-area-inset-bottom,0px))}
+h1,h2,h3{text-wrap:balance}
+.k{font-family:var(--f-ui);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:12px 20px;
+  font:600 15px/1 var(--f-ui);background:var(--accent);color:var(--on-accent);text-decoration:none;cursor:pointer}
+.btn.done{background:var(--lav-bg);color:var(--lav-ink)}
+.aura{border-radius:28px;position:relative;overflow:hidden;color:var(--plum)}
+.dot{width:9px;height:9px;border-radius:50%;flex:none}
+
+/* abas */
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:color-mix(in srgb,var(--surface) 88%,transparent);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);
+  padding:6px max(16px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.tabs nav{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.tabs a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 0;text-decoration:none;color:var(--muted);font-size:11.5px;font-weight:500;border-radius:14px}
+.tabs a svg{width:22px;height:22px}
+.tabs a[aria-current="page"]{color:var(--accent)}
+
+/* hoje */
+.hello{display:flex;flex-direction:column;gap:2px;margin:6px 0 18px}
+.hello h1{font:400 30px/1.1 var(--f-disp);margin:0;color:var(--plum)}
+.hello h1 i{color:var(--rose)}
+.hero{padding:22px 20px 20px;display:flex;flex-direction:column;gap:12px;box-shadow:var(--shadow)}
+.hero .k{color:var(--plum);opacity:.8}
+.hero .dn{font:italic 400 15px/1 var(--f-disp)}
+.hero h2{font:500 22px/1.22 var(--f-disp);margin:2px 0 0}
+.hero .meta{font-size:13.5px;opacity:.88}
+.note{font-size:13.5px;color:var(--muted);margin:12px 4px 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:18px}
+.stack{display:flex;flex-direction:column;gap:14px;margin-top:14px}
+.prog{display:flex;flex-direction:column;gap:10px}
+.prog .big{font:400 30px/1 var(--f-disp);color:var(--plum)}
+.prog .big small{font:500 14px var(--f-ui);color:var(--muted)}
+.bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--rose),var(--ok))}
+.prog .sub{font-size:13px;color:var(--muted)}
+.week{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:4px}
+.week a{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 0;border-radius:14px;text-decoration:none;color:var(--ink);font-size:12px;font-variant-numeric:tabular-nums}
+.week a .wd{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.week a .c{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--line);font-weight:700;font-size:12px}
+.week a.lido .c{background:var(--ok);border-color:var(--ok);color:var(--surface)}
+.week a.hoje .c{border-color:var(--accent);color:var(--accent)}
+.week a.off{opacity:.45}
+.bh{display:flex;align-items:center;gap:8px}
+.bh span:last-child{font:700 11px var(--f-ui);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.vs{font:italic 400 18px/1.5 var(--f-read);margin:8px 0 6px;color:var(--plum)}
+.ref{font-size:12.5px;color:var(--muted)}
+
+/* leitura */
+.rbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:15;background:var(--bg);margin:-18px 0 14px;padding:10px 0 0}
+.rbar .in{display:flex;align-items:center;gap:8px}
+.rbar .t{flex:1;min-width:0;text-align:center;font:600 14px var(--f-ui);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ib{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;border:0;background:transparent;color:var(--ink);text-decoration:none;cursor:pointer;font:600 15px var(--f-ui)}
+.ib svg{width:22px;height:22px}
+.ib.on{color:var(--rose)}
+.rprog{height:3px;margin-top:8px;background:var(--line);border-radius:3px;overflow:hidden}
+.rprog i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--rose),var(--ok))}
+.dh{padding:22px 20px;display:flex;flex-direction:column;gap:4px}
+.dh .dn{font:400 40px/1 var(--f-disp)}
+.dh .dd{font-size:13.5px}
+.dt{font:500 26px/1.2 var(--f-disp);margin:22px 0 4px;color:var(--plum)}
+.dm{font-size:14px;color:var(--muted);margin-bottom:18px}
+.dm b{color:var(--rose);font-weight:600}
+.reader{font-family:var(--f-read);font-size:var(--fs);line-height:1.7}
+.reader .bl{font:400 1.5em/1.2 var(--f-disp);color:var(--plum);margin:1.4em 0 .2em}
+.reader .cap{font:italic 400 1.15em/1.25 var(--f-disp);color:var(--rose);margin:1.5em 0 .5em}
+.reader .bl + .cap,.reader > .cap:first-child{margin-top:.4em}
+.reader .sobre{font-style:italic;color:var(--muted);font-size:.9em;margin:0 0 .5em}
+.reader .vv{margin:0 0 .8em}
+.reader sup{font:700 .58em var(--f-ui);color:var(--rose);margin:0 .22em 0 .1em;vertical-align:.55em;line-height:0}
+.reader .vk{background:color-mix(in srgb,var(--a3) 30%,transparent);border-radius:4px;box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:0 2px}
+.loading{color:var(--muted);font-style:italic}
+.esp{margin-top:26px;border-radius:24px;padding:20px 20px 8px;background:linear-gradient(135deg,var(--s1),var(--s2) 55%,var(--s3));font-size:16px;line-height:1.62}
+.esp p{margin:0 0 .85em}
+.esp strong{color:var(--plum)}
+.esp .conv{background:color-mix(in srgb,var(--surface) 60%,transparent);border-radius:16px;padding:.7em .9em;font-size:.95em}
+.lbl{display:block;font:700 10.5px/1.4 var(--f-ui);letter-spacing:.16em;text-transform:uppercase;color:var(--lav);margin-bottom:.5em}
+.closing{margin-top:14px;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.blk{padding:16px 18px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:6px;font-size:15px}
+.blk:first-child{border-top:0}
+.blk p{margin:0}
+.markbox{display:flex;flex-direction:column;align-items:center;gap:10px;margin:26px 0 8px;text-align:center}
+.markbox .btn{width:100%;max-width:340px;padding:15px 20px;font-size:16px}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.pager a{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1px solid var(--line);border-radius:18px;text-decoration:none;color:var(--ink);min-width:0}
+.pager a.nx{text-align:right}
+.pager a small{color:var(--muted);font-size:12px}
+.pager a span{font-size:13.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* cronograma */
+.ph{margin:6px 0 16px}
+.ph h1{font:400 30px/1.1 var(--f-disp);margin:2px 0 6px;color:var(--plum)}
+.ph h1 i{color:var(--rose)}
+.ph p{margin:0;color:var(--muted);font-size:14px}
+.mes{font:italic 400 18px var(--f-disp);color:var(--rose);margin:22px 4px 8px;text-transform:lowercase}
+.list{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.it{display:grid;grid-template-columns:44px 1fr;align-items:center;border-top:1px solid var(--line)}
+.it:first-child{border-top:0}
+.it .tg{width:44px;height:100%;min-height:56px;display:grid;place-items:center;background:none;border:0;cursor:pointer;padding:0}
+.it .tg i{width:20px;height:20px;border-radius:50%;border:1.6px solid var(--line);display:grid;place-items:center;color:var(--surface);font-style:normal;font-size:12px}
+.it.lido .tg i{background:var(--ok);border-color:var(--ok)}
+.it a{display:grid;grid-template-columns:52px 1fr;gap:10px;padding:11px 14px 11px 0;text-decoration:none;color:var(--ink);min-width:0}
+.it .when{font-variant-numeric:tabular-nums;font-size:12px;color:var(--muted);line-height:1.3}
+.it .when b{display:block;font:500 16px var(--f-disp);color:var(--plum)}
+.it .what{min-width:0;font-size:14.5px;line-height:1.35}
+.it .what small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.it.hoje{background:color-mix(in srgb,var(--rose-l) 30%,var(--surface))}
+.it.hoje .when b::after{content:" · hoje";font:700 10px var(--f-ui);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.it.atraso .when b{color:var(--accent)}
+.it.lido .what{color:var(--muted)}
+.fase{display:flex;align-items:baseline;gap:8px;margin:26px 4px 2px;font:600 12px var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--lav)}
+
+/* como usar */
+.steps{display:flex;flex-direction:column;gap:14px}
+.step{display:grid;grid-template-columns:30px 1fr;gap:10px;font-size:14.5px}
+.step .sn{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--lav-bg);color:var(--lav-ink);font:600 14px var(--f-disp)}
+.seg{display:inline-grid;grid-auto-flow:column;gap:4px;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:4px}
+.seg button{border:0;background:none;border-radius:999px;padding:8px 14px;font:600 14px var(--f-ui);color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.fine{font-size:12.5px;color:var(--muted)}
+.nm{display:flex;flex-direction:column;gap:10px;margin-bottom:14px}
+.nmrow{display:flex;gap:8px}
+.nmrow input{flex:1;min-width:0;border:1px solid var(--line);border-radius:999px;padding:11px 16px;font:16px var(--f-ui);background:var(--bg);color:var(--ink)}
+.fases{margin:0;padding-left:20px;font-size:14px}
+.fases li{margin:3px 0}
+.fases small{color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(8px);background:var(--plum);color:var(--bg);
+  padding:10px 16px;border-radius:999px;font-size:14px;opacity:0;transition:opacity .2s,transform .2s;pointer-events:none;z-index:40;white-space:nowrap}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media (prefers-reduced-motion: reduce){.toast{transition:none}}
+</style></head><body>
+<main id="app" aria-live="polite"></main>
+<div class="tabs"><nav aria-label="Seções">
+  <a href="#hoje" data-tab="hoje"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.8v2M12 19.2v2M2.8 12h2M19.2 12h2M5.5 5.5l1.4 1.4M17.1 17.1l1.4 1.4M5.5 18.5l1.4-1.4M17.1 6.9l1.4-1.4"/></svg>Hoje</a>
+  <a href="#cronograma" data-tab="cronograma"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Cronograma</a>
+  <a href="#sobre" data-tab="sobre"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5C10 5 7 4.6 3.5 5v13.5c3.5-.4 6.5 0 8.5 1.5 2-1.5 5-1.9 8.5-1.5V5C17 4.6 14 5 12 6.5z"/><path d="M12 6.5V20"/></svg>Como usar</a>
+</nav></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script type="application/json" id="data">{"days":[{"n":1,"date":"2026-11-16","fase":1,"faseNome":"Os Evangelhos","ref":"Mateus 1–4","mins":9},{"n":2,"date":"2026-11-17","fase":1,"faseNome":"Os Evangelhos","ref":"Mateus 5–7","mins":11},{"n":3,"date":"2026-11-18","fase":1,"faseNome":"Os Evangelhos","ref":"Mateus 8–10","mins":11},{"n":4,"date":"2026-11-19","fase":1,"faseNome":"Os Evangelhos","ref":"Mateus 11–13","mins":14},{"n":5,"date":"2026-11-23","fase":1,"faseNome":"Os Evangelhos","ref":"Mateus 14–17","mins":12},{"n":6,"date":"2026-11-24","fase":1,"faseNome":"Os Evangelhos","ref":"Mateus 18–20","mins":10},{"n":7,"date":"2026-11-25","fase":1,"faseNome":"Os Evangelhos","ref":"Mateus 21–23","mins":12},{"n":8,"date":"2026-11-26","fase":1,"faseNome":"Os Evangelhos","ref":"Mateus 24–25","mins":9},{"n":9,"date":"2026-11-27","fase":1,"faseNome":"Os Evangelhos","ref":"Mateus 26–28","mins":15},{"n":10,"date":"2026-11-30","fase":1,"faseNome":"Os Evangelhos","ref":"Marcos 1–4","mins":14},{"n":11,"date":"2026-12-01","fase":1,"faseNome":"Os Evangelhos","ref":"Marcos 5–7","mins":13},{"n":12,"date":"2026-12-02","fase":1,"faseNome":"Os Evangelhos","ref":"Marcos 8–10","mins":13},{"n":13,"date":"2026-12-03","fase":1,"faseNome":"Os Evangelhos","ref":"Marcos 11–13","mins":11},{"n":14,"date":"2026-12-04","fase":1,"faseNome":"Os Evangelhos","ref":"Marcos 14–16","mins":13},{"n":15,"date":"2026-12-07","fase":1,"faseNome":"Os Evangelhos","ref":"Lucas 1–2","mins":11},{"n":16,"date":"2026-12-08","fase":1,"faseNome":"Os Evangelhos","ref":"Lucas 3–5","mins":12},{"n":17,"date":"2026-12-09","fase":1,"faseNome":"Os Evangelhos","ref":"Lucas 6–7","mins":11},{"n":18,"date":"2026-12-10","fase":1,"faseNome":"Os Evangelhos","ref":"Lucas 8–9","mins":13},{"n":19,"date":"2026-12-11","fase":1,"faseNome":"Os Evangelhos","ref":"Lucas 10–11","mins":10},{"n":20,"date":"2026-12-14","fase":1,"faseNome":"Os Evangelhos","ref":"Lucas 12–13","mins":10},{"n":21,"date":"2026-12-15","fase":1,"faseNome":"Os Evangelhos","ref":"Lucas 14–17","mins":13},{"n":22,"date":"2026-12-16","fase":1,"faseNome":"Os Evangelhos","ref":"Lucas 18–20","mins":12},{"n":23,"date":"2026-12-17","fase":1,"faseNome":"Os Evangelhos","ref":"Lucas 21–22","mins":10},{"n":24,"date":"2026-12-18","fase":1,"faseNome":"Os Evangelhos","ref":"Lucas 23–24","mins":10},{"n":25,"date":"2026-12-21","fase":1,"faseNome":"Os Evangelhos","ref":"João 1–4","mins":15},{"n":26,"date":"2026-12-22","fase":1,"faseNome":"Os Evangelhos","ref":"João 5–6","mins":11},{"n":27,"date":"2026-12-23","fase":1,"faseNome":"Os Evangelhos","ref":"João 7–8","mins":10},{"n":28,"date":"2026-12-24","fase":1,"faseNome":"Os Evangelhos","ref":"João 9–11","mins":12},{"n":29,"date":"2026-12-28","fase":1,"faseNome":"Os Evangelhos","ref":"João 12–14","mins":12},{"n":30,"date":"2026-12-29","fase":1,"faseNome":"Os Evangelhos","ref":"João 15–18","mins":13},{"n":31,"date":"2026-12-30","fase":1,"faseNome":"Os Evangelhos","ref":"João 19–21","mins":11},{"n":32,"date":"2026-12-31","fase":2,"faseNome":"Os primeiros cristãos","ref":"Atos 1–4","mins":15},{"n":33,"date":"2027-01-04","fase":2,"faseNome":"Os primeiros cristãos","ref":"Atos 5–7","mins":13},{"n":34,"date":"2027-01-05","fase":2,"faseNome":"Os primeiros cristãos","ref":"Atos 8–10","mins":14},{"n":35,"date":"2027-01-06","fase":2,"faseNome":"Os primeiros cristãos","ref":"Atos 11–13","mins":12},{"n":36,"date":"2027-01-07","fase":2,"faseNome":"Os primeiros cristãos","ref":"Atos 14–16","mins":11},{"n":37,"date":"2027-01-08","fase":2,"faseNome":"Os primeiros cristãos","ref":"Atos 17–19","mins":11},{"n":38,"date":"2027-01-11","fase":2,"faseNome":"Os primeiros cristãos","ref":"Atos 20–22","mins":13},{"n":39,"date":"2027-01-12","fase":2,"faseNome":"Os primeiros cristãos","ref":"Atos 23–25","mins":10},{"n":40,"date":"2027-01-13","fase":2,"faseNome":"Os primeiros cristãos","ref":"Atos 26–28","mins":13},{"n":41,"date":"2027-01-14","fase":3,"faseNome":"O começo de tudo","ref":"Gênesis 1–4","mins":12},{"n":42,"date":"2027-01-15","fase":3,"faseNome":"O começo de tudo","ref":"Gênesis 5–9","mins":13},{"n":43,"date":"2027-01-18","fase":3,"faseNome":"O começo de tudo","ref":"Gênesis 10–14","mins":12},{"n":44,"date":"2027-01-19","fase":3,"faseNome":"O começo de tudo","ref":"Gênesis 15–18","mins":11},{"n":45,"date":"2027-01-20","fase":3,"faseNome":"O começo de tudo","ref":"Gênesis 19–21","mins":10},{"n":46,"date":"2027-01-21","fase":3,"faseNome":"O começo de tudo","ref":"Gênesis 22–24","mins":13},{"n":47,"date":"2027-01-22","fase":3,"faseNome":"O começo de tudo","ref":"Gênesis 25–27","mins":12},{"n":48,"date":"2027-01-25","fase":3,"faseNome":"O começo de tudo","ref":"Gênesis 28–30","mins":11},{"n":49,"date":"2027-01-26","fase":3,"faseNome":"O começo de tudo","ref":"Gênesis 31–33","mins":12},{"n":50,"date":"2027-01-27","fase":3,"faseNome":"O começo de tudo","ref":"Gênesis 34–36","mins":11},{"n":51,"date":"2027-01-28","fase":3,"faseNome":"O começo de tudo","ref":"Gênesis 37–40","mins":13},{"n":52,"date":"2027-01-29","fase":3,"faseNome":"O começo de tudo","ref":"Gênesis 41–43","mins":15},{"n":53,"date":"2027-02-01","fase":3,"faseNome":"O começo de tudo","ref":"Gênesis 44–46","mins":11},{"n":54,"date":"2027-02-02","fase":3,"faseNome":"O começo de tudo","ref":"Gênesis 47–50","mins":14},{"n":55,"date":"2027-02-03","fase":3,"faseNome":"O começo de tudo","ref":"Êxodo 1–4","mins":12},{"n":56,"date":"2027-02-04","fase":3,"faseNome":"O começo de tudo","ref":"Êxodo 5–7","mins":9},{"n":57,"date":"2027-02-05","fase":3,"faseNome":"O começo de tudo","ref":"Êxodo 8–10","mins":12},{"n":58,"date":"2027-02-10","fase":3,"faseNome":"O começo de tudo","ref":"Êxodo 11–13","mins":10},{"n":59,"date":"2027-02-11","fase":3,"faseNome":"O começo de tudo","ref":"Êxodo 14–17","mins":13},{"n":60,"date":"2027-02-12","fase":3,"faseNome":"O começo de tudo","ref":"Êxodo 18–21","mins":12},{"n":61,"date":"2027-02-15","fase":3,"faseNome":"O começo de tudo","ref":"Êxodo 22–25","mins":13},{"n":62,"date":"2027-02-16","fase":3,"faseNome":"O começo de tudo","ref":"Êxodo 26–28","mins":11},{"n":63,"date":"2027-02-17","fase":3,"faseNome":"O começo de tudo","ref":"Êxodo 29–31","mins":11},{"n":64,"date":"2027-02-18","fase":3,"faseNome":"O começo de tudo","ref":"Êxodo 32–34","mins":12},{"n":65,"date":"2027-02-19","fase":3,"faseNome":"O começo de tudo","ref":"Êxodo 35–37","mins":11},{"n":66,"date":"2027-02-22","fase":3,"faseNome":"O começo de tudo","ref":"Êxodo 38–40","mins":12},{"n":67,"date":"2027-02-23","fase":4,"faseNome":"As cartas de Paulo I","ref":"Romanos 1–4","mins":11},{"n":68,"date":"2027-02-24","fase":4,"faseNome":"As cartas de Paulo I","ref":"Romanos 5–8","mins":12},{"n":69,"date":"2027-02-25","fase":4,"faseNome":"As cartas de Paulo I","ref":"Romanos 9–12","mins":11},{"n":70,"date":"2027-02-26","fase":4,"faseNome":"As cartas de Paulo I","ref":"Romanos 13–16","mins":10},{"n":71,"date":"2027-03-01","fase":4,"faseNome":"As cartas de Paulo I","ref":"1 Coríntios 1–5","mins":11},{"n":72,"date":"2027-03-02","fase":4,"faseNome":"As cartas de Paulo I","ref":"1 Coríntios 6–9","mins":11},{"n":73,"date":"2027-03-03","fase":4,"faseNome":"As cartas de Paulo I","ref":"1 Coríntios 10–13","mins":11},{"n":74,"date":"2027-03-04","fase":4,"faseNome":"As cartas de Paulo I","ref":"1 Coríntios 14–16","mins":11},{"n":75,"date":"2027-03-05","fase":4,"faseNome":"As cartas de Paulo I","ref":"2 Coríntios 1–5","mins":11},{"n":76,"date":"2027-03-08","fase":4,"faseNome":"As cartas de Paulo I","ref":"2 Coríntios 6–10","mins":10},{"n":77,"date":"2027-03-09","fase":4,"faseNome":"As cartas de Paulo I","ref":"2 Coríntios 11–13 · Gálatas 1","mins":10},{"n":78,"date":"2027-03-10","fase":4,"faseNome":"As cartas de Paulo I","ref":"Gálatas 2–6","mins":12},{"n":79,"date":"2027-03-11","fase":5,"faseNome":"A Lei de Moisés","ref":"Levítico 1–5","mins":13},{"n":80,"date":"2027-03-12","fase":5,"faseNome":"A Lei de Moisés","ref":"Levítico 6–8","mins":12},{"n":81,"date":"2027-03-15","fase":5,"faseNome":"A Lei de Moisés","ref":"Levítico 9–12","mins":11},{"n":82,"date":"2027-03-16","fase":5,"faseNome":"A Lei de Moisés","ref":"Levítico 13–14","mins":15},{"n":83,"date":"2027-03-17","fase":5,"faseNome":"A Lei de Moisés","ref":"Levítico 15–17","mins":11},{"n":84,"date":"2027-03-18","fase":5,"faseNome":"A Lei de Moisés","ref":"Levítico 18–21","mins":13},{"n":85,"date":"2027-03-19","fase":5,"faseNome":"A Lei de Moisés","ref":"Levítico 22–24","mins":11},{"n":86,"date":"2027-03-22","fase":5,"faseNome":"A Lei de Moisés","ref":"Levítico 25–27","mins":15},{"n":87,"date":"2027-03-23","fase":5,"faseNome":"A Lei de Moisés","ref":"Números 1–3","mins":14},{"n":88,"date":"2027-03-24","fase":5,"faseNome":"A Lei de Moisés","ref":"Números 4–6","mins":13},{"n":89,"date":"2027-03-25","fase":5,"faseNome":"A Lei de Moisés","ref":"Números 7–8","mins":11},{"n":90,"date":"2027-03-29","fase":5,"faseNome":"A Lei de Moisés","ref":"Números 9–11","mins":11},{"n":91,"date":"2027-03-30","fase":5,"faseNome":"A Lei de Moisés","ref":"Números 12–14","mins":10},{"n":92,"date":"2027-03-31","fase":5,"faseNome":"A Lei de Moisés","ref":"Números 15–17","mins":12},{"n":93,"date":"2027-04-01","fase":5,"faseNome":"A Lei de Moisés","ref":"Números 18–20","mins":11},{"n":94,"date":"2027-04-02","fase":5,"faseNome":"A Lei de Moisés","ref":"Números 21–23","mins":12},{"n":95,"date":"2027-04-05","fase":5,"faseNome":"A Lei de Moisés","ref":"Números 24–26","mins":11},{"n":96,"date":"2027-04-06","fase":5,"faseNome":"A Lei de Moisés","ref":"Números 27–30","mins":12},{"n":97,"date":"2027-04-07","fase":5,"faseNome":"A Lei de Moisés","ref":"Números 31–32","mins":10},{"n":98,"date":"2027-04-08","fase":5,"faseNome":"A Lei de Moisés","ref":"Números 33–36","mins":12},{"n":99,"date":"2027-04-09","fase":5,"faseNome":"A Lei de Moisés","ref":"Deuteronômio 1–3","mins":13},{"n":100,"date":"2027-04-12","fase":5,"faseNome":"A Lei de Moisés","ref":"Deuteronômio 4–6","mins":13},{"n":101,"date":"2027-04-13","fase":5,"faseNome":"A Lei de Moisés","ref":"Deuteronômio 7–10","mins":13},{"n":102,"date":"2027-04-14","fase":5,"faseNome":"A Lei de Moisés","ref":"Deuteronômio 11–13","mins":11},{"n":103,"date":"2027-04-15","fase":5,"faseNome":"A Lei de Moisés","ref":"Deuteronômio 14–17","mins":12},{"n":104,"date":"2027-04-16","fase":5,"faseNome":"A Lei de Moisés","ref":"Deuteronômio 18–21","mins":11},{"n":105,"date":"2027-04-19","fase":5,"faseNome":"A Lei de Moisés","ref":"Deuteronômio 22–25","mins":11},{"n":106,"date":"2027-04-20","fase":5,"faseNome":"A Lei de Moisés","ref":"Deuteronômio 26–28","mins":14},{"n":107,"date":"2027-04-22","fase":5,"faseNome":"A Lei de Moisés","ref":"Deuteronômio 29–31","mins":11},{"n":108,"date":"2027-04-23","fase":5,"faseNome":"A Lei de Moisés","ref":"Deuteronômio 32–34","mins":10},{"n":109,"date":"2027-04-26","fase":6,"faseNome":"As cartas de Paulo II","ref":"Efésios 1–5","mins":12},{"n":110,"date":"2027-04-27","fase":6,"faseNome":"As cartas de Paulo II","ref":"Efésios 6 · Filipenses 1–4","mins":13},{"n":111,"date":"2027-04-28","fase":6,"faseNome":"As cartas de Paulo II","ref":"Colossenses 1–4 · 1 Tessalonicenses 1–2","mins":13},{"n":112,"date":"2027-04-29","fase":6,"faseNome":"As cartas de Paulo II","ref":"1 Tessalonicenses 3–5 · 2 Tessalonicenses 1–3 · Filemom","mins":12},{"n":113,"date":"2027-04-30","fase":7,"faseNome":"A terra prometida","ref":"Josué 1–5","mins":14},{"n":114,"date":"2027-05-03","fase":7,"faseNome":"A terra prometida","ref":"Josué 6–8","mins":13},{"n":115,"date":"2027-05-04","fase":7,"faseNome":"A terra prometida","ref":"Josué 9–10","mins":9},{"n":116,"date":"2027-05-05","fase":7,"faseNome":"A terra prometida","ref":"Josué 11–14","mins":11},{"n":117,"date":"2027-05-06","fase":7,"faseNome":"A terra prometida","ref":"Josué 15–18","mins":12},{"n":118,"date":"2027-05-07","fase":7,"faseNome":"A terra prometida","ref":"Josué 19–21","mins":10},{"n":119,"date":"2027-05-10","fase":7,"faseNome":"A terra prometida","ref":"Josué 22–24","mins":13},{"n":120,"date":"2027-05-11","fase":7,"faseNome":"A terra prometida","ref":"Juízes 1–4","mins":14},{"n":121,"date":"2027-05-12","fase":7,"faseNome":"A terra prometida","ref":"Juízes 5–7","mins":13},{"n":122,"date":"2027-05-13","fase":7,"faseNome":"A terra prometida","ref":"Juízes 8–10","mins":14},{"n":123,"date":"2027-05-14","fase":7,"faseNome":"A terra prometida","ref":"Juízes 11–14","mins":13},{"n":124,"date":"2027-05-17","fase":7,"faseNome":"A terra prometida","ref":"Juízes 15–18","mins":14},{"n":125,"date":"2027-05-18","fase":7,"faseNome":"A terra prometida","ref":"Juízes 19–21","mins":14},{"n":126,"date":"2027-05-19","fase":7,"faseNome":"A terra prometida","ref":"Rute 1–4","mins":11},{"n":127,"date":"2027-05-20","fase":8,"faseNome":"Os livros de sabedoria","ref":"Jó 1–6","mins":12},{"n":128,"date":"2027-05-21","fase":8,"faseNome":"Os livros de sabedoria","ref":"Jó 7–12","mins":11},{"n":129,"date":"2027-05-24","fase":8,"faseNome":"Os livros de sabedoria","ref":"Jó 13–19","mins":13},{"n":130,"date":"2027-05-25","fase":8,"faseNome":"Os livros de sabedoria","ref":"Jó 20–26","mins":11},{"n":131,"date":"2027-05-26","fase":8,"faseNome":"Os livros de sabedoria","ref":"Jó 27–31","mins":11},{"n":132,"date":"2027-05-28","fase":8,"faseNome":"Os livros de sabedoria","ref":"Jó 32–37","mins":13},{"n":133,"date":"2027-05-31","fase":8,"faseNome":"Os livros de sabedoria","ref":"Jó 38–42","mins":11},{"n":134,"date":"2027-06-01","fase":8,"faseNome":"Os livros de sabedoria","ref":"Provérbios 1–6","mins":13},{"n":135,"date":"2027-06-02","fase":8,"faseNome":"Os livros de sabedoria","ref":"Provérbios 7–11","mins":11},{"n":136,"date":"2027-06-03","fase":8,"faseNome":"Os livros de sabedoria","ref":"Provérbios 12–16","mins":12},{"n":137,"date":"2027-06-04","fase":8,"faseNome":"Os livros de sabedoria","ref":"Provérbios 17–21","mins":11},{"n":138,"date":"2027-06-07","fase":8,"faseNome":"Os livros de sabedoria","ref":"Provérbios 22–26","mins":12},{"n":139,"date":"2027-06-08","fase":8,"faseNome":"Os livros de sabedoria","ref":"Provérbios 27–31","mins":12},{"n":140,"date":"2027-06-09","fase":8,"faseNome":"Os livros de sabedoria","ref":"Eclesiastes 1–6","mins":14},{"n":141,"date":"2027-06-10","fase":8,"faseNome":"Os livros de sabedoria","ref":"Eclesiastes 7–12","mins":13},{"n":142,"date":"2027-06-11","fase":8,"faseNome":"Os livros de sabedoria","ref":"Cânticos 1–8","mins":13},{"n":143,"date":"2027-06-14","fase":9,"faseNome":"Os reis de Israel","ref":"1 Samuel 1–4","mins":14},{"n":144,"date":"2027-06-15","fase":9,"faseNome":"Os reis de Israel","ref":"1 Samuel 5–9","mins":14},{"n":145,"date":"2027-06-16","fase":9,"faseNome":"Os reis de Israel","ref":"1 Samuel 10–13","mins":12},{"n":146,"date":"2027-06-17","fase":9,"faseNome":"Os reis de Israel","ref":"1 Samuel 14–15","mins":12},{"n":147,"date":"2027-06-18","fase":9,"faseNome":"Os reis de Israel","ref":"1 Samuel 16–17","mins":11},{"n":148,"date":"2027-06-21","fase":9,"faseNome":"Os reis de Israel","ref":"1 Samuel 18–20","mins":13},{"n":149,"date":"2027-06-22","fase":9,"faseNome":"Os reis de Israel","ref":"1 Samuel 21–24","mins":12},{"n":150,"date":"2027-06-23","fase":9,"faseNome":"Os reis de Israel","ref":"1 Samuel 25–27","mins":12},{"n":151,"date":"2027-06-24","fase":9,"faseNome":"Os reis de Israel","ref":"1 Samuel 28–31","mins":11},{"n":152,"date":"2027-06-25","fase":9,"faseNome":"Os reis de Israel","ref":"2 Samuel 1–3","mins":12},{"n":153,"date":"2027-06-28","fase":9,"faseNome":"Os reis de Israel","ref":"2 Samuel 4–8","mins":14},{"n":154,"date":"2027-06-29","fase":9,"faseNome":"Os reis de Israel","ref":"2 Samuel 9–12","mins":12},{"n":155,"date":"2027-06-30","fase":9,"faseNome":"Os reis de Israel","ref":"2 Samuel 13–15","mins":15},{"n":156,"date":"2027-07-01","fase":9,"faseNome":"Os reis de Israel","ref":"2 Samuel 16–18","mins":13},{"n":157,"date":"2027-07-02","fase":9,"faseNome":"Os reis de Israel","ref":"2 Samuel 19–21","mins":14},{"n":158,"date":"2027-07-05","fase":9,"faseNome":"Os reis de Israel","ref":"2 Samuel 22–24","mins":11},{"n":159,"date":"2027-07-06","fase":9,"faseNome":"Os reis de Israel","ref":"1 Reis 1–2","mins":13},{"n":160,"date":"2027-07-07","fase":9,"faseNome":"Os reis de Israel","ref":"1 Reis 3–5","mins":10},{"n":161,"date":"2027-07-08","fase":9,"faseNome":"Os reis de Israel","ref":"1 Reis 6–7","mins":12},{"n":162,"date":"2027-07-09","fase":9,"faseNome":"Os reis de Israel","ref":"1 Reis 8–9","mins":13},{"n":163,"date":"2027-07-12","fase":9,"faseNome":"Os reis de Israel","ref":"1 Reis 10–12","mins":14},{"n":164,"date":"2027-07-13","fase":9,"faseNome":"Os reis de Israel","ref":"1 Reis 13–15","mins":13},{"n":165,"date":"2027-07-14","fase":9,"faseNome":"Os reis de Israel","ref":"1 Reis 16–18","mins":14},{"n":166,"date":"2027-07-15","fase":9,"faseNome":"Os reis de Israel","ref":"1 Reis 19–20","mins":9},{"n":167,"date":"2027-07-16","fase":9,"faseNome":"Os reis de Israel","ref":"1 Reis 21–22","mins":11},{"n":168,"date":"2027-07-19","fase":9,"faseNome":"Os reis de Israel","ref":"2 Reis 1–3","mins":10},{"n":169,"date":"2027-07-20","fase":9,"faseNome":"Os reis de Israel","ref":"2 Reis 4–6","mins":14},{"n":170,"date":"2027-07-21","fase":9,"faseNome":"Os reis de Israel","ref":"2 Reis 7–9","mins":13},{"n":171,"date":"2027-07-22","fase":9,"faseNome":"Os reis de Israel","ref":"2 Reis 10–12","mins":12},{"n":172,"date":"2027-07-23","fase":9,"faseNome":"Os reis de Israel","ref":"2 Reis 13–15","mins":12},{"n":173,"date":"2027-07-26","fase":9,"faseNome":"Os reis de Israel","ref":"2 Reis 16–18","mins":14},{"n":174,"date":"2027-07-27","fase":9,"faseNome":"Os reis de Israel","ref":"2 Reis 19–22","mins":14},{"n":175,"date":"2027-07-28","fase":9,"faseNome":"Os reis de Israel","ref":"2 Reis 23–25","mins":13},{"n":176,"date":"2027-07-29","fase":10,"faseNome":"As cartas de Paulo III","ref":"1 Timóteo 1–6","mins":11},{"n":177,"date":"2027-07-30","fase":10,"faseNome":"As cartas de Paulo III","ref":"2 Timóteo 1–4 · Tito 1–3","mins":12},{"n":178,"date":"2027-08-02","fase":10,"faseNome":"As cartas de Paulo III","ref":"Hebreus 1–6","mins":11},{"n":179,"date":"2027-08-03","fase":10,"faseNome":"As cartas de Paulo III","ref":"Hebreus 7–10","mins":12},{"n":180,"date":"2027-08-04","fase":10,"faseNome":"As cartas de Paulo III","ref":"Hebreus 11–13","mins":10},{"n":181,"date":"2027-08-05","fase":11,"faseNome":"Os Salmos","ref":"Salmos 1–11","mins":11},{"n":182,"date":"2027-08-06","fase":11,"faseNome":"Os Salmos","ref":"Salmos 12–20","mins":11},{"n":183,"date":"2027-08-09","fase":11,"faseNome":"Os Salmos","ref":"Salmos 21–29","mins":11},{"n":184,"date":"2027-08-10","fase":11,"faseNome":"Os Salmos","ref":"Salmos 30–36","mins":11},{"n":185,"date":"2027-08-11","fase":11,"faseNome":"Os Salmos","ref":"Salmos 37–43","mins":11},{"n":186,"date":"2027-08-12","fase":11,"faseNome":"Os Salmos","ref":"Salmos 44–51","mins":11},{"n":187,"date":"2027-08-13","fase":11,"faseNome":"Os Salmos","ref":"Salmos 52–62","mins":12},{"n":188,"date":"2027-08-16","fase":11,"faseNome":"Os Salmos","ref":"Salmos 63–69","mins":11},{"n":189,"date":"2027-08-17","fase":11,"faseNome":"Os Salmos","ref":"Salmos 70–77","mins":11},{"n":190,"date":"2027-08-18","fase":11,"faseNome":"Os Salmos","ref":"Salmos 78–84","mins":13},{"n":191,"date":"2027-08-19","fase":11,"faseNome":"Os Salmos","ref":"Salmos 85–92","mins":12},{"n":192,"date":"2027-08-20","fase":11,"faseNome":"Os Salmos","ref":"Salmos 93–103","mins":12},{"n":193,"date":"2027-08-23","fase":11,"faseNome":"Os Salmos","ref":"Salmos 104–107","mins":12},{"n":194,"date":"2027-08-24","fase":11,"faseNome":"Os Salmos","ref":"Salmos 108–118","mins":11},{"n":195,"date":"2027-08-25","fase":11,"faseNome":"Os Salmos","ref":"Salmos 119–120","mins":12},{"n":196,"date":"2027-08-26","fase":11,"faseNome":"Os Salmos","ref":"Salmos 121–138","mins":12},{"n":197,"date":"2027-08-27","fase":11,"faseNome":"Os Salmos","ref":"Salmos 139–150","mins":13},{"n":198,"date":"2027-08-30","fase":12,"faseNome":"A volta do exílio","ref":"1 Crônicas 1–3","mins":9},{"n":199,"date":"2027-08-31","fase":12,"faseNome":"A volta do exílio","ref":"1 Crônicas 4–6","mins":13},{"n":200,"date":"2027-09-01","fase":12,"faseNome":"A volta do exílio","ref":"1 Crônicas 7–10","mins":12},{"n":201,"date":"2027-09-02","fase":12,"faseNome":"A volta do exílio","ref":"1 Crônicas 11–14","mins":12},{"n":202,"date":"2027-09-03","fase":12,"faseNome":"A volta do exílio","ref":"1 Crônicas 15–18","mins":12},{"n":203,"date":"2027-09-06","fase":12,"faseNome":"A volta do exílio","ref":"1 Crônicas 19–22","mins":11},{"n":204,"date":"2027-09-08","fase":12,"faseNome":"A volta do exílio","ref":"1 Crônicas 23–26","mins":11},{"n":205,"date":"2027-09-09","fase":12,"faseNome":"A volta do exílio","ref":"1 Crônicas 27–29","mins":12},{"n":206,"date":"2027-09-10","fase":12,"faseNome":"A volta do exílio","ref":"2 Crônicas 1–5","mins":12},{"n":207,"date":"2027-09-13","fase":12,"faseNome":"A volta do exílio","ref":"2 Crônicas 6–8","mins":12},{"n":208,"date":"2027-09-14","fase":12,"faseNome":"A volta do exílio","ref":"2 Crônicas 9–13","mins":14},{"n":209,"date":"2027-09-15","fase":12,"faseNome":"A volta do exílio","ref":"2 Crônicas 14–19","mins":14},{"n":210,"date":"2027-09-16","fase":12,"faseNome":"A volta do exílio","ref":"2 Crônicas 20–23","mins":13},{"n":211,"date":"2027-09-17","fase":12,"faseNome":"A volta do exílio","ref":"2 Crônicas 24–27","mins":12},{"n":212,"date":"2027-09-20","fase":12,"faseNome":"A volta do exílio","ref":"2 Crônicas 28–30","mins":13},{"n":213,"date":"2027-09-21","fase":12,"faseNome":"A volta do exílio","ref":"2 Crônicas 31–33","mins":11},{"n":214,"date":"2027-09-22","fase":12,"faseNome":"A volta do exílio","ref":"2 Crônicas 34–36","mins":13},{"n":215,"date":"2027-09-23","fase":12,"faseNome":"A volta do exílio","ref":"Esdras 1–4","mins":12},{"n":216,"date":"2027-09-24","fase":12,"faseNome":"A volta do exílio","ref":"Esdras 5–7","mins":10},{"n":217,"date":"2027-09-27","fase":12,"faseNome":"A volta do exílio","ref":"Esdras 8–10","mins":11},{"n":218,"date":"2027-09-28","fase":12,"faseNome":"A volta do exílio","ref":"Neemias 1–4","mins":12},{"n":219,"date":"2027-09-29","fase":12,"faseNome":"A volta do exílio","ref":"Neemias 5–7","mins":11},{"n":220,"date":"2027-09-30","fase":12,"faseNome":"A volta do exílio","ref":"Neemias 8–10","mins":12},{"n":221,"date":"2027-10-01","fase":12,"faseNome":"A volta do exílio","ref":"Neemias 11–13","mins":12},{"n":222,"date":"2027-10-04","fase":12,"faseNome":"A volta do exílio","ref":"Ester 1–4","mins":12},{"n":223,"date":"2027-10-05","fase":12,"faseNome":"A volta do exílio","ref":"Ester 5–10","mins":14},{"n":224,"date":"2027-10-06","fase":13,"faseNome":"As cartas de Tiago, Pedro, João e Judas","ref":"Tiago 1–5","mins":11},{"n":225,"date":"2027-10-07","fase":13,"faseNome":"As cartas de Tiago, Pedro, João e Judas","ref":"1 Pedro 1–5","mins":11},{"n":226,"date":"2027-10-08","fase":13,"faseNome":"As cartas de Tiago, Pedro, João e Judas","ref":"2 Pedro 1–3 · 1 João 1–2","mins":11},{"n":227,"date":"2027-10-11","fase":13,"faseNome":"As cartas de Tiago, Pedro, João e Judas","ref":"1 João 3–5 · 2 João · 3 João · Judas","mins":13},{"n":228,"date":"2027-10-13","fase":14,"faseNome":"Os grandes profetas I","ref":"Isaías 1–4","mins":9},{"n":229,"date":"2027-10-14","fase":14,"faseNome":"Os grandes profetas I","ref":"Isaías 5–8","mins":11},{"n":230,"date":"2027-10-15","fase":14,"faseNome":"Os grandes profetas I","ref":"Isaías 9–13","mins":12},{"n":231,"date":"2027-10-18","fase":14,"faseNome":"Os grandes profetas I","ref":"Isaías 14–19","mins":13},{"n":232,"date":"2027-10-19","fase":14,"faseNome":"Os grandes profetas I","ref":"Isaías 20–25","mins":12},{"n":233,"date":"2027-10-20","fase":14,"faseNome":"Os grandes profetas I","ref":"Isaías 26–29","mins":11},{"n":234,"date":"2027-10-21","fase":14,"faseNome":"Os grandes profetas I","ref":"Isaías 30–34","mins":13},{"n":235,"date":"2027-10-22","fase":14,"faseNome":"Os grandes profetas I","ref":"Isaías 35–38","mins":12},{"n":236,"date":"2027-10-25","fase":14,"faseNome":"Os grandes profetas I","ref":"Isaías 39–42","mins":11},{"n":237,"date":"2027-10-26","fase":14,"faseNome":"Os grandes profetas I","ref":"Isaías 43–45","mins":11},{"n":238,"date":"2027-10-27","fase":14,"faseNome":"Os grandes profetas I","ref":"Isaías 46–50","mins":12},{"n":239,"date":"2027-10-28","fase":14,"faseNome":"Os grandes profetas I","ref":"Isaías 51–56","mins":12},{"n":240,"date":"2027-10-29","fase":14,"faseNome":"Os grandes profetas I","ref":"Isaías 57–61","mins":12},{"n":241,"date":"2027-11-01","fase":14,"faseNome":"Os grandes profetas I","ref":"Isaías 62–66","mins":13},{"n":242,"date":"2027-11-03","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 1–3","mins":11},{"n":243,"date":"2027-11-04","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 4–6","mins":11},{"n":244,"date":"2027-11-05","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 7–9","mins":11},{"n":245,"date":"2027-11-08","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 10–13","mins":12},{"n":246,"date":"2027-11-09","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 14–17","mins":13},{"n":247,"date":"2027-11-10","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 18–21","mins":10},{"n":248,"date":"2027-11-11","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 22–24","mins":11},{"n":249,"date":"2027-11-12","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 25–28","mins":14},{"n":250,"date":"2027-11-16","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 29–31","mins":13},{"n":251,"date":"2027-11-17","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 32–33","mins":10},{"n":252,"date":"2027-11-18","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 34–36","mins":11},{"n":253,"date":"2027-11-19","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 37–40","mins":12},{"n":254,"date":"2027-11-22","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 41–44","mins":14},{"n":255,"date":"2027-11-23","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 45–48","mins":10},{"n":256,"date":"2027-11-24","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 49–50","mins":11},{"n":257,"date":"2027-11-25","fase":14,"faseNome":"Os grandes profetas I","ref":"Jeremias 51–52","mins":13},{"n":258,"date":"2027-11-26","fase":14,"faseNome":"Os grandes profetas I","ref":"Lamentações 1–5","mins":14},{"n":259,"date":"2027-11-29","fase":15,"faseNome":"Os grandes profetas II","ref":"Ezequiel 1–5","mins":13},{"n":260,"date":"2027-11-30","fase":15,"faseNome":"Os grandes profetas II","ref":"Ezequiel 6–10","mins":13},{"n":261,"date":"2027-12-01","fase":15,"faseNome":"Os grandes profetas II","ref":"Ezequiel 11–14","mins":13},{"n":262,"date":"2027-12-02","fase":15,"faseNome":"Os grandes profetas II","ref":"Ezequiel 15–17","mins":12},{"n":263,"date":"2027-12-03","fase":15,"faseNome":"Os grandes profetas II","ref":"Ezequiel 18–20","mins":12},{"n":264,"date":"2027-12-06","fase":15,"faseNome":"Os grandes profetas II","ref":"Ezequiel 21–23","mins":13},{"n":265,"date":"2027-12-07","fase":15,"faseNome":"Os grandes profetas II","ref":"Ezequiel 24–27","mins":12},{"n":266,"date":"2027-12-08","fase":15,"faseNome":"Os grandes profetas II","ref":"Ezequiel 28–30","mins":9},{"n":267,"date":"2027-12-09","fase":15,"faseNome":"Os grandes profetas II","ref":"Ezequiel 31–33","mins":12},{"n":268,"date":"2027-12-10","fase":15,"faseNome":"Os grandes profetas II","ref":"Ezequiel 34–36","mins":11},{"n":269,"date":"2027-12-13","fase":15,"faseNome":"Os grandes profetas II","ref":"Ezequiel 37–39","mins":11},{"n":270,"date":"2027-12-14","fase":15,"faseNome":"Os grandes profetas II","ref":"Ezequiel 40–42","mins":13},{"n":271,"date":"2027-12-15","fase":15,"faseNome":"Os grandes profetas II","ref":"Ezequiel 43–45","mins":12},{"n":272,"date":"2027-12-16","fase":15,"faseNome":"Os grandes profetas II","ref":"Ezequiel 46–48","mins":12},{"n":273,"date":"2027-12-17","fase":15,"faseNome":"Os grandes profetas II","ref":"Daniel 1–3","mins":14},{"n":274,"date":"2027-12-20","fase":15,"faseNome":"Os grandes profetas II","ref":"Daniel 4–6","mins":14},{"n":275,"date":"2027-12-21","fase":15,"faseNome":"Os grandes profetas II","ref":"Daniel 7–9","mins":12},{"n":276,"date":"2027-12-22","fase":15,"faseNome":"Os grandes profetas II","ref":"Daniel 10–12","mins":11},{"n":277,"date":"2027-12-23","fase":16,"faseNome":"Os doze profetas menores","ref":"Oseias 1–8","mins":13},{"n":278,"date":"2027-12-24","fase":16,"faseNome":"Os doze profetas menores","ref":"Oseias 9–14 · Joel 1","mins":12},{"n":279,"date":"2027-12-27","fase":16,"faseNome":"Os doze profetas menores","ref":"Joel 2–3 · Amós 1–3","mins":12},{"n":280,"date":"2027-12-28","fase":16,"faseNome":"Os doze profetas menores","ref":"Amós 4–9","mins":13},{"n":281,"date":"2027-12-29","fase":16,"faseNome":"Os doze profetas menores","ref":"Obadias · Jonas 1–4 · Miqueias 1","mins":11},{"n":282,"date":"2027-12-30","fase":16,"faseNome":"Os doze profetas menores","ref":"Miqueias 2–7","mins":12},{"n":283,"date":"2027-12-31","fase":16,"faseNome":"Os doze profetas menores","ref":"Naum 1–3 · Habacuque 1–3","mins":12},{"n":284,"date":"2028-01-03","fase":16,"faseNome":"Os doze profetas menores","ref":"Sofonias 1–3 · Ageu 1–2","mins":12},{"n":285,"date":"2028-01-04","fase":16,"faseNome":"Os doze profetas menores","ref":"Zacarias 1–7","mins":12},{"n":286,"date":"2028-01-05","fase":16,"faseNome":"Os doze profetas menores","ref":"Zacarias 8–13","mins":12},{"n":287,"date":"2028-01-06","fase":16,"faseNome":"Os doze profetas menores","ref":"Zacarias 14 · Malaquias 1–4","mins":11},{"n":288,"date":"2028-01-07","fase":17,"faseNome":"O Apocalipse","ref":"Apocalipse 1–4","mins":11},{"n":289,"date":"2028-01-10","fase":17,"faseNome":"O Apocalipse","ref":"Apocalipse 5–9","mins":11},{"n":290,"date":"2028-01-11","fase":17,"faseNome":"O Apocalipse","ref":"Apocalipse 10–14","mins":12},{"n":291,"date":"2028-01-12","fase":17,"faseNome":"O Apocalipse","ref":"Apocalipse 15–18","mins":10},{"n":292,"date":"2028-01-13","fase":17,"faseNome":"O Apocalipse","ref":"Apocalipse 19–22","mins":11}],"fases":[["Os Evangelhos","Mateus, Marcos, Lucas, João"],["Os primeiros cristãos","Atos"],["O começo de tudo","Gênesis, Êxodo"],["As cartas de Paulo I","Romanos, 1 Coríntios, 2 Coríntios, Gálatas"],["A Lei de Moisés","Levítico, Números, Deuteronômio"],["As cartas de Paulo II","Efésios, Filipenses, Colossenses, 1 Tessalonicenses, 2 Tessalonicenses, Filemom"],["A terra prometida","Josué, Juízes, Rute"],["Os livros de sabedoria","Jó, Provérbios, Eclesiastes, Cânticos"],["Os reis de Israel","1 Samuel, 2 Samuel, 1 Reis, 2 Reis"],["As cartas de Paulo III","1 Timóteo, 2 Timóteo, Tito, Hebreus"],["Os Salmos","Salmos"],["A volta do exílio","1 Crônicas, 2 Crônicas, Esdras, Neemias, Ester"],["As cartas de Tiago, Pedro, João e Judas","Tiago, 1 Pedro, 2 Pedro, 1 João, 2 João, 3 João, Judas"],["Os grandes profetas I","Isaías, Jeremias, Lamentações"],["Os grandes profetas II","Ezequiel, Daniel"],["Os doze profetas menores","Oseias, Joel, Amós, Obadias, Jonas, Miqueias, Naum, Habacuque, Sofonias, Ageu, Zacarias, Malaquias"],["O Apocalipse","Apocalipse"]]}</script>
+<script>
+(function(){
+const DATA = JSON.parse(document.getElementById('data').textContent);
+const DAYS = DATA.days, FASES = DATA.fases;
+let COM = {};                       // comentários: comentarios.json (atualizado toda semana)
+const TXT = {};                     // textos já baixados
+const MESES=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+const SEM=['domingo','segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sábado'];
+const AURAS=[['15% 20%','85% 35%','45% 95%'],['80% 15%','10% 60%','70% 90%'],['30% 85%','90% 70%','20% 10%'],['60% 10%','5% 40%','95% 95%'],['10% 90%','75% 25%','40% 40%'],['90% 85%','25% 20%','55% 60%']];
+const aura = k => { const [a,b,c]=AURAS[k%AURAS.length];
+  return `background:radial-gradient(circle at 50% 50%,var(--aw) 0,transparent 32%),radial-gradient(circle at ${a},var(--a1) 0,transparent 62%),radial-gradient(circle at ${b},var(--a2) 0,transparent 62%),radial-gradient(circle at ${c},var(--a3) 0,transparent 62%),var(--abase)`; };
+const COR = {terra:'#E0957A',mar:'#82B2CE',trigo:'#E6C27E',luz:'#C9A3E3'};
+const dot = k => `<span class="dot" style="background:${COR[k]}"></span>`;
+const pd = iso => { const [y,m,d]=iso.split('-').map(Number); return new Date(y,m-1,d); };
+const longo = iso => { const d=pd(iso); return `${SEM[d.getDay()]}, ${d.getDate()} de ${MESES[d.getMonth()]}`; };
+const curto = iso => { const d=pd(iso); return `${String(d.getDate()).padStart(2,'0')}/${String(d.getMonth()+1).padStart(2,'0')}`; };
+const todayISO = () => { const d=new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; };
+const byN = n => DAYS[n-1];
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const inline = s => esc(s).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+const titulo = d => (COM[d.n] && COM[d.n].titulo) || d.ref;
+const $app = document.getElementById('app');
+
+/* ---------- estado ---------- */
+const LS='biblia-espirita-v1';
+let state = { lidos: [], fs: 17, t: 0, nome: '' };
+try { const s = JSON.parse(localStorage.getItem(LS)||'null'); if (s && Array.isArray(s.lidos)) state = Object.assign(state, s); } catch(e){}
+let lidos = new Set(state.lidos);
+function persist(){ state.lidos=[...lidos].sort((a,b)=>a-b); state.t=Date.now(); try { localStorage.setItem(LS, JSON.stringify(state)); } catch(e){} }
+function applyFs(){ document.documentElement.style.setProperty('--fs', state.fs+'px'); }
+applyFs();
+function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toast.h); toast.h=setTimeout(()=>t.classList.remove('show'),1800); }
+function toggle(n){ if (lidos.has(n)) { lidos.delete(n); toast('Desmarcado'); } else { lidos.add(n); toast('Leitura marcada como lida ♡'); } persist(); }
+
+/* ---------- dados de fora ---------- */
+fetch('comentarios.json', {cache:'no-store'}).then(r => r.ok ? r.json() : {}).then(j => { COM = j || {}; render(false); }).catch(() => {});
+function texto(n){
+  if (TXT[n]) return Promise.resolve(TXT[n]);
+  return fetch(`textos/${String(n).padStart(3,'0')}.json`).then(r => { if(!r.ok) throw 0; return r.json(); }).then(j => (TXT[n]=j));
+}
+// "Mateus 5:14-16" -> {l, c, a, z}
+function parseRef(r){ const m = String(r||'').match(/^(.+?)\s+(\d+):(\d+)(?:\s*[-–]\s*(\d+))?$/); return m ? {l:m[1], c:+m[2], a:+m[3], z:+(m[4]||m[3])} : null; }
+function versiculo(n){
+  const c = COM[n]; const r = c && parseRef(c.chave); if (!r) return Promise.resolve(null);
+  return texto(n).then(caps => { const k = caps.find(x => x.l===r.l && x.c===r.c); if (!k) return null;
+    return { ref: `${r.l} ${r.c}:${r.a}${r.z!==r.a?'–'+r.z:''}`, txt: k.v.slice(r.a-1, r.z).join(' '), r }; }).catch(() => null);
+}
+function htmlTexto(caps, n){
+  const r = COM[n] && parseRef(COM[n].chave);
+  const multi = new Set(caps.map(x=>x.l)).size > 1; let o = '', last = '';
+  caps.forEach(k => {
+    if (multi && k.l !== last) { o += `<h2 class="bl">${esc(k.l)}</h2>`; last = k.l; }
+    if (k.n > 1) o += `<h3 class="cap">${k.l==='Salmos'?'Salmo':'Capítulo'} ${k.c}</h3>`;
+    if (k.s) o += `<p class="sobre">${esc(k.s)}</p>`;
+    o += '<p class="vv">' + k.v.map((v,i) => { const vk = r && r.l===k.l && r.c===k.c && i+1>=r.a && i+1<=r.z;
+      return `<sup>${i+1}</sup>${vk?'<span class="vk">':''}${esc(v)}${vk?'</span>':''}`; }).join(' ') + '</p>';
+  });
+  return o;
+}
+
+/* ---------- views ---------- */
+function plan(){
+  const t = todayISO();
+  const hoje = DAYS.find(d=>d.date===t);
+  const firstUnread = DAYS.find(d=>!lidos.has(d.n));
+  const atrasadas = DAYS.filter(d=>d.date<t && !lidos.has(d.n));
+  let alvo, rot;
+  if (hoje && !lidos.has(hoje.n) && !atrasadas.length) { alvo=hoje; rot='leitura de hoje'; }
+  else if (atrasadas.length) { alvo=atrasadas[0]; rot = 'continuar de onde parou'; }
+  else if (firstUnread) { alvo=firstUnread; rot = firstUnread.date===t ? 'leitura de hoje' : 'próxima leitura · '+longo(firstUnread.date); }
+  return {t, hoje, alvo, rot, atrasadas};
+}
+
+function vHoje(){
+  const {t, hoje, alvo, rot, atrasadas} = plan();
+  const h = new Date().getHours();
+  const saud = h<12 ? 'Bom dia' : h<18 ? 'Boa tarde' : 'Boa noite';
+  let o = `<div class="hello"><span class="k">${longo(t)}</span><h1>${saud}${state.nome?`, <i>${esc(state.nome)}</i>`:' <i>♡</i>'}</h1></div>`;
+  if (!state.nome) o += `<form class="card nm" id="nmForm"><label for="nmIn" class="k">como você quer ser chamada?</label><div class="nmrow"><input id="nmIn" name="nome" autocomplete="given-name" placeholder="Seu nome" maxlength="30"><button class="btn" type="submit">Salvar</button></div></form>`;
+  if (alvo){
+    o += `<section class="aura hero" style="${aura(alvo.n)}">
+      <span class="k">${rot}</span>
+      <div><div class="dn">Dia ${alvo.n} · ${esc(alvo.faseNome)}</div><h2>${esc(titulo(alvo))}</h2></div>
+      <div class="meta">${esc(alvo.ref)} · ≈ ${alvo.mins} min de leitura</div>
+      <div><a class="btn" href="#dia-${alvo.n}">Ler agora</a></div></section>`;
+    if (hoje && lidos.has(hoje.n) && alvo.n!==hoje.n) o += `<p class="note">A leitura de hoje (Dia ${hoje.n}) já está feita ♡</p>`;
+    else if (!hoje && t < DAYS[0].date) o += `<p class="note">A leitura começa ${longo(DAYS[0].date)}.</p>`;
+    else if (!hoje) o += `<p class="note">Hoje não tem leitura no cronograma. ${atrasadas.length? 'Dá pra pôr em dia, sem pressa.' : 'Aproveite o descanso.'}</p>`;
+    if (atrasadas.length>1) o += `<p class="note">${atrasadas.length} leituras pra pôr em dia. É só seguir na ordem.</p>`;
+  } else {
+    o += `<section class="aura hero" style="${aura(2)}"><span class="k">fim</span><h2>Você leu a Bíblia inteira ♡</h2><p>De Gênesis ao Apocalipse.</p></section>`;
+  }
+  const nl = lidos.size, pct = Math.round(nl/DAYS.length*100), fim = DAYS[DAYS.length-1].date;
+  o += `<div class="stack"><section class="card prog"><span class="k">seu caminho</span>
+     <div class="big">${nl} <small>de ${DAYS.length} leituras · ${pct}%</small></div>
+     <div class="bar"><i style="width:${pct}%"></i></div>
+     <div class="sub">Termina em ${longo(fim)} de ${fim.slice(0,4)}, se seguir o cronograma.</div>
+     ${semana(alvo)}</section>`;
+  const vd = alvo || DAYS[DAYS.length-1], c = COM[vd.n];
+  o += `<section class="card" id="vsCard" hidden><div class="bh">${dot('mar')}<span>versículo do dia</span></div><p class="vs" id="vsTxt"></p><div class="ref" id="vsRef"></div></section>`;
+  if (c && c.hoje) o += `<section class="card"><div class="bh">${dot('terra')}<span>pra hoje</span></div><p style="margin:8px 0 0;font-size:15px">${inline(c.hoje)}</p></section>`;
+  o += '</div>';
+  versiculo(vd.n).then(v => { const card=document.getElementById('vsCard'); if (!v || !card) return;
+    document.getElementById('vsTxt').textContent = '“'+v.txt+'”'; document.getElementById('vsRef').textContent = v.ref+' · Bíblia Livre'; card.hidden=false; });
+  return o;
+}
+function semana(alvo){
+  const ref = alvo ? pd(alvo.date) : new Date();
+  const seg = new Date(ref); seg.setDate(ref.getDate() - ((ref.getDay()+6)%7));
+  const t = todayISO(); let o = '<div class="week">';
+  for (let i=0;i<5;i++){ const d=new Date(seg); d.setDate(seg.getDate()+i);
+    const iso=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    const dd = DAYS.find(x=>x.date===iso); const wd = SEM[d.getDay()].slice(0,3);
+    if (!dd) { o += `<a class="off" aria-disabled="true"><span class="wd">${wd}</span><span class="c">–</span>${d.getDate()}</a>`; continue; }
+    const cls = lidos.has(dd.n)?'lido':(iso===t?'hoje':'');
+    o += `<a class="${cls}" href="#dia-${dd.n}" aria-label="Dia ${dd.n}, ${longo(iso)}${lidos.has(dd.n)?', lido':''}"><span class="wd">${wd}</span><span class="c">${lidos.has(dd.n)?'✓':dd.n}</span>${curto(iso)}</a>`; }
+  return o + '</div>';
+}
+
+function vDia(n){
+  const d = byN(n); if (!d) return vHoje();
+  const lido = lidos.has(n), p = byN(n-1), nx = byN(n+1), c = COM[n];
+  const esp = c && c.explicacao ? c.explicacao.trim().split('\n').filter(x=>x.trim()).map(x =>
+      /^\*\*Pra conversar:\*\*/.test(x) ? `<p class="conv">${inline(x)}</p>` : `<p>${inline(x)}</p>`).join('') : '';
+  texto(n).then(caps => { const el=document.getElementById('txt'); if (el && location.hash==='#dia-'+n) { el.innerHTML = htmlTexto(caps, n); onScroll(); } })
+    .catch(() => { const el=document.getElementById('txt'); if (el) el.innerHTML='<p class="loading">Não deu pra carregar o texto agora. Confira a internet e abra de novo.</p>'; });
+  return `<div class="rbar"><div class="in">
+      <a class="ib" href="#cronograma" aria-label="Voltar ao cronograma"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></a>
+      <div class="t">Dia ${n} · ${curto(d.date)}</div>
+      <button class="ib" id="fsBtn" aria-label="Tamanho da letra">Aa</button>
+      <button class="ib ${lido?'on':''}" id="chkTop" aria-pressed="${lido}" aria-label="Marcar como lido"><svg viewBox="0 0 24 24" fill="${lido?'currentColor':'none'}" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7.5-4.4-7.5-10A4.3 4.3 0 0 1 12 7.6 4.3 4.3 0 0 1 19.5 10c0 5.6-7.5 10-7.5 10z"/></svg></button>
+    </div><div class="rprog"><i id="rp"></i></div></div>
+    <header class="aura dh" style="${aura(n)}"><span class="k">${esc(d.faseNome)}</span><div class="dn">Dia ${n}</div><div class="dd">${longo(d.date)} · ≈ ${d.mins} min de leitura</div></header>
+    <h1 class="dt">${esc(titulo(d))}</h1>${c && c.titulo ? `<div class="dm"><b>${esc(d.ref)}</b></div>` : '<div class="dm"></div>'}
+    <article class="reader" id="txt">${TXT[n] ? htmlTexto(TXT[n], n) : '<p class="loading">Carregando o texto…</p>'}</article>
+    ${esp ? `<section class="esp"><span class="lbl">na visão espírita</span>${esp}</section>
+    <section class="closing">
+      ${c.hoje?`<div class="blk"><div class="bh">${dot('terra')}<span>pra hoje</span></div><p>${inline(c.hoje)}</p></div>`:''}
+      ${c.kardec?`<div class="blk"><div class="bh">${dot('trigo')}<span>pra aprofundar</span></div><p>${inline(c.kardec)}</p></div>`:''}
+    </section>` : `<section class="esp"><span class="lbl">na visão espírita</span><p>A explicação deste dia fica pronta até a semana anterior. Por enquanto, leia o texto com calma e anote o que chamou a sua atenção.</p></section>`}
+    <div class="markbox"><button class="btn ${lido?'done':''}" id="chkBig">${lido?'Lido ♡ · toque pra desmarcar':'Marcar como lido'}</button></div>
+    <nav class="pager" aria-label="Outros dias">
+      ${p?`<a href="#dia-${p.n}"><small>‹ Dia ${p.n}</small><span>${esc(titulo(p))}</span></a>`:'<span></span>'}
+      ${nx?`<a class="nx" href="#dia-${nx.n}"><small>Dia ${nx.n} ›</small><span>${esc(titulo(nx))}</span></a>`:'<span></span>'}
+    </nav>`;
+}
+
+function vCrono(){
+  const t = todayISO(), nl = lidos.size;
+  let o = `<div class="ph"><span class="k">de Gênesis ao Apocalipse</span><h1>Crono<i>grama</i></h1><p>${nl} de ${DAYS.length} leituras feitas. Toque no círculo pra marcar e no texto pra ler.</p></div>`;
+  let mes = '', fase = 0;
+  DAYS.forEach(d => {
+    const m = d.date.slice(0,7);
+    if (d.fase!==fase || m!==mes){ if (mes) o += '</div>';
+      if (d.fase!==fase){ fase=d.fase; o += `<div class="fase">${fase}. ${esc(d.faseNome)}</div>`; }
+      mes=m; const dd=pd(d.date); o += `<h2 class="mes">${MESES[dd.getMonth()]} ${dd.getFullYear()}</h2><div class="list">`; }
+    const l = lidos.has(d.n), cls = ['it', l?'lido':'', d.date===t?'hoje':'', (!l && d.date<t)?'atraso':''].join(' ');
+    const tt = COM[d.n] && COM[d.n].titulo;
+    o += `<div class="${cls}" id="c${d.n}"><button class="tg" data-n="${d.n}" aria-pressed="${l}" aria-label="Dia ${d.n}: ${l?'lido':'não lido'}"><i>${l?'✓':''}</i></button>
+      <a href="#dia-${d.n}"><span class="when"><b>Dia ${d.n}</b>${curto(d.date)} ${SEM[pd(d.date).getDay()].slice(0,3)}</span><span class="what">${esc(tt||d.ref)}<small>${tt?esc(d.ref)+' · ':''}${d.mins} min</small></span></a></div>`;
+  });
+  o += '</div><p class="note">Sem leitura nos fins de semana e feriados nacionais. Se pular um dia, é só continuar de onde parou.</p>';
+  return o;
+}
+
+function vSobre(){
+  const fsOpts=[15,17,19,21];
+  return `<div class="ph"><span class="k">antes de começar</span><h1>Como <i>usar</i></h1></div>
+  <div class="stack" style="margin-top:0">
+  <section class="card"><div class="steps">
+    <div class="step"><div class="sn">1</div><div><b>Leia o texto do dia.</b> São de 9 a 15 minutos, com os capítulos inteiros. O versículo-chave aparece marcado.</div></div>
+    <div class="step"><div class="sn">2</div><div><b>Leia a visão espírita.</b> Uma explicação simples do que você leu à luz da Doutrina Espírita, com as ideias principais em negrito. Quando o trecho é lido de outro jeito pelas igrejas evangélicas, tem um quadro “pra conversar”.</div></div>
+    <div class="step"><div class="sn">3</div><div><b>Leve pra vida.</b> O “pra hoje” é uma aplicação prática. Em “pra aprofundar” estão os livros de Kardec que falam do assunto.</div></div>
+    <div class="step"><div class="sn">4</div><div><b>Toque no ♡.</b> Marca a leitura como lida. A aba Hoje sempre abre na próxima leitura.</div></div>
+  </div></section>
+  <section class="card"><span class="k">a ordem da leitura</span>
+    <p style="margin:8px 0 10px;font-size:14px">A Bíblia inteira, alternando o Novo e o Antigo Testamento pra não ficar pesado. Começa por Jesus.</p>
+    <ol class="fases">${FASES.map(f=>`<li>${esc(f[0])} <small>· ${esc(f[1])}</small></li>`).join('')}</ol></section>
+  <section class="card"><span class="k">tamanho da letra</span>
+    <div style="margin-top:10px" class="seg" role="group" aria-label="Tamanho da letra">${fsOpts.map((v,i)=>`<button data-fs="${v}" aria-pressed="${state.fs===v}" style="font-size:${12+i*2.5}px">A</button>`).join('')}</div>
+    <p class="reader" style="margin:12px 0 0">“Lâmpada para os meus pés é a tua palavra, e luz para o meu caminho.”</p></section>
+  <section class="card"><div class="bh">${dot('mar')}<span>seu progresso</span></div><p style="margin:8px 0 0;font-size:14px">Fica salvo neste aparelho e neste navegador.</p></section>
+  <p class="fine">Texto bíblico: Bíblia Livre (BLIVRE), do Projeto Bíblia Livre, licença Creative Commons Atribuição 3.0 Brasil (CC BY 3.0 BR). As explicações foram escritas à luz das obras de Allan Kardec.</p>
+  </div>`;
+}
+
+/* ---------- roteador ---------- */
+let lastView = '';
+function render(scroll=true){
+  const h = (location.hash||'#hoje').slice(1);
+  let html, tab='hoje', m;
+  if ((m=h.match(/^dia-(\d+)$/))) { html=vDia(+m[1]); tab='cronograma'; }
+  else if (h==='cronograma') { html=vCrono(); tab='cronograma'; }
+  else if (h==='sobre') { html=vSobre(); tab='sobre'; }
+  else html=vHoje();
+  const y = window.scrollY;
+  $app.innerHTML = html;
+  document.querySelectorAll('.tabs a').forEach(a=>{ if(a.dataset.tab===tab) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
+  if (scroll && h!==lastView) {
+    if (h==='cronograma') { const p=plan(); const el=p.alvo && document.getElementById('c'+p.alvo.n); window.scrollTo(0, el ? Math.max(0, el.getBoundingClientRect().top + window.scrollY - 160) : 0); }
+    else window.scrollTo(0,0);
+  } else window.scrollTo(0,y);
+  lastView = h;
+  onScroll();
+}
+window.addEventListener('hashchange', ()=>render(true));
+
+$app.addEventListener('click', e => {
+  const tg = e.target.closest('.tg');
+  if (tg && tg.dataset.n) { toggle(+tg.dataset.n); render(false); return; }
+  const m = (location.hash||'').match(/^#dia-(\d+)$/);
+  if (m && (e.target.closest('#chkTop') || e.target.closest('#chkBig'))) { toggle(+m[1]); render(false); return; }
+  if (e.target.closest('#fsBtn')) { const s=[15,17,19,21]; state.fs = s[(s.indexOf(state.fs)+1)%s.length] || 17; applyFs(); persist(); toast('Letra '+['pequena','normal','grande','maior'][s.indexOf(state.fs)]); onScroll(); return; }
+  const fb = e.target.closest('[data-fs]');
+  if (fb) { state.fs=+fb.dataset.fs; applyFs(); persist(); render(false); }
+});
+function onScroll(){
+  const rp = document.getElementById('rp'); if (!rp) return;
+  const art = document.querySelector('.reader'); if (!art) return;
+  const top = art.getBoundingClientRect().top + window.scrollY, h = art.offsetHeight - window.innerHeight*0.6;
+  const p = Math.min(1, Math.max(0, (window.scrollY - top + window.innerHeight*0.3) / Math.max(1,h)));
+  rp.style.width = (p*100).toFixed(1)+'%';
+}
+window.addEventListener('scroll', onScroll, {passive:true});
+$app.addEventListener('submit', e => { if (e.target.id!=='nmForm') return; e.preventDefault(); const v=document.getElementById('nmIn').value.trim(); if (!v) return; state.nome=v.slice(0,30); persist(); render(false); toast('Prazer, '+state.nome+' ♡'); });
+$app.addEventListener('click', e => { const a=e.target.closest('a[href^="http"]'); if (a) { a.target='_blank'; a.rel='noopener'; } }, true);
+render(true);
+})();
+</script></body></html>

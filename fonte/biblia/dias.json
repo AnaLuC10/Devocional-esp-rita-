@@ -1,0 +1,4759 @@
+[
+{
+"n": 1,
+"date": "2026-11-16",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Mateus 1–4",
+"livro": "Mateus",
+"mins": 9,
+"segs": [
+{
+"livro": "Mateus",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 2,
+"date": "2026-11-17",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Mateus 5–7",
+"livro": "Mateus",
+"mins": 11,
+"segs": [
+{
+"livro": "Mateus",
+"de": 5,
+"ate": 7
+}
+]
+},
+{
+"n": 3,
+"date": "2026-11-18",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Mateus 8–10",
+"livro": "Mateus",
+"mins": 11,
+"segs": [
+{
+"livro": "Mateus",
+"de": 8,
+"ate": 10
+}
+]
+},
+{
+"n": 4,
+"date": "2026-11-19",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Mateus 11–13",
+"livro": "Mateus",
+"mins": 14,
+"segs": [
+{
+"livro": "Mateus",
+"de": 11,
+"ate": 13
+}
+]
+},
+{
+"n": 5,
+"date": "2026-11-23",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Mateus 14–17",
+"livro": "Mateus",
+"mins": 12,
+"segs": [
+{
+"livro": "Mateus",
+"de": 14,
+"ate": 17
+}
+]
+},
+{
+"n": 6,
+"date": "2026-11-24",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Mateus 18–20",
+"livro": "Mateus",
+"mins": 10,
+"segs": [
+{
+"livro": "Mateus",
+"de": 18,
+"ate": 20
+}
+]
+},
+{
+"n": 7,
+"date": "2026-11-25",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Mateus 21–23",
+"livro": "Mateus",
+"mins": 12,
+"segs": [
+{
+"livro": "Mateus",
+"de": 21,
+"ate": 23
+}
+]
+},
+{
+"n": 8,
+"date": "2026-11-26",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Mateus 24–25",
+"livro": "Mateus",
+"mins": 9,
+"segs": [
+{
+"livro": "Mateus",
+"de": 24,
+"ate": 25
+}
+]
+},
+{
+"n": 9,
+"date": "2026-11-27",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Mateus 26–28",
+"livro": "Mateus",
+"mins": 15,
+"segs": [
+{
+"livro": "Mateus",
+"de": 26,
+"ate": 28
+}
+]
+},
+{
+"n": 10,
+"date": "2026-11-30",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Marcos 1–4",
+"livro": "Marcos",
+"mins": 14,
+"segs": [
+{
+"livro": "Marcos",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 11,
+"date": "2026-12-01",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Marcos 5–7",
+"livro": "Marcos",
+"mins": 13,
+"segs": [
+{
+"livro": "Marcos",
+"de": 5,
+"ate": 7
+}
+]
+},
+{
+"n": 12,
+"date": "2026-12-02",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Marcos 8–10",
+"livro": "Marcos",
+"mins": 13,
+"segs": [
+{
+"livro": "Marcos",
+"de": 8,
+"ate": 10
+}
+]
+},
+{
+"n": 13,
+"date": "2026-12-03",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Marcos 11–13",
+"livro": "Marcos",
+"mins": 11,
+"segs": [
+{
+"livro": "Marcos",
+"de": 11,
+"ate": 13
+}
+]
+},
+{
+"n": 14,
+"date": "2026-12-04",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Marcos 14–16",
+"livro": "Marcos",
+"mins": 13,
+"segs": [
+{
+"livro": "Marcos",
+"de": 14,
+"ate": 16
+}
+]
+},
+{
+"n": 15,
+"date": "2026-12-07",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Lucas 1–2",
+"livro": "Lucas",
+"mins": 11,
+"segs": [
+{
+"livro": "Lucas",
+"de": 1,
+"ate": 2
+}
+]
+},
+{
+"n": 16,
+"date": "2026-12-08",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Lucas 3–5",
+"livro": "Lucas",
+"mins": 12,
+"segs": [
+{
+"livro": "Lucas",
+"de": 3,
+"ate": 5
+}
+]
+},
+{
+"n": 17,
+"date": "2026-12-09",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Lucas 6–7",
+"livro": "Lucas",
+"mins": 11,
+"segs": [
+{
+"livro": "Lucas",
+"de": 6,
+"ate": 7
+}
+]
+},
+{
+"n": 18,
+"date": "2026-12-10",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Lucas 8–9",
+"livro": "Lucas",
+"mins": 13,
+"segs": [
+{
+"livro": "Lucas",
+"de": 8,
+"ate": 9
+}
+]
+},
+{
+"n": 19,
+"date": "2026-12-11",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Lucas 10–11",
+"livro": "Lucas",
+"mins": 10,
+"segs": [
+{
+"livro": "Lucas",
+"de": 10,
+"ate": 11
+}
+]
+},
+{
+"n": 20,
+"date": "2026-12-14",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Lucas 12–13",
+"livro": "Lucas",
+"mins": 10,
+"segs": [
+{
+"livro": "Lucas",
+"de": 12,
+"ate": 13
+}
+]
+},
+{
+"n": 21,
+"date": "2026-12-15",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Lucas 14–17",
+"livro": "Lucas",
+"mins": 13,
+"segs": [
+{
+"livro": "Lucas",
+"de": 14,
+"ate": 17
+}
+]
+},
+{
+"n": 22,
+"date": "2026-12-16",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Lucas 18–20",
+"livro": "Lucas",
+"mins": 12,
+"segs": [
+{
+"livro": "Lucas",
+"de": 18,
+"ate": 20
+}
+]
+},
+{
+"n": 23,
+"date": "2026-12-17",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Lucas 21–22",
+"livro": "Lucas",
+"mins": 10,
+"segs": [
+{
+"livro": "Lucas",
+"de": 21,
+"ate": 22
+}
+]
+},
+{
+"n": 24,
+"date": "2026-12-18",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "Lucas 23–24",
+"livro": "Lucas",
+"mins": 10,
+"segs": [
+{
+"livro": "Lucas",
+"de": 23,
+"ate": 24
+}
+]
+},
+{
+"n": 25,
+"date": "2026-12-21",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "João 1–4",
+"livro": "João",
+"mins": 15,
+"segs": [
+{
+"livro": "João",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 26,
+"date": "2026-12-22",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "João 5–6",
+"livro": "João",
+"mins": 11,
+"segs": [
+{
+"livro": "João",
+"de": 5,
+"ate": 6
+}
+]
+},
+{
+"n": 27,
+"date": "2026-12-23",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "João 7–8",
+"livro": "João",
+"mins": 10,
+"segs": [
+{
+"livro": "João",
+"de": 7,
+"ate": 8
+}
+]
+},
+{
+"n": 28,
+"date": "2026-12-24",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "João 9–11",
+"livro": "João",
+"mins": 12,
+"segs": [
+{
+"livro": "João",
+"de": 9,
+"ate": 11
+}
+]
+},
+{
+"n": 29,
+"date": "2026-12-28",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "João 12–14",
+"livro": "João",
+"mins": 12,
+"segs": [
+{
+"livro": "João",
+"de": 12,
+"ate": 14
+}
+]
+},
+{
+"n": 30,
+"date": "2026-12-29",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "João 15–18",
+"livro": "João",
+"mins": 13,
+"segs": [
+{
+"livro": "João",
+"de": 15,
+"ate": 18
+}
+]
+},
+{
+"n": 31,
+"date": "2026-12-30",
+"fase": 1,
+"faseNome": "Os Evangelhos",
+"ref": "João 19–21",
+"livro": "João",
+"mins": 11,
+"segs": [
+{
+"livro": "João",
+"de": 19,
+"ate": 21
+}
+]
+},
+{
+"n": 32,
+"date": "2026-12-31",
+"fase": 2,
+"faseNome": "Os primeiros cristãos",
+"ref": "Atos 1–4",
+"livro": "Atos",
+"mins": 15,
+"segs": [
+{
+"livro": "Atos",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 33,
+"date": "2027-01-04",
+"fase": 2,
+"faseNome": "Os primeiros cristãos",
+"ref": "Atos 5–7",
+"livro": "Atos",
+"mins": 13,
+"segs": [
+{
+"livro": "Atos",
+"de": 5,
+"ate": 7
+}
+]
+},
+{
+"n": 34,
+"date": "2027-01-05",
+"fase": 2,
+"faseNome": "Os primeiros cristãos",
+"ref": "Atos 8–10",
+"livro": "Atos",
+"mins": 14,
+"segs": [
+{
+"livro": "Atos",
+"de": 8,
+"ate": 10
+}
+]
+},
+{
+"n": 35,
+"date": "2027-01-06",
+"fase": 2,
+"faseNome": "Os primeiros cristãos",
+"ref": "Atos 11–13",
+"livro": "Atos",
+"mins": 12,
+"segs": [
+{
+"livro": "Atos",
+"de": 11,
+"ate": 13
+}
+]
+},
+{
+"n": 36,
+"date": "2027-01-07",
+"fase": 2,
+"faseNome": "Os primeiros cristãos",
+"ref": "Atos 14–16",
+"livro": "Atos",
+"mins": 11,
+"segs": [
+{
+"livro": "Atos",
+"de": 14,
+"ate": 16
+}
+]
+},
+{
+"n": 37,
+"date": "2027-01-08",
+"fase": 2,
+"faseNome": "Os primeiros cristãos",
+"ref": "Atos 17–19",
+"livro": "Atos",
+"mins": 11,
+"segs": [
+{
+"livro": "Atos",
+"de": 17,
+"ate": 19
+}
+]
+},
+{
+"n": 38,
+"date": "2027-01-11",
+"fase": 2,
+"faseNome": "Os primeiros cristãos",
+"ref": "Atos 20–22",
+"livro": "Atos",
+"mins": 13,
+"segs": [
+{
+"livro": "Atos",
+"de": 20,
+"ate": 22
+}
+]
+},
+{
+"n": 39,
+"date": "2027-01-12",
+"fase": 2,
+"faseNome": "Os primeiros cristãos",
+"ref": "Atos 23–25",
+"livro": "Atos",
+"mins": 10,
+"segs": [
+{
+"livro": "Atos",
+"de": 23,
+"ate": 25
+}
+]
+},
+{
+"n": 40,
+"date": "2027-01-13",
+"fase": 2,
+"faseNome": "Os primeiros cristãos",
+"ref": "Atos 26–28",
+"livro": "Atos",
+"mins": 13,
+"segs": [
+{
+"livro": "Atos",
+"de": 26,
+"ate": 28
+}
+]
+},
+{
+"n": 41,
+"date": "2027-01-14",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Gênesis 1–4",
+"livro": "Gênesis",
+"mins": 12,
+"segs": [
+{
+"livro": "Gênesis",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 42,
+"date": "2027-01-15",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Gênesis 5–9",
+"livro": "Gênesis",
+"mins": 13,
+"segs": [
+{
+"livro": "Gênesis",
+"de": 5,
+"ate": 9
+}
+]
+},
+{
+"n": 43,
+"date": "2027-01-18",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Gênesis 10–14",
+"livro": "Gênesis",
+"mins": 12,
+"segs": [
+{
+"livro": "Gênesis",
+"de": 10,
+"ate": 14
+}
+]
+},
+{
+"n": 44,
+"date": "2027-01-19",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Gênesis 15–18",
+"livro": "Gênesis",
+"mins": 11,
+"segs": [
+{
+"livro": "Gênesis",
+"de": 15,
+"ate": 18
+}
+]
+},
+{
+"n": 45,
+"date": "2027-01-20",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Gênesis 19–21",
+"livro": "Gênesis",
+"mins": 10,
+"segs": [
+{
+"livro": "Gênesis",
+"de": 19,
+"ate": 21
+}
+]
+},
+{
+"n": 46,
+"date": "2027-01-21",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Gênesis 22–24",
+"livro": "Gênesis",
+"mins": 13,
+"segs": [
+{
+"livro": "Gênesis",
+"de": 22,
+"ate": 24
+}
+]
+},
+{
+"n": 47,
+"date": "2027-01-22",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Gênesis 25–27",
+"livro": "Gênesis",
+"mins": 12,
+"segs": [
+{
+"livro": "Gênesis",
+"de": 25,
+"ate": 27
+}
+]
+},
+{
+"n": 48,
+"date": "2027-01-25",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Gênesis 28–30",
+"livro": "Gênesis",
+"mins": 11,
+"segs": [
+{
+"livro": "Gênesis",
+"de": 28,
+"ate": 30
+}
+]
+},
+{
+"n": 49,
+"date": "2027-01-26",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Gênesis 31–33",
+"livro": "Gênesis",
+"mins": 12,
+"segs": [
+{
+"livro": "Gênesis",
+"de": 31,
+"ate": 33
+}
+]
+},
+{
+"n": 50,
+"date": "2027-01-27",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Gênesis 34–36",
+"livro": "Gênesis",
+"mins": 11,
+"segs": [
+{
+"livro": "Gênesis",
+"de": 34,
+"ate": 36
+}
+]
+},
+{
+"n": 51,
+"date": "2027-01-28",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Gênesis 37–40",
+"livro": "Gênesis",
+"mins": 13,
+"segs": [
+{
+"livro": "Gênesis",
+"de": 37,
+"ate": 40
+}
+]
+},
+{
+"n": 52,
+"date": "2027-01-29",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Gênesis 41–43",
+"livro": "Gênesis",
+"mins": 15,
+"segs": [
+{
+"livro": "Gênesis",
+"de": 41,
+"ate": 43
+}
+]
+},
+{
+"n": 53,
+"date": "2027-02-01",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Gênesis 44–46",
+"livro": "Gênesis",
+"mins": 11,
+"segs": [
+{
+"livro": "Gênesis",
+"de": 44,
+"ate": 46
+}
+]
+},
+{
+"n": 54,
+"date": "2027-02-02",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Gênesis 47–50",
+"livro": "Gênesis",
+"mins": 14,
+"segs": [
+{
+"livro": "Gênesis",
+"de": 47,
+"ate": 50
+}
+]
+},
+{
+"n": 55,
+"date": "2027-02-03",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Êxodo 1–4",
+"livro": "Êxodo",
+"mins": 12,
+"segs": [
+{
+"livro": "Êxodo",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 56,
+"date": "2027-02-04",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Êxodo 5–7",
+"livro": "Êxodo",
+"mins": 9,
+"segs": [
+{
+"livro": "Êxodo",
+"de": 5,
+"ate": 7
+}
+]
+},
+{
+"n": 57,
+"date": "2027-02-05",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Êxodo 8–10",
+"livro": "Êxodo",
+"mins": 12,
+"segs": [
+{
+"livro": "Êxodo",
+"de": 8,
+"ate": 10
+}
+]
+},
+{
+"n": 58,
+"date": "2027-02-10",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Êxodo 11–13",
+"livro": "Êxodo",
+"mins": 10,
+"segs": [
+{
+"livro": "Êxodo",
+"de": 11,
+"ate": 13
+}
+]
+},
+{
+"n": 59,
+"date": "2027-02-11",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Êxodo 14–17",
+"livro": "Êxodo",
+"mins": 13,
+"segs": [
+{
+"livro": "Êxodo",
+"de": 14,
+"ate": 17
+}
+]
+},
+{
+"n": 60,
+"date": "2027-02-12",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Êxodo 18–21",
+"livro": "Êxodo",
+"mins": 12,
+"segs": [
+{
+"livro": "Êxodo",
+"de": 18,
+"ate": 21
+}
+]
+},
+{
+"n": 61,
+"date": "2027-02-15",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Êxodo 22–25",
+"livro": "Êxodo",
+"mins": 13,
+"segs": [
+{
+"livro": "Êxodo",
+"de": 22,
+"ate": 25
+}
+]
+},
+{
+"n": 62,
+"date": "2027-02-16",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Êxodo 26–28",
+"livro": "Êxodo",
+"mins": 11,
+"segs": [
+{
+"livro": "Êxodo",
+"de": 26,
+"ate": 28
+}
+]
+},
+{
+"n": 63,
+"date": "2027-02-17",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Êxodo 29–31",
+"livro": "Êxodo",
+"mins": 11,
+"segs": [
+{
+"livro": "Êxodo",
+"de": 29,
+"ate": 31
+}
+]
+},
+{
+"n": 64,
+"date": "2027-02-18",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Êxodo 32–34",
+"livro": "Êxodo",
+"mins": 12,
+"segs": [
+{
+"livro": "Êxodo",
+"de": 32,
+"ate": 34
+}
+]
+},
+{
+"n": 65,
+"date": "2027-02-19",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Êxodo 35–37",
+"livro": "Êxodo",
+"mins": 11,
+"segs": [
+{
+"livro": "Êxodo",
+"de": 35,
+"ate": 37
+}
+]
+},
+{
+"n": 66,
+"date": "2027-02-22",
+"fase": 3,
+"faseNome": "O começo de tudo",
+"ref": "Êxodo 38–40",
+"livro": "Êxodo",
+"mins": 12,
+"segs": [
+{
+"livro": "Êxodo",
+"de": 38,
+"ate": 40
+}
+]
+},
+{
+"n": 67,
+"date": "2027-02-23",
+"fase": 4,
+"faseNome": "As cartas de Paulo I",
+"ref": "Romanos 1–4",
+"livro": "Romanos",
+"mins": 11,
+"segs": [
+{
+"livro": "Romanos",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 68,
+"date": "2027-02-24",
+"fase": 4,
+"faseNome": "As cartas de Paulo I",
+"ref": "Romanos 5–8",
+"livro": "Romanos",
+"mins": 12,
+"segs": [
+{
+"livro": "Romanos",
+"de": 5,
+"ate": 8
+}
+]
+},
+{
+"n": 69,
+"date": "2027-02-25",
+"fase": 4,
+"faseNome": "As cartas de Paulo I",
+"ref": "Romanos 9–12",
+"livro": "Romanos",
+"mins": 11,
+"segs": [
+{
+"livro": "Romanos",
+"de": 9,
+"ate": 12
+}
+]
+},
+{
+"n": 70,
+"date": "2027-02-26",
+"fase": 4,
+"faseNome": "As cartas de Paulo I",
+"ref": "Romanos 13–16",
+"livro": "Romanos",
+"mins": 10,
+"segs": [
+{
+"livro": "Romanos",
+"de": 13,
+"ate": 16
+}
+]
+},
+{
+"n": 71,
+"date": "2027-03-01",
+"fase": 4,
+"faseNome": "As cartas de Paulo I",
+"ref": "1 Coríntios 1–5",
+"livro": "1 Coríntios",
+"mins": 11,
+"segs": [
+{
+"livro": "1 Coríntios",
+"de": 1,
+"ate": 5
+}
+]
+},
+{
+"n": 72,
+"date": "2027-03-02",
+"fase": 4,
+"faseNome": "As cartas de Paulo I",
+"ref": "1 Coríntios 6–9",
+"livro": "1 Coríntios",
+"mins": 11,
+"segs": [
+{
+"livro": "1 Coríntios",
+"de": 6,
+"ate": 9
+}
+]
+},
+{
+"n": 73,
+"date": "2027-03-03",
+"fase": 4,
+"faseNome": "As cartas de Paulo I",
+"ref": "1 Coríntios 10–13",
+"livro": "1 Coríntios",
+"mins": 11,
+"segs": [
+{
+"livro": "1 Coríntios",
+"de": 10,
+"ate": 13
+}
+]
+},
+{
+"n": 74,
+"date": "2027-03-04",
+"fase": 4,
+"faseNome": "As cartas de Paulo I",
+"ref": "1 Coríntios 14–16",
+"livro": "1 Coríntios",
+"mins": 11,
+"segs": [
+{
+"livro": "1 Coríntios",
+"de": 14,
+"ate": 16
+}
+]
+},
+{
+"n": 75,
+"date": "2027-03-05",
+"fase": 4,
+"faseNome": "As cartas de Paulo I",
+"ref": "2 Coríntios 1–5",
+"livro": "2 Coríntios",
+"mins": 11,
+"segs": [
+{
+"livro": "2 Coríntios",
+"de": 1,
+"ate": 5
+}
+]
+},
+{
+"n": 76,
+"date": "2027-03-08",
+"fase": 4,
+"faseNome": "As cartas de Paulo I",
+"ref": "2 Coríntios 6–10",
+"livro": "2 Coríntios",
+"mins": 10,
+"segs": [
+{
+"livro": "2 Coríntios",
+"de": 6,
+"ate": 10
+}
+]
+},
+{
+"n": 77,
+"date": "2027-03-09",
+"fase": 4,
+"faseNome": "As cartas de Paulo I",
+"ref": "2 Coríntios 11–13 · Gálatas 1",
+"livro": "2 Coríntios",
+"mins": 10,
+"segs": [
+{
+"livro": "2 Coríntios",
+"de": 11,
+"ate": 13
+},
+{
+"livro": "Gálatas",
+"de": 1,
+"ate": 1
+}
+]
+},
+{
+"n": 78,
+"date": "2027-03-10",
+"fase": 4,
+"faseNome": "As cartas de Paulo I",
+"ref": "Gálatas 2–6",
+"livro": "Gálatas",
+"mins": 12,
+"segs": [
+{
+"livro": "Gálatas",
+"de": 2,
+"ate": 6
+}
+]
+},
+{
+"n": 79,
+"date": "2027-03-11",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Levítico 1–5",
+"livro": "Levítico",
+"mins": 13,
+"segs": [
+{
+"livro": "Levítico",
+"de": 1,
+"ate": 5
+}
+]
+},
+{
+"n": 80,
+"date": "2027-03-12",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Levítico 6–8",
+"livro": "Levítico",
+"mins": 12,
+"segs": [
+{
+"livro": "Levítico",
+"de": 6,
+"ate": 8
+}
+]
+},
+{
+"n": 81,
+"date": "2027-03-15",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Levítico 9–12",
+"livro": "Levítico",
+"mins": 11,
+"segs": [
+{
+"livro": "Levítico",
+"de": 9,
+"ate": 12
+}
+]
+},
+{
+"n": 82,
+"date": "2027-03-16",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Levítico 13–14",
+"livro": "Levítico",
+"mins": 15,
+"segs": [
+{
+"livro": "Levítico",
+"de": 13,
+"ate": 14
+}
+]
+},
+{
+"n": 83,
+"date": "2027-03-17",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Levítico 15–17",
+"livro": "Levítico",
+"mins": 11,
+"segs": [
+{
+"livro": "Levítico",
+"de": 15,
+"ate": 17
+}
+]
+},
+{
+"n": 84,
+"date": "2027-03-18",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Levítico 18–21",
+"livro": "Levítico",
+"mins": 13,
+"segs": [
+{
+"livro": "Levítico",
+"de": 18,
+"ate": 21
+}
+]
+},
+{
+"n": 85,
+"date": "2027-03-19",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Levítico 22–24",
+"livro": "Levítico",
+"mins": 11,
+"segs": [
+{
+"livro": "Levítico",
+"de": 22,
+"ate": 24
+}
+]
+},
+{
+"n": 86,
+"date": "2027-03-22",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Levítico 25–27",
+"livro": "Levítico",
+"mins": 15,
+"segs": [
+{
+"livro": "Levítico",
+"de": 25,
+"ate": 27
+}
+]
+},
+{
+"n": 87,
+"date": "2027-03-23",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Números 1–3",
+"livro": "Números",
+"mins": 14,
+"segs": [
+{
+"livro": "Números",
+"de": 1,
+"ate": 3
+}
+]
+},
+{
+"n": 88,
+"date": "2027-03-24",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Números 4–6",
+"livro": "Números",
+"mins": 13,
+"segs": [
+{
+"livro": "Números",
+"de": 4,
+"ate": 6
+}
+]
+},
+{
+"n": 89,
+"date": "2027-03-25",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Números 7–8",
+"livro": "Números",
+"mins": 11,
+"segs": [
+{
+"livro": "Números",
+"de": 7,
+"ate": 8
+}
+]
+},
+{
+"n": 90,
+"date": "2027-03-29",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Números 9–11",
+"livro": "Números",
+"mins": 11,
+"segs": [
+{
+"livro": "Números",
+"de": 9,
+"ate": 11
+}
+]
+},
+{
+"n": 91,
+"date": "2027-03-30",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Números 12–14",
+"livro": "Números",
+"mins": 10,
+"segs": [
+{
+"livro": "Números",
+"de": 12,
+"ate": 14
+}
+]
+},
+{
+"n": 92,
+"date": "2027-03-31",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Números 15–17",
+"livro": "Números",
+"mins": 12,
+"segs": [
+{
+"livro": "Números",
+"de": 15,
+"ate": 17
+}
+]
+},
+{
+"n": 93,
+"date": "2027-04-01",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Números 18–20",
+"livro": "Números",
+"mins": 11,
+"segs": [
+{
+"livro": "Números",
+"de": 18,
+"ate": 20
+}
+]
+},
+{
+"n": 94,
+"date": "2027-04-02",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Números 21–23",
+"livro": "Números",
+"mins": 12,
+"segs": [
+{
+"livro": "Números",
+"de": 21,
+"ate": 23
+}
+]
+},
+{
+"n": 95,
+"date": "2027-04-05",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Números 24–26",
+"livro": "Números",
+"mins": 11,
+"segs": [
+{
+"livro": "Números",
+"de": 24,
+"ate": 26
+}
+]
+},
+{
+"n": 96,
+"date": "2027-04-06",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Números 27–30",
+"livro": "Números",
+"mins": 12,
+"segs": [
+{
+"livro": "Números",
+"de": 27,
+"ate": 30
+}
+]
+},
+{
+"n": 97,
+"date": "2027-04-07",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Números 31–32",
+"livro": "Números",
+"mins": 10,
+"segs": [
+{
+"livro": "Números",
+"de": 31,
+"ate": 32
+}
+]
+},
+{
+"n": 98,
+"date": "2027-04-08",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Números 33–36",
+"livro": "Números",
+"mins": 12,
+"segs": [
+{
+"livro": "Números",
+"de": 33,
+"ate": 36
+}
+]
+},
+{
+"n": 99,
+"date": "2027-04-09",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Deuteronômio 1–3",
+"livro": "Deuteronômio",
+"mins": 13,
+"segs": [
+{
+"livro": "Deuteronômio",
+"de": 1,
+"ate": 3
+}
+]
+},
+{
+"n": 100,
+"date": "2027-04-12",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Deuteronômio 4–6",
+"livro": "Deuteronômio",
+"mins": 13,
+"segs": [
+{
+"livro": "Deuteronômio",
+"de": 4,
+"ate": 6
+}
+]
+},
+{
+"n": 101,
+"date": "2027-04-13",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Deuteronômio 7–10",
+"livro": "Deuteronômio",
+"mins": 13,
+"segs": [
+{
+"livro": "Deuteronômio",
+"de": 7,
+"ate": 10
+}
+]
+},
+{
+"n": 102,
+"date": "2027-04-14",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Deuteronômio 11–13",
+"livro": "Deuteronômio",
+"mins": 11,
+"segs": [
+{
+"livro": "Deuteronômio",
+"de": 11,
+"ate": 13
+}
+]
+},
+{
+"n": 103,
+"date": "2027-04-15",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Deuteronômio 14–17",
+"livro": "Deuteronômio",
+"mins": 12,
+"segs": [
+{
+"livro": "Deuteronômio",
+"de": 14,
+"ate": 17
+}
+]
+},
+{
+"n": 104,
+"date": "2027-04-16",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Deuteronômio 18–21",
+"livro": "Deuteronômio",
+"mins": 11,
+"segs": [
+{
+"livro": "Deuteronômio",
+"de": 18,
+"ate": 21
+}
+]
+},
+{
+"n": 105,
+"date": "2027-04-19",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Deuteronômio 22–25",
+"livro": "Deuteronômio",
+"mins": 11,
+"segs": [
+{
+"livro": "Deuteronômio",
+"de": 22,
+"ate": 25
+}
+]
+},
+{
+"n": 106,
+"date": "2027-04-20",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Deuteronômio 26–28",
+"livro": "Deuteronômio",
+"mins": 14,
+"segs": [
+{
+"livro": "Deuteronômio",
+"de": 26,
+"ate": 28
+}
+]
+},
+{
+"n": 107,
+"date": "2027-04-22",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Deuteronômio 29–31",
+"livro": "Deuteronômio",
+"mins": 11,
+"segs": [
+{
+"livro": "Deuteronômio",
+"de": 29,
+"ate": 31
+}
+]
+},
+{
+"n": 108,
+"date": "2027-04-23",
+"fase": 5,
+"faseNome": "A Lei de Moisés",
+"ref": "Deuteronômio 32–34",
+"livro": "Deuteronômio",
+"mins": 10,
+"segs": [
+{
+"livro": "Deuteronômio",
+"de": 32,
+"ate": 34
+}
+]
+},
+{
+"n": 109,
+"date": "2027-04-26",
+"fase": 6,
+"faseNome": "As cartas de Paulo II",
+"ref": "Efésios 1–5",
+"livro": "Efésios",
+"mins": 12,
+"segs": [
+{
+"livro": "Efésios",
+"de": 1,
+"ate": 5
+}
+]
+},
+{
+"n": 110,
+"date": "2027-04-27",
+"fase": 6,
+"faseNome": "As cartas de Paulo II",
+"ref": "Efésios 6 · Filipenses 1–4",
+"livro": "Efésios",
+"mins": 13,
+"segs": [
+{
+"livro": "Efésios",
+"de": 6,
+"ate": 6
+},
+{
+"livro": "Filipenses",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 111,
+"date": "2027-04-28",
+"fase": 6,
+"faseNome": "As cartas de Paulo II",
+"ref": "Colossenses 1–4 · 1 Tessalonicenses 1–2",
+"livro": "Colossenses",
+"mins": 13,
+"segs": [
+{
+"livro": "Colossenses",
+"de": 1,
+"ate": 4
+},
+{
+"livro": "1 Tessalonicenses",
+"de": 1,
+"ate": 2
+}
+]
+},
+{
+"n": 112,
+"date": "2027-04-29",
+"fase": 6,
+"faseNome": "As cartas de Paulo II",
+"ref": "1 Tessalonicenses 3–5 · 2 Tessalonicenses 1–3 · Filemom",
+"livro": "1 Tessalonicenses",
+"mins": 12,
+"segs": [
+{
+"livro": "1 Tessalonicenses",
+"de": 3,
+"ate": 5
+},
+{
+"livro": "2 Tessalonicenses",
+"de": 1,
+"ate": 3
+},
+{
+"livro": "Filemom",
+"de": 1,
+"ate": 1
+}
+]
+},
+{
+"n": 113,
+"date": "2027-04-30",
+"fase": 7,
+"faseNome": "A terra prometida",
+"ref": "Josué 1–5",
+"livro": "Josué",
+"mins": 14,
+"segs": [
+{
+"livro": "Josué",
+"de": 1,
+"ate": 5
+}
+]
+},
+{
+"n": 114,
+"date": "2027-05-03",
+"fase": 7,
+"faseNome": "A terra prometida",
+"ref": "Josué 6–8",
+"livro": "Josué",
+"mins": 13,
+"segs": [
+{
+"livro": "Josué",
+"de": 6,
+"ate": 8
+}
+]
+},
+{
+"n": 115,
+"date": "2027-05-04",
+"fase": 7,
+"faseNome": "A terra prometida",
+"ref": "Josué 9–10",
+"livro": "Josué",
+"mins": 9,
+"segs": [
+{
+"livro": "Josué",
+"de": 9,
+"ate": 10
+}
+]
+},
+{
+"n": 116,
+"date": "2027-05-05",
+"fase": 7,
+"faseNome": "A terra prometida",
+"ref": "Josué 11–14",
+"livro": "Josué",
+"mins": 11,
+"segs": [
+{
+"livro": "Josué",
+"de": 11,
+"ate": 14
+}
+]
+},
+{
+"n": 117,
+"date": "2027-05-06",
+"fase": 7,
+"faseNome": "A terra prometida",
+"ref": "Josué 15–18",
+"livro": "Josué",
+"mins": 12,
+"segs": [
+{
+"livro": "Josué",
+"de": 15,
+"ate": 18
+}
+]
+},
+{
+"n": 118,
+"date": "2027-05-07",
+"fase": 7,
+"faseNome": "A terra prometida",
+"ref": "Josué 19–21",
+"livro": "Josué",
+"mins": 10,
+"segs": [
+{
+"livro": "Josué",
+"de": 19,
+"ate": 21
+}
+]
+},
+{
+"n": 119,
+"date": "2027-05-10",
+"fase": 7,
+"faseNome": "A terra prometida",
+"ref": "Josué 22–24",
+"livro": "Josué",
+"mins": 13,
+"segs": [
+{
+"livro": "Josué",
+"de": 22,
+"ate": 24
+}
+]
+},
+{
+"n": 120,
+"date": "2027-05-11",
+"fase": 7,
+"faseNome": "A terra prometida",
+"ref": "Juízes 1–4",
+"livro": "Juízes",
+"mins": 14,
+"segs": [
+{
+"livro": "Juízes",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 121,
+"date": "2027-05-12",
+"fase": 7,
+"faseNome": "A terra prometida",
+"ref": "Juízes 5–7",
+"livro": "Juízes",
+"mins": 13,
+"segs": [
+{
+"livro": "Juízes",
+"de": 5,
+"ate": 7
+}
+]
+},
+{
+"n": 122,
+"date": "2027-05-13",
+"fase": 7,
+"faseNome": "A terra prometida",
+"ref": "Juízes 8–10",
+"livro": "Juízes",
+"mins": 14,
+"segs": [
+{
+"livro": "Juízes",
+"de": 8,
+"ate": 10
+}
+]
+},
+{
+"n": 123,
+"date": "2027-05-14",
+"fase": 7,
+"faseNome": "A terra prometida",
+"ref": "Juízes 11–14",
+"livro": "Juízes",
+"mins": 13,
+"segs": [
+{
+"livro": "Juízes",
+"de": 11,
+"ate": 14
+}
+]
+},
+{
+"n": 124,
+"date": "2027-05-17",
+"fase": 7,
+"faseNome": "A terra prometida",
+"ref": "Juízes 15–18",
+"livro": "Juízes",
+"mins": 14,
+"segs": [
+{
+"livro": "Juízes",
+"de": 15,
+"ate": 18
+}
+]
+},
+{
+"n": 125,
+"date": "2027-05-18",
+"fase": 7,
+"faseNome": "A terra prometida",
+"ref": "Juízes 19–21",
+"livro": "Juízes",
+"mins": 14,
+"segs": [
+{
+"livro": "Juízes",
+"de": 19,
+"ate": 21
+}
+]
+},
+{
+"n": 126,
+"date": "2027-05-19",
+"fase": 7,
+"faseNome": "A terra prometida",
+"ref": "Rute 1–4",
+"livro": "Rute",
+"mins": 11,
+"segs": [
+{
+"livro": "Rute",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 127,
+"date": "2027-05-20",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Jó 1–6",
+"livro": "Jó",
+"mins": 12,
+"segs": [
+{
+"livro": "Jó",
+"de": 1,
+"ate": 6
+}
+]
+},
+{
+"n": 128,
+"date": "2027-05-21",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Jó 7–12",
+"livro": "Jó",
+"mins": 11,
+"segs": [
+{
+"livro": "Jó",
+"de": 7,
+"ate": 12
+}
+]
+},
+{
+"n": 129,
+"date": "2027-05-24",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Jó 13–19",
+"livro": "Jó",
+"mins": 13,
+"segs": [
+{
+"livro": "Jó",
+"de": 13,
+"ate": 19
+}
+]
+},
+{
+"n": 130,
+"date": "2027-05-25",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Jó 20–26",
+"livro": "Jó",
+"mins": 11,
+"segs": [
+{
+"livro": "Jó",
+"de": 20,
+"ate": 26
+}
+]
+},
+{
+"n": 131,
+"date": "2027-05-26",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Jó 27–31",
+"livro": "Jó",
+"mins": 11,
+"segs": [
+{
+"livro": "Jó",
+"de": 27,
+"ate": 31
+}
+]
+},
+{
+"n": 132,
+"date": "2027-05-28",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Jó 32–37",
+"livro": "Jó",
+"mins": 13,
+"segs": [
+{
+"livro": "Jó",
+"de": 32,
+"ate": 37
+}
+]
+},
+{
+"n": 133,
+"date": "2027-05-31",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Jó 38–42",
+"livro": "Jó",
+"mins": 11,
+"segs": [
+{
+"livro": "Jó",
+"de": 38,
+"ate": 42
+}
+]
+},
+{
+"n": 134,
+"date": "2027-06-01",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Provérbios 1–6",
+"livro": "Provérbios",
+"mins": 13,
+"segs": [
+{
+"livro": "Provérbios",
+"de": 1,
+"ate": 6
+}
+]
+},
+{
+"n": 135,
+"date": "2027-06-02",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Provérbios 7–11",
+"livro": "Provérbios",
+"mins": 11,
+"segs": [
+{
+"livro": "Provérbios",
+"de": 7,
+"ate": 11
+}
+]
+},
+{
+"n": 136,
+"date": "2027-06-03",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Provérbios 12–16",
+"livro": "Provérbios",
+"mins": 12,
+"segs": [
+{
+"livro": "Provérbios",
+"de": 12,
+"ate": 16
+}
+]
+},
+{
+"n": 137,
+"date": "2027-06-04",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Provérbios 17–21",
+"livro": "Provérbios",
+"mins": 11,
+"segs": [
+{
+"livro": "Provérbios",
+"de": 17,
+"ate": 21
+}
+]
+},
+{
+"n": 138,
+"date": "2027-06-07",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Provérbios 22–26",
+"livro": "Provérbios",
+"mins": 12,
+"segs": [
+{
+"livro": "Provérbios",
+"de": 22,
+"ate": 26
+}
+]
+},
+{
+"n": 139,
+"date": "2027-06-08",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Provérbios 27–31",
+"livro": "Provérbios",
+"mins": 12,
+"segs": [
+{
+"livro": "Provérbios",
+"de": 27,
+"ate": 31
+}
+]
+},
+{
+"n": 140,
+"date": "2027-06-09",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Eclesiastes 1–6",
+"livro": "Eclesiastes",
+"mins": 14,
+"segs": [
+{
+"livro": "Eclesiastes",
+"de": 1,
+"ate": 6
+}
+]
+},
+{
+"n": 141,
+"date": "2027-06-10",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Eclesiastes 7–12",
+"livro": "Eclesiastes",
+"mins": 13,
+"segs": [
+{
+"livro": "Eclesiastes",
+"de": 7,
+"ate": 12
+}
+]
+},
+{
+"n": 142,
+"date": "2027-06-11",
+"fase": 8,
+"faseNome": "Os livros de sabedoria",
+"ref": "Cânticos 1–8",
+"livro": "Cânticos",
+"mins": 13,
+"segs": [
+{
+"livro": "Cantares",
+"de": 1,
+"ate": 8
+}
+]
+},
+{
+"n": 143,
+"date": "2027-06-14",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Samuel 1–4",
+"livro": "1 Samuel",
+"mins": 14,
+"segs": [
+{
+"livro": "1 Samuel",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 144,
+"date": "2027-06-15",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Samuel 5–9",
+"livro": "1 Samuel",
+"mins": 14,
+"segs": [
+{
+"livro": "1 Samuel",
+"de": 5,
+"ate": 9
+}
+]
+},
+{
+"n": 145,
+"date": "2027-06-16",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Samuel 10–13",
+"livro": "1 Samuel",
+"mins": 12,
+"segs": [
+{
+"livro": "1 Samuel",
+"de": 10,
+"ate": 13
+}
+]
+},
+{
+"n": 146,
+"date": "2027-06-17",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Samuel 14–15",
+"livro": "1 Samuel",
+"mins": 12,
+"segs": [
+{
+"livro": "1 Samuel",
+"de": 14,
+"ate": 15
+}
+]
+},
+{
+"n": 147,
+"date": "2027-06-18",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Samuel 16–17",
+"livro": "1 Samuel",
+"mins": 11,
+"segs": [
+{
+"livro": "1 Samuel",
+"de": 16,
+"ate": 17
+}
+]
+},
+{
+"n": 148,
+"date": "2027-06-21",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Samuel 18–20",
+"livro": "1 Samuel",
+"mins": 13,
+"segs": [
+{
+"livro": "1 Samuel",
+"de": 18,
+"ate": 20
+}
+]
+},
+{
+"n": 149,
+"date": "2027-06-22",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Samuel 21–24",
+"livro": "1 Samuel",
+"mins": 12,
+"segs": [
+{
+"livro": "1 Samuel",
+"de": 21,
+"ate": 24
+}
+]
+},
+{
+"n": 150,
+"date": "2027-06-23",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Samuel 25–27",
+"livro": "1 Samuel",
+"mins": 12,
+"segs": [
+{
+"livro": "1 Samuel",
+"de": 25,
+"ate": 27
+}
+]
+},
+{
+"n": 151,
+"date": "2027-06-24",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Samuel 28–31",
+"livro": "1 Samuel",
+"mins": 11,
+"segs": [
+{
+"livro": "1 Samuel",
+"de": 28,
+"ate": 31
+}
+]
+},
+{
+"n": 152,
+"date": "2027-06-25",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Samuel 1–3",
+"livro": "2 Samuel",
+"mins": 12,
+"segs": [
+{
+"livro": "2 Samuel",
+"de": 1,
+"ate": 3
+}
+]
+},
+{
+"n": 153,
+"date": "2027-06-28",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Samuel 4–8",
+"livro": "2 Samuel",
+"mins": 14,
+"segs": [
+{
+"livro": "2 Samuel",
+"de": 4,
+"ate": 8
+}
+]
+},
+{
+"n": 154,
+"date": "2027-06-29",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Samuel 9–12",
+"livro": "2 Samuel",
+"mins": 12,
+"segs": [
+{
+"livro": "2 Samuel",
+"de": 9,
+"ate": 12
+}
+]
+},
+{
+"n": 155,
+"date": "2027-06-30",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Samuel 13–15",
+"livro": "2 Samuel",
+"mins": 15,
+"segs": [
+{
+"livro": "2 Samuel",
+"de": 13,
+"ate": 15
+}
+]
+},
+{
+"n": 156,
+"date": "2027-07-01",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Samuel 16–18",
+"livro": "2 Samuel",
+"mins": 13,
+"segs": [
+{
+"livro": "2 Samuel",
+"de": 16,
+"ate": 18
+}
+]
+},
+{
+"n": 157,
+"date": "2027-07-02",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Samuel 19–21",
+"livro": "2 Samuel",
+"mins": 14,
+"segs": [
+{
+"livro": "2 Samuel",
+"de": 19,
+"ate": 21
+}
+]
+},
+{
+"n": 158,
+"date": "2027-07-05",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Samuel 22–24",
+"livro": "2 Samuel",
+"mins": 11,
+"segs": [
+{
+"livro": "2 Samuel",
+"de": 22,
+"ate": 24
+}
+]
+},
+{
+"n": 159,
+"date": "2027-07-06",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Reis 1–2",
+"livro": "1 Reis",
+"mins": 13,
+"segs": [
+{
+"livro": "1 Reis",
+"de": 1,
+"ate": 2
+}
+]
+},
+{
+"n": 160,
+"date": "2027-07-07",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Reis 3–5",
+"livro": "1 Reis",
+"mins": 10,
+"segs": [
+{
+"livro": "1 Reis",
+"de": 3,
+"ate": 5
+}
+]
+},
+{
+"n": 161,
+"date": "2027-07-08",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Reis 6–7",
+"livro": "1 Reis",
+"mins": 12,
+"segs": [
+{
+"livro": "1 Reis",
+"de": 6,
+"ate": 7
+}
+]
+},
+{
+"n": 162,
+"date": "2027-07-09",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Reis 8–9",
+"livro": "1 Reis",
+"mins": 13,
+"segs": [
+{
+"livro": "1 Reis",
+"de": 8,
+"ate": 9
+}
+]
+},
+{
+"n": 163,
+"date": "2027-07-12",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Reis 10–12",
+"livro": "1 Reis",
+"mins": 14,
+"segs": [
+{
+"livro": "1 Reis",
+"de": 10,
+"ate": 12
+}
+]
+},
+{
+"n": 164,
+"date": "2027-07-13",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Reis 13–15",
+"livro": "1 Reis",
+"mins": 13,
+"segs": [
+{
+"livro": "1 Reis",
+"de": 13,
+"ate": 15
+}
+]
+},
+{
+"n": 165,
+"date": "2027-07-14",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Reis 16–18",
+"livro": "1 Reis",
+"mins": 14,
+"segs": [
+{
+"livro": "1 Reis",
+"de": 16,
+"ate": 18
+}
+]
+},
+{
+"n": 166,
+"date": "2027-07-15",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Reis 19–20",
+"livro": "1 Reis",
+"mins": 9,
+"segs": [
+{
+"livro": "1 Reis",
+"de": 19,
+"ate": 20
+}
+]
+},
+{
+"n": 167,
+"date": "2027-07-16",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "1 Reis 21–22",
+"livro": "1 Reis",
+"mins": 11,
+"segs": [
+{
+"livro": "1 Reis",
+"de": 21,
+"ate": 22
+}
+]
+},
+{
+"n": 168,
+"date": "2027-07-19",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Reis 1–3",
+"livro": "2 Reis",
+"mins": 10,
+"segs": [
+{
+"livro": "2 Reis",
+"de": 1,
+"ate": 3
+}
+]
+},
+{
+"n": 169,
+"date": "2027-07-20",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Reis 4–6",
+"livro": "2 Reis",
+"mins": 14,
+"segs": [
+{
+"livro": "2 Reis",
+"de": 4,
+"ate": 6
+}
+]
+},
+{
+"n": 170,
+"date": "2027-07-21",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Reis 7–9",
+"livro": "2 Reis",
+"mins": 13,
+"segs": [
+{
+"livro": "2 Reis",
+"de": 7,
+"ate": 9
+}
+]
+},
+{
+"n": 171,
+"date": "2027-07-22",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Reis 10–12",
+"livro": "2 Reis",
+"mins": 12,
+"segs": [
+{
+"livro": "2 Reis",
+"de": 10,
+"ate": 12
+}
+]
+},
+{
+"n": 172,
+"date": "2027-07-23",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Reis 13–15",
+"livro": "2 Reis",
+"mins": 12,
+"segs": [
+{
+"livro": "2 Reis",
+"de": 13,
+"ate": 15
+}
+]
+},
+{
+"n": 173,
+"date": "2027-07-26",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Reis 16–18",
+"livro": "2 Reis",
+"mins": 14,
+"segs": [
+{
+"livro": "2 Reis",
+"de": 16,
+"ate": 18
+}
+]
+},
+{
+"n": 174,
+"date": "2027-07-27",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Reis 19–22",
+"livro": "2 Reis",
+"mins": 14,
+"segs": [
+{
+"livro": "2 Reis",
+"de": 19,
+"ate": 22
+}
+]
+},
+{
+"n": 175,
+"date": "2027-07-28",
+"fase": 9,
+"faseNome": "Os reis de Israel",
+"ref": "2 Reis 23–25",
+"livro": "2 Reis",
+"mins": 13,
+"segs": [
+{
+"livro": "2 Reis",
+"de": 23,
+"ate": 25
+}
+]
+},
+{
+"n": 176,
+"date": "2027-07-29",
+"fase": 10,
+"faseNome": "As cartas de Paulo III",
+"ref": "1 Timóteo 1–6",
+"livro": "1 Timóteo",
+"mins": 11,
+"segs": [
+{
+"livro": "1 Timóteo",
+"de": 1,
+"ate": 6
+}
+]
+},
+{
+"n": 177,
+"date": "2027-07-30",
+"fase": 10,
+"faseNome": "As cartas de Paulo III",
+"ref": "2 Timóteo 1–4 · Tito 1–3",
+"livro": "2 Timóteo",
+"mins": 12,
+"segs": [
+{
+"livro": "2 Timóteo",
+"de": 1,
+"ate": 4
+},
+{
+"livro": "Tito",
+"de": 1,
+"ate": 3
+}
+]
+},
+{
+"n": 178,
+"date": "2027-08-02",
+"fase": 10,
+"faseNome": "As cartas de Paulo III",
+"ref": "Hebreus 1–6",
+"livro": "Hebreus",
+"mins": 11,
+"segs": [
+{
+"livro": "Hebreus",
+"de": 1,
+"ate": 6
+}
+]
+},
+{
+"n": 179,
+"date": "2027-08-03",
+"fase": 10,
+"faseNome": "As cartas de Paulo III",
+"ref": "Hebreus 7–10",
+"livro": "Hebreus",
+"mins": 12,
+"segs": [
+{
+"livro": "Hebreus",
+"de": 7,
+"ate": 10
+}
+]
+},
+{
+"n": 180,
+"date": "2027-08-04",
+"fase": 10,
+"faseNome": "As cartas de Paulo III",
+"ref": "Hebreus 11–13",
+"livro": "Hebreus",
+"mins": 10,
+"segs": [
+{
+"livro": "Hebreus",
+"de": 11,
+"ate": 13
+}
+]
+},
+{
+"n": 181,
+"date": "2027-08-05",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 1–11",
+"livro": "Salmos",
+"mins": 11,
+"segs": [
+{
+"livro": "Salmos",
+"de": 1,
+"ate": 11
+}
+]
+},
+{
+"n": 182,
+"date": "2027-08-06",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 12–20",
+"livro": "Salmos",
+"mins": 11,
+"segs": [
+{
+"livro": "Salmos",
+"de": 12,
+"ate": 20
+}
+]
+},
+{
+"n": 183,
+"date": "2027-08-09",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 21–29",
+"livro": "Salmos",
+"mins": 11,
+"segs": [
+{
+"livro": "Salmos",
+"de": 21,
+"ate": 29
+}
+]
+},
+{
+"n": 184,
+"date": "2027-08-10",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 30–36",
+"livro": "Salmos",
+"mins": 11,
+"segs": [
+{
+"livro": "Salmos",
+"de": 30,
+"ate": 36
+}
+]
+},
+{
+"n": 185,
+"date": "2027-08-11",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 37–43",
+"livro": "Salmos",
+"mins": 11,
+"segs": [
+{
+"livro": "Salmos",
+"de": 37,
+"ate": 43
+}
+]
+},
+{
+"n": 186,
+"date": "2027-08-12",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 44–51",
+"livro": "Salmos",
+"mins": 11,
+"segs": [
+{
+"livro": "Salmos",
+"de": 44,
+"ate": 51
+}
+]
+},
+{
+"n": 187,
+"date": "2027-08-13",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 52–62",
+"livro": "Salmos",
+"mins": 12,
+"segs": [
+{
+"livro": "Salmos",
+"de": 52,
+"ate": 62
+}
+]
+},
+{
+"n": 188,
+"date": "2027-08-16",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 63–69",
+"livro": "Salmos",
+"mins": 11,
+"segs": [
+{
+"livro": "Salmos",
+"de": 63,
+"ate": 69
+}
+]
+},
+{
+"n": 189,
+"date": "2027-08-17",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 70–77",
+"livro": "Salmos",
+"mins": 11,
+"segs": [
+{
+"livro": "Salmos",
+"de": 70,
+"ate": 77
+}
+]
+},
+{
+"n": 190,
+"date": "2027-08-18",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 78–84",
+"livro": "Salmos",
+"mins": 13,
+"segs": [
+{
+"livro": "Salmos",
+"de": 78,
+"ate": 84
+}
+]
+},
+{
+"n": 191,
+"date": "2027-08-19",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 85–92",
+"livro": "Salmos",
+"mins": 12,
+"segs": [
+{
+"livro": "Salmos",
+"de": 85,
+"ate": 92
+}
+]
+},
+{
+"n": 192,
+"date": "2027-08-20",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 93–103",
+"livro": "Salmos",
+"mins": 12,
+"segs": [
+{
+"livro": "Salmos",
+"de": 93,
+"ate": 103
+}
+]
+},
+{
+"n": 193,
+"date": "2027-08-23",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 104–107",
+"livro": "Salmos",
+"mins": 12,
+"segs": [
+{
+"livro": "Salmos",
+"de": 104,
+"ate": 107
+}
+]
+},
+{
+"n": 194,
+"date": "2027-08-24",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 108–118",
+"livro": "Salmos",
+"mins": 11,
+"segs": [
+{
+"livro": "Salmos",
+"de": 108,
+"ate": 118
+}
+]
+},
+{
+"n": 195,
+"date": "2027-08-25",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 119–120",
+"livro": "Salmos",
+"mins": 12,
+"segs": [
+{
+"livro": "Salmos",
+"de": 119,
+"ate": 120
+}
+]
+},
+{
+"n": 196,
+"date": "2027-08-26",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 121–138",
+"livro": "Salmos",
+"mins": 12,
+"segs": [
+{
+"livro": "Salmos",
+"de": 121,
+"ate": 138
+}
+]
+},
+{
+"n": 197,
+"date": "2027-08-27",
+"fase": 11,
+"faseNome": "Os Salmos",
+"ref": "Salmos 139–150",
+"livro": "Salmos",
+"mins": 13,
+"segs": [
+{
+"livro": "Salmos",
+"de": 139,
+"ate": 150
+}
+]
+},
+{
+"n": 198,
+"date": "2027-08-30",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "1 Crônicas 1–3",
+"livro": "1 Crônicas",
+"mins": 9,
+"segs": [
+{
+"livro": "1 Crônicas",
+"de": 1,
+"ate": 3
+}
+]
+},
+{
+"n": 199,
+"date": "2027-08-31",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "1 Crônicas 4–6",
+"livro": "1 Crônicas",
+"mins": 13,
+"segs": [
+{
+"livro": "1 Crônicas",
+"de": 4,
+"ate": 6
+}
+]
+},
+{
+"n": 200,
+"date": "2027-09-01",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "1 Crônicas 7–10",
+"livro": "1 Crônicas",
+"mins": 12,
+"segs": [
+{
+"livro": "1 Crônicas",
+"de": 7,
+"ate": 10
+}
+]
+},
+{
+"n": 201,
+"date": "2027-09-02",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "1 Crônicas 11–14",
+"livro": "1 Crônicas",
+"mins": 12,
+"segs": [
+{
+"livro": "1 Crônicas",
+"de": 11,
+"ate": 14
+}
+]
+},
+{
+"n": 202,
+"date": "2027-09-03",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "1 Crônicas 15–18",
+"livro": "1 Crônicas",
+"mins": 12,
+"segs": [
+{
+"livro": "1 Crônicas",
+"de": 15,
+"ate": 18
+}
+]
+},
+{
+"n": 203,
+"date": "2027-09-06",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "1 Crônicas 19–22",
+"livro": "1 Crônicas",
+"mins": 11,
+"segs": [
+{
+"livro": "1 Crônicas",
+"de": 19,
+"ate": 22
+}
+]
+},
+{
+"n": 204,
+"date": "2027-09-08",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "1 Crônicas 23–26",
+"livro": "1 Crônicas",
+"mins": 11,
+"segs": [
+{
+"livro": "1 Crônicas",
+"de": 23,
+"ate": 26
+}
+]
+},
+{
+"n": 205,
+"date": "2027-09-09",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "1 Crônicas 27–29",
+"livro": "1 Crônicas",
+"mins": 12,
+"segs": [
+{
+"livro": "1 Crônicas",
+"de": 27,
+"ate": 29
+}
+]
+},
+{
+"n": 206,
+"date": "2027-09-10",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "2 Crônicas 1–5",
+"livro": "2 Crônicas",
+"mins": 12,
+"segs": [
+{
+"livro": "2 Crônicas",
+"de": 1,
+"ate": 5
+}
+]
+},
+{
+"n": 207,
+"date": "2027-09-13",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "2 Crônicas 6–8",
+"livro": "2 Crônicas",
+"mins": 12,
+"segs": [
+{
+"livro": "2 Crônicas",
+"de": 6,
+"ate": 8
+}
+]
+},
+{
+"n": 208,
+"date": "2027-09-14",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "2 Crônicas 9–13",
+"livro": "2 Crônicas",
+"mins": 14,
+"segs": [
+{
+"livro": "2 Crônicas",
+"de": 9,
+"ate": 13
+}
+]
+},
+{
+"n": 209,
+"date": "2027-09-15",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "2 Crônicas 14–19",
+"livro": "2 Crônicas",
+"mins": 14,
+"segs": [
+{
+"livro": "2 Crônicas",
+"de": 14,
+"ate": 19
+}
+]
+},
+{
+"n": 210,
+"date": "2027-09-16",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "2 Crônicas 20–23",
+"livro": "2 Crônicas",
+"mins": 13,
+"segs": [
+{
+"livro": "2 Crônicas",
+"de": 20,
+"ate": 23
+}
+]
+},
+{
+"n": 211,
+"date": "2027-09-17",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "2 Crônicas 24–27",
+"livro": "2 Crônicas",
+"mins": 12,
+"segs": [
+{
+"livro": "2 Crônicas",
+"de": 24,
+"ate": 27
+}
+]
+},
+{
+"n": 212,
+"date": "2027-09-20",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "2 Crônicas 28–30",
+"livro": "2 Crônicas",
+"mins": 13,
+"segs": [
+{
+"livro": "2 Crônicas",
+"de": 28,
+"ate": 30
+}
+]
+},
+{
+"n": 213,
+"date": "2027-09-21",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "2 Crônicas 31–33",
+"livro": "2 Crônicas",
+"mins": 11,
+"segs": [
+{
+"livro": "2 Crônicas",
+"de": 31,
+"ate": 33
+}
+]
+},
+{
+"n": 214,
+"date": "2027-09-22",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "2 Crônicas 34–36",
+"livro": "2 Crônicas",
+"mins": 13,
+"segs": [
+{
+"livro": "2 Crônicas",
+"de": 34,
+"ate": 36
+}
+]
+},
+{
+"n": 215,
+"date": "2027-09-23",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "Esdras 1–4",
+"livro": "Esdras",
+"mins": 12,
+"segs": [
+{
+"livro": "Esdras",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 216,
+"date": "2027-09-24",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "Esdras 5–7",
+"livro": "Esdras",
+"mins": 10,
+"segs": [
+{
+"livro": "Esdras",
+"de": 5,
+"ate": 7
+}
+]
+},
+{
+"n": 217,
+"date": "2027-09-27",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "Esdras 8–10",
+"livro": "Esdras",
+"mins": 11,
+"segs": [
+{
+"livro": "Esdras",
+"de": 8,
+"ate": 10
+}
+]
+},
+{
+"n": 218,
+"date": "2027-09-28",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "Neemias 1–4",
+"livro": "Neemias",
+"mins": 12,
+"segs": [
+{
+"livro": "Neemias",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 219,
+"date": "2027-09-29",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "Neemias 5–7",
+"livro": "Neemias",
+"mins": 11,
+"segs": [
+{
+"livro": "Neemias",
+"de": 5,
+"ate": 7
+}
+]
+},
+{
+"n": 220,
+"date": "2027-09-30",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "Neemias 8–10",
+"livro": "Neemias",
+"mins": 12,
+"segs": [
+{
+"livro": "Neemias",
+"de": 8,
+"ate": 10
+}
+]
+},
+{
+"n": 221,
+"date": "2027-10-01",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "Neemias 11–13",
+"livro": "Neemias",
+"mins": 12,
+"segs": [
+{
+"livro": "Neemias",
+"de": 11,
+"ate": 13
+}
+]
+},
+{
+"n": 222,
+"date": "2027-10-04",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "Ester 1–4",
+"livro": "Ester",
+"mins": 12,
+"segs": [
+{
+"livro": "Ester",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 223,
+"date": "2027-10-05",
+"fase": 12,
+"faseNome": "A volta do exílio",
+"ref": "Ester 5–10",
+"livro": "Ester",
+"mins": 14,
+"segs": [
+{
+"livro": "Ester",
+"de": 5,
+"ate": 10
+}
+]
+},
+{
+"n": 224,
+"date": "2027-10-06",
+"fase": 13,
+"faseNome": "As cartas de Tiago, Pedro, João e Judas",
+"ref": "Tiago 1–5",
+"livro": "Tiago",
+"mins": 11,
+"segs": [
+{
+"livro": "Tiago",
+"de": 1,
+"ate": 5
+}
+]
+},
+{
+"n": 225,
+"date": "2027-10-07",
+"fase": 13,
+"faseNome": "As cartas de Tiago, Pedro, João e Judas",
+"ref": "1 Pedro 1–5",
+"livro": "1 Pedro",
+"mins": 11,
+"segs": [
+{
+"livro": "1 Pedro",
+"de": 1,
+"ate": 5
+}
+]
+},
+{
+"n": 226,
+"date": "2027-10-08",
+"fase": 13,
+"faseNome": "As cartas de Tiago, Pedro, João e Judas",
+"ref": "2 Pedro 1–3 · 1 João 1–2",
+"livro": "2 Pedro",
+"mins": 11,
+"segs": [
+{
+"livro": "2 Pedro",
+"de": 1,
+"ate": 3
+},
+{
+"livro": "1 João",
+"de": 1,
+"ate": 2
+}
+]
+},
+{
+"n": 227,
+"date": "2027-10-11",
+"fase": 13,
+"faseNome": "As cartas de Tiago, Pedro, João e Judas",
+"ref": "1 João 3–5 · 2 João · 3 João · Judas",
+"livro": "1 João",
+"mins": 13,
+"segs": [
+{
+"livro": "1 João",
+"de": 3,
+"ate": 5
+},
+{
+"livro": "2 João",
+"de": 1,
+"ate": 1
+},
+{
+"livro": "3 João",
+"de": 1,
+"ate": 1
+},
+{
+"livro": "Judas",
+"de": 1,
+"ate": 1
+}
+]
+},
+{
+"n": 228,
+"date": "2027-10-13",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Isaías 1–4",
+"livro": "Isaías",
+"mins": 9,
+"segs": [
+{
+"livro": "Isaías",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 229,
+"date": "2027-10-14",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Isaías 5–8",
+"livro": "Isaías",
+"mins": 11,
+"segs": [
+{
+"livro": "Isaías",
+"de": 5,
+"ate": 8
+}
+]
+},
+{
+"n": 230,
+"date": "2027-10-15",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Isaías 9–13",
+"livro": "Isaías",
+"mins": 12,
+"segs": [
+{
+"livro": "Isaías",
+"de": 9,
+"ate": 13
+}
+]
+},
+{
+"n": 231,
+"date": "2027-10-18",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Isaías 14–19",
+"livro": "Isaías",
+"mins": 13,
+"segs": [
+{
+"livro": "Isaías",
+"de": 14,
+"ate": 19
+}
+]
+},
+{
+"n": 232,
+"date": "2027-10-19",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Isaías 20–25",
+"livro": "Isaías",
+"mins": 12,
+"segs": [
+{
+"livro": "Isaías",
+"de": 20,
+"ate": 25
+}
+]
+},
+{
+"n": 233,
+"date": "2027-10-20",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Isaías 26–29",
+"livro": "Isaías",
+"mins": 11,
+"segs": [
+{
+"livro": "Isaías",
+"de": 26,
+"ate": 29
+}
+]
+},
+{
+"n": 234,
+"date": "2027-10-21",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Isaías 30–34",
+"livro": "Isaías",
+"mins": 13,
+"segs": [
+{
+"livro": "Isaías",
+"de": 30,
+"ate": 34
+}
+]
+},
+{
+"n": 235,
+"date": "2027-10-22",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Isaías 35–38",
+"livro": "Isaías",
+"mins": 12,
+"segs": [
+{
+"livro": "Isaías",
+"de": 35,
+"ate": 38
+}
+]
+},
+{
+"n": 236,
+"date": "2027-10-25",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Isaías 39–42",
+"livro": "Isaías",
+"mins": 11,
+"segs": [
+{
+"livro": "Isaías",
+"de": 39,
+"ate": 42
+}
+]
+},
+{
+"n": 237,
+"date": "2027-10-26",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Isaías 43–45",
+"livro": "Isaías",
+"mins": 11,
+"segs": [
+{
+"livro": "Isaías",
+"de": 43,
+"ate": 45
+}
+]
+},
+{
+"n": 238,
+"date": "2027-10-27",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Isaías 46–50",
+"livro": "Isaías",
+"mins": 12,
+"segs": [
+{
+"livro": "Isaías",
+"de": 46,
+"ate": 50
+}
+]
+},
+{
+"n": 239,
+"date": "2027-10-28",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Isaías 51–56",
+"livro": "Isaías",
+"mins": 12,
+"segs": [
+{
+"livro": "Isaías",
+"de": 51,
+"ate": 56
+}
+]
+},
+{
+"n": 240,
+"date": "2027-10-29",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Isaías 57–61",
+"livro": "Isaías",
+"mins": 12,
+"segs": [
+{
+"livro": "Isaías",
+"de": 57,
+"ate": 61
+}
+]
+},
+{
+"n": 241,
+"date": "2027-11-01",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Isaías 62–66",
+"livro": "Isaías",
+"mins": 13,
+"segs": [
+{
+"livro": "Isaías",
+"de": 62,
+"ate": 66
+}
+]
+},
+{
+"n": 242,
+"date": "2027-11-03",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 1–3",
+"livro": "Jeremias",
+"mins": 11,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 1,
+"ate": 3
+}
+]
+},
+{
+"n": 243,
+"date": "2027-11-04",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 4–6",
+"livro": "Jeremias",
+"mins": 11,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 4,
+"ate": 6
+}
+]
+},
+{
+"n": 244,
+"date": "2027-11-05",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 7–9",
+"livro": "Jeremias",
+"mins": 11,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 7,
+"ate": 9
+}
+]
+},
+{
+"n": 245,
+"date": "2027-11-08",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 10–13",
+"livro": "Jeremias",
+"mins": 12,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 10,
+"ate": 13
+}
+]
+},
+{
+"n": 246,
+"date": "2027-11-09",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 14–17",
+"livro": "Jeremias",
+"mins": 13,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 14,
+"ate": 17
+}
+]
+},
+{
+"n": 247,
+"date": "2027-11-10",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 18–21",
+"livro": "Jeremias",
+"mins": 10,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 18,
+"ate": 21
+}
+]
+},
+{
+"n": 248,
+"date": "2027-11-11",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 22–24",
+"livro": "Jeremias",
+"mins": 11,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 22,
+"ate": 24
+}
+]
+},
+{
+"n": 249,
+"date": "2027-11-12",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 25–28",
+"livro": "Jeremias",
+"mins": 14,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 25,
+"ate": 28
+}
+]
+},
+{
+"n": 250,
+"date": "2027-11-16",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 29–31",
+"livro": "Jeremias",
+"mins": 13,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 29,
+"ate": 31
+}
+]
+},
+{
+"n": 251,
+"date": "2027-11-17",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 32–33",
+"livro": "Jeremias",
+"mins": 10,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 32,
+"ate": 33
+}
+]
+},
+{
+"n": 252,
+"date": "2027-11-18",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 34–36",
+"livro": "Jeremias",
+"mins": 11,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 34,
+"ate": 36
+}
+]
+},
+{
+"n": 253,
+"date": "2027-11-19",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 37–40",
+"livro": "Jeremias",
+"mins": 12,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 37,
+"ate": 40
+}
+]
+},
+{
+"n": 254,
+"date": "2027-11-22",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 41–44",
+"livro": "Jeremias",
+"mins": 14,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 41,
+"ate": 44
+}
+]
+},
+{
+"n": 255,
+"date": "2027-11-23",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 45–48",
+"livro": "Jeremias",
+"mins": 10,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 45,
+"ate": 48
+}
+]
+},
+{
+"n": 256,
+"date": "2027-11-24",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 49–50",
+"livro": "Jeremias",
+"mins": 11,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 49,
+"ate": 50
+}
+]
+},
+{
+"n": 257,
+"date": "2027-11-25",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Jeremias 51–52",
+"livro": "Jeremias",
+"mins": 13,
+"segs": [
+{
+"livro": "Jeremias",
+"de": 51,
+"ate": 52
+}
+]
+},
+{
+"n": 258,
+"date": "2027-11-26",
+"fase": 14,
+"faseNome": "Os grandes profetas I",
+"ref": "Lamentações 1–5",
+"livro": "Lamentações",
+"mins": 14,
+"segs": [
+{
+"livro": "Lamentações",
+"de": 1,
+"ate": 5
+}
+]
+},
+{
+"n": 259,
+"date": "2027-11-29",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Ezequiel 1–5",
+"livro": "Ezequiel",
+"mins": 13,
+"segs": [
+{
+"livro": "Ezequiel",
+"de": 1,
+"ate": 5
+}
+]
+},
+{
+"n": 260,
+"date": "2027-11-30",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Ezequiel 6–10",
+"livro": "Ezequiel",
+"mins": 13,
+"segs": [
+{
+"livro": "Ezequiel",
+"de": 6,
+"ate": 10
+}
+]
+},
+{
+"n": 261,
+"date": "2027-12-01",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Ezequiel 11–14",
+"livro": "Ezequiel",
+"mins": 13,
+"segs": [
+{
+"livro": "Ezequiel",
+"de": 11,
+"ate": 14
+}
+]
+},
+{
+"n": 262,
+"date": "2027-12-02",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Ezequiel 15–17",
+"livro": "Ezequiel",
+"mins": 12,
+"segs": [
+{
+"livro": "Ezequiel",
+"de": 15,
+"ate": 17
+}
+]
+},
+{
+"n": 263,
+"date": "2027-12-03",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Ezequiel 18–20",
+"livro": "Ezequiel",
+"mins": 12,
+"segs": [
+{
+"livro": "Ezequiel",
+"de": 18,
+"ate": 20
+}
+]
+},
+{
+"n": 264,
+"date": "2027-12-06",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Ezequiel 21–23",
+"livro": "Ezequiel",
+"mins": 13,
+"segs": [
+{
+"livro": "Ezequiel",
+"de": 21,
+"ate": 23
+}
+]
+},
+{
+"n": 265,
+"date": "2027-12-07",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Ezequiel 24–27",
+"livro": "Ezequiel",
+"mins": 12,
+"segs": [
+{
+"livro": "Ezequiel",
+"de": 24,
+"ate": 27
+}
+]
+},
+{
+"n": 266,
+"date": "2027-12-08",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Ezequiel 28–30",
+"livro": "Ezequiel",
+"mins": 9,
+"segs": [
+{
+"livro": "Ezequiel",
+"de": 28,
+"ate": 30
+}
+]
+},
+{
+"n": 267,
+"date": "2027-12-09",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Ezequiel 31–33",
+"livro": "Ezequiel",
+"mins": 12,
+"segs": [
+{
+"livro": "Ezequiel",
+"de": 31,
+"ate": 33
+}
+]
+},
+{
+"n": 268,
+"date": "2027-12-10",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Ezequiel 34–36",
+"livro": "Ezequiel",
+"mins": 11,
+"segs": [
+{
+"livro": "Ezequiel",
+"de": 34,
+"ate": 36
+}
+]
+},
+{
+"n": 269,
+"date": "2027-12-13",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Ezequiel 37–39",
+"livro": "Ezequiel",
+"mins": 11,
+"segs": [
+{
+"livro": "Ezequiel",
+"de": 37,
+"ate": 39
+}
+]
+},
+{
+"n": 270,
+"date": "2027-12-14",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Ezequiel 40–42",
+"livro": "Ezequiel",
+"mins": 13,
+"segs": [
+{
+"livro": "Ezequiel",
+"de": 40,
+"ate": 42
+}
+]
+},
+{
+"n": 271,
+"date": "2027-12-15",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Ezequiel 43–45",
+"livro": "Ezequiel",
+"mins": 12,
+"segs": [
+{
+"livro": "Ezequiel",
+"de": 43,
+"ate": 45
+}
+]
+},
+{
+"n": 272,
+"date": "2027-12-16",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Ezequiel 46–48",
+"livro": "Ezequiel",
+"mins": 12,
+"segs": [
+{
+"livro": "Ezequiel",
+"de": 46,
+"ate": 48
+}
+]
+},
+{
+"n": 273,
+"date": "2027-12-17",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Daniel 1–3",
+"livro": "Daniel",
+"mins": 14,
+"segs": [
+{
+"livro": "Daniel",
+"de": 1,
+"ate": 3
+}
+]
+},
+{
+"n": 274,
+"date": "2027-12-20",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Daniel 4–6",
+"livro": "Daniel",
+"mins": 14,
+"segs": [
+{
+"livro": "Daniel",
+"de": 4,
+"ate": 6
+}
+]
+},
+{
+"n": 275,
+"date": "2027-12-21",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Daniel 7–9",
+"livro": "Daniel",
+"mins": 12,
+"segs": [
+{
+"livro": "Daniel",
+"de": 7,
+"ate": 9
+}
+]
+},
+{
+"n": 276,
+"date": "2027-12-22",
+"fase": 15,
+"faseNome": "Os grandes profetas II",
+"ref": "Daniel 10–12",
+"livro": "Daniel",
+"mins": 11,
+"segs": [
+{
+"livro": "Daniel",
+"de": 10,
+"ate": 12
+}
+]
+},
+{
+"n": 277,
+"date": "2027-12-23",
+"fase": 16,
+"faseNome": "Os doze profetas menores",
+"ref": "Oseias 1–8",
+"livro": "Oseias",
+"mins": 13,
+"segs": [
+{
+"livro": "Oséias",
+"de": 1,
+"ate": 8
+}
+]
+},
+{
+"n": 278,
+"date": "2027-12-24",
+"fase": 16,
+"faseNome": "Os doze profetas menores",
+"ref": "Oseias 9–14 · Joel 1",
+"livro": "Oseias",
+"mins": 12,
+"segs": [
+{
+"livro": "Oséias",
+"de": 9,
+"ate": 14
+},
+{
+"livro": "Joel",
+"de": 1,
+"ate": 1
+}
+]
+},
+{
+"n": 279,
+"date": "2027-12-27",
+"fase": 16,
+"faseNome": "Os doze profetas menores",
+"ref": "Joel 2–3 · Amós 1–3",
+"livro": "Joel",
+"mins": 12,
+"segs": [
+{
+"livro": "Joel",
+"de": 2,
+"ate": 3
+},
+{
+"livro": "Amós",
+"de": 1,
+"ate": 3
+}
+]
+},
+{
+"n": 280,
+"date": "2027-12-28",
+"fase": 16,
+"faseNome": "Os doze profetas menores",
+"ref": "Amós 4–9",
+"livro": "Amós",
+"mins": 13,
+"segs": [
+{
+"livro": "Amós",
+"de": 4,
+"ate": 9
+}
+]
+},
+{
+"n": 281,
+"date": "2027-12-29",
+"fase": 16,
+"faseNome": "Os doze profetas menores",
+"ref": "Obadias · Jonas 1–4 · Miqueias 1",
+"livro": "Obadias",
+"mins": 11,
+"segs": [
+{
+"livro": "Obadias",
+"de": 1,
+"ate": 1
+},
+{
+"livro": "Jonas",
+"de": 1,
+"ate": 4
+},
+{
+"livro": "Miqueias",
+"de": 1,
+"ate": 1
+}
+]
+},
+{
+"n": 282,
+"date": "2027-12-30",
+"fase": 16,
+"faseNome": "Os doze profetas menores",
+"ref": "Miqueias 2–7",
+"livro": "Miqueias",
+"mins": 12,
+"segs": [
+{
+"livro": "Miqueias",
+"de": 2,
+"ate": 7
+}
+]
+},
+{
+"n": 283,
+"date": "2027-12-31",
+"fase": 16,
+"faseNome": "Os doze profetas menores",
+"ref": "Naum 1–3 · Habacuque 1–3",
+"livro": "Naum",
+"mins": 12,
+"segs": [
+{
+"livro": "Naum",
+"de": 1,
+"ate": 3
+},
+{
+"livro": "Habacuque",
+"de": 1,
+"ate": 3
+}
+]
+},
+{
+"n": 284,
+"date": "2028-01-03",
+"fase": 16,
+"faseNome": "Os doze profetas menores",
+"ref": "Sofonias 1–3 · Ageu 1–2",
+"livro": "Sofonias",
+"mins": 12,
+"segs": [
+{
+"livro": "Sofonias",
+"de": 1,
+"ate": 3
+},
+{
+"livro": "Ageu",
+"de": 1,
+"ate": 2
+}
+]
+},
+{
+"n": 285,
+"date": "2028-01-04",
+"fase": 16,
+"faseNome": "Os doze profetas menores",
+"ref": "Zacarias 1–7",
+"livro": "Zacarias",
+"mins": 12,
+"segs": [
+{
+"livro": "Zacarias",
+"de": 1,
+"ate": 7
+}
+]
+},
+{
+"n": 286,
+"date": "2028-01-05",
+"fase": 16,
+"faseNome": "Os doze profetas menores",
+"ref": "Zacarias 8–13",
+"livro": "Zacarias",
+"mins": 12,
+"segs": [
+{
+"livro": "Zacarias",
+"de": 8,
+"ate": 13
+}
+]
+},
+{
+"n": 287,
+"date": "2028-01-06",
+"fase": 16,
+"faseNome": "Os doze profetas menores",
+"ref": "Zacarias 14 · Malaquias 1–4",
+"livro": "Zacarias",
+"mins": 11,
+"segs": [
+{
+"livro": "Zacarias",
+"de": 14,
+"ate": 14
+},
+{
+"livro": "Malaquias",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 288,
+"date": "2028-01-07",
+"fase": 17,
+"faseNome": "O Apocalipse",
+"ref": "Apocalipse 1–4",
+"livro": "Apocalipse",
+"mins": 11,
+"segs": [
+{
+"livro": "Apocalipse",
+"de": 1,
+"ate": 4
+}
+]
+},
+{
+"n": 289,
+"date": "2028-01-10",
+"fase": 17,
+"faseNome": "O Apocalipse",
+"ref": "Apocalipse 5–9",
+"livro": "Apocalipse",
+"mins": 11,
+"segs": [
+{
+"livro": "Apocalipse",
+"de": 5,
+"ate": 9
+}
+]
+},
+{
+"n": 290,
+"date": "2028-01-11",
+"fase": 17,
+"faseNome": "O Apocalipse",
+"ref": "Apocalipse 10–14",
+"livro": "Apocalipse",
+"mins": 12,
+"segs": [
+{
+"livro": "Apocalipse",
+"de": 10,
+"ate": 14
+}
+]
+},
+{
+"n": 291,
+"date": "2028-01-12",
+"fase": 17,
+"faseNome": "O Apocalipse",
+"ref": "Apocalipse 15–18",
+"livro": "Apocalipse",
+"mins": 10,
+"segs": [
+{
+"livro": "Apocalipse",
+"de": 15,
+"ate": 18
+}
+]
+},
+{
+"n": 292,
+"date": "2028-01-13",
+"fase": 17,
+"faseNome": "O Apocalipse",
+"ref": "Apocalipse 19–22",
+"livro": "Apocalipse",
+"mins": 11,
+"segs": [
+{
+"livro": "Apocalipse",
+"de": 19,
+"ate": 22
+}
+]
+}
+]
