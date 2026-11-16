@@ -19,7 +19,9 @@ for b in C.D[1:]:
     livros.append([C.nm(nome), b['abrev'].lower(), len(caps), 'AT' if b['periodo'].startswith('Antigo') else 'NT',
                    [dia_de[(nome, c + 1)] for c in range(len(caps))]])
     for c in range(len(caps)): busca.append([len(livros) - 1, c + 1, [C.limpa(v) for v in caps[c]]])
-data = json.dumps({'days': days, 'fases': fases, 'livros': livros}, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+import guia_biblia as G
+guia = {'grupos': G.GRUPOS, 'resumos': G.RESUMOS, 'linha': G.LINHA, 'lembrar': G.LEMBRAR, 'conversa': G.CONVERSA}
+data = json.dumps({'days': days, 'fases': fases, 'livros': livros, 'guia': guia}, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
 html = open(os.path.join(AQUI, 'app_biblia.html')).read().replace('__DATA__', data)
 open(os.path.join(OUT, 'index.html'), 'w').write(html)
 if os.path.exists(os.path.join(OUT, 'textos')): shutil.rmtree(os.path.join(OUT, 'textos'))
