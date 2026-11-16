@@ -211,6 +211,26 @@ h1,h2,h3{text-wrap:balance}
 .gtag{display:inline-flex;align-items:center;gap:6px;font:700 11px var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
 .gtag i{width:10px;height:10px;border-radius:3px}
 
+/* jornada (cartões semanais do guia) */
+.jor{display:grid;gap:14px}
+.jc{background:var(--surface);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.jc .top{padding:18px 18px 16px}
+.jc .top .k{color:var(--plum);opacity:.8}
+.jc .top h3{font:500 22px/1.2 var(--f-disp);margin:4px 0 4px}
+.jc .top p{margin:0;font-size:14.5px}
+.jc .bd{padding:14px 18px 16px;display:flex;flex-direction:column;gap:14px;font-size:14.5px}
+.jc .pp{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.jc .pp div{background:var(--bg);border-radius:14px;padding:9px 11px;line-height:1.35}
+.jc .pp b{display:block;font:500 15px var(--f-disp);color:var(--plum);margin-bottom:2px}
+.jc .pp span{font-size:12.5px;color:var(--muted)}
+.jc .lg{display:flex;flex-direction:column;gap:6px;margin:0;padding:0;list-style:none}
+.jc .lg li{display:grid;grid-template-columns:18px 1fr;gap:6px;align-items:start}
+.jc .lg svg{width:16px;height:16px;margin-top:2px;color:var(--rose)}
+.jc .id{background:linear-gradient(135deg,var(--s1),var(--s2) 55%,var(--s3));border-radius:16px;padding:12px 14px}
+.jc .hd{font:700 10.5px var(--f-ui);letter-spacing:.16em;text-transform:uppercase;color:var(--lav);margin-bottom:6px}
+.trava{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1.5px dashed var(--line);border-radius:20px;color:var(--muted);font-size:14px}
+.trava svg{width:22px;height:22px;flex:none}
+
 /* como usar */
 .steps{display:flex;flex-direction:column;gap:14px}
 .step{display:grid;grid-template-columns:30px 1fr;gap:10px;font-size:14.5px}
@@ -244,7 +264,7 @@ h1,h2,h3{text-wrap:balance}
 (function(){
 const DATA = JSON.parse(document.getElementById('data').textContent);
 const DAYS = DATA.days, FASES = DATA.fases, LIVROS = DATA.livros, G = DATA.guia;  // livro: [nome, abrev, capítulos, AT/NT, dia de cada capítulo]
-let COM = {};                       // comentários: comentarios.json (atualizado toda semana)
+let COM = {}, SEM_G = [];                       // comentários: comentarios.json (atualizado toda semana)
 const TXT = {};                     // textos já baixados
 const MESES=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
 const SEM=['domingo','segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sábado'];
@@ -275,6 +295,7 @@ function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg
 function toggle(n){ if (lidos.has(n)) { lidos.delete(n); toast('Desmarcado'); } else { lidos.add(n); toast('Leitura marcada como lida ♡'); } persist(); }
 
 /* ---------- dados de fora ---------- */
+fetch('guia-semanal.json', {cache:'no-store'}).then(r => r.ok ? r.json() : {}).then(j => { SEM_G = (j && j.semanas) || []; if (/^#guia/.test(location.hash)) render(false); }).catch(() => {});
 fetch('comentarios.json', {cache:'no-store'}).then(r => r.ok ? r.json() : {}).then(j => { COM = j || {}; render(false); }).catch(() => {});
 function texto(n){
   if (TXT[n]) return Promise.resolve(TXT[n]);
@@ -523,12 +544,30 @@ function vBusca(q){
     ${formBusca(q)}<div id="res" style="margin-top:12px"><p class="loading" style="margin:8px 6px">Procurando na Bíblia inteira…</p></div>`;
 }
 
+function vJornada(){
+  const sem = SEM_G.slice().sort((a,b)=>a.de-b.de);
+  const abertas = sem.filter(w => lidos.has(w.ate)), prox = sem.find(w => !lidos.has(w.ate));
+  const pin = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>';
+  const card = (w,k) => { const r = parseRef(w.chave);
+    const ln = r ? (() => { const i = LIVROS.findIndex(b=>b[0]===r.l); return i<0 ? '' : `<a href="#ler-${i}-${r.c}-${r.a}${r.z!==r.a?'-'+r.z:''}">${esc(w.chave)} ›</a>`; })() : '';
+    return `<article class="jc"><div class="top aura" style="${aura(k+1)};border-radius:0"><span class="k">semana ${k+1} · dias ${w.de} a ${w.ate} · ${esc(w.ref)}</span><h3>${esc(w.titulo)}</h3><p>${esc(w.resumo)}</p></div>
+      <div class="bd">
+        ${w.personagens&&w.personagens.length?`<div><div class="hd">quem aparece</div><div class="pp">${w.personagens.map(p=>`<div><b>${esc(p[0])}</b><span>${esc(p[1])}</span></div>`).join('')}</div></div>`:''}
+        ${w.lugares&&w.lugares.length?`<div><div class="hd">onde acontece</div><ul class="lg">${w.lugares.map(l=>`<li>${pin}<span><b>${esc(l[0])}</b> · ${esc(l[1])}</span></li>`).join('')}</ul></div>`:''}
+        ${w.ideia?`<div class="id"><div class="hd">a ideia espírita da semana</div>${inline(w.ideia)}${ln?`<div style="margin-top:8px;font-size:13px;font-weight:600">${ln}</div>`:''}</div>`:''}
+      </div></article>`; };
+  const lock = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg>';
+  return `<section class="sec" id="g-jornada"><h2>Sua <i>jornada</i></h2><p class="sub">A cada semana de leitura, um cartão novo: quem aparece, onde acontece e a ideia espírita. Ele abre quando você marca a última leitura da semana.</p>
+    <div class="jor">${abertas.slice().reverse().map(w=>card(w, sem.indexOf(w))).join('')}
+    ${prox ? `<div class="trava">${lock}<span>${abertas.length?'Próximo cartão':'O primeiro cartão'} abre quando você terminar o <a href="#dia-${prox.ate}">Dia ${prox.ate}</a>.</span></div>` : (sem.length ? '' : '<div class="trava">Os cartões aparecem conforme você lê.</div>')}</div></section>`;
+}
 function vGuia(){
-  const ch = [['ler','Como ler'],['biblioteca','A biblioteca'],['tempo','Linha do tempo'],['lembrar','Pra lembrar'],['conversar','Pra conversar'],['sobre','Como usar o app']];
+  const ch = [['jornada','Sua jornada'],['ler','Como ler'],['biblioteca','A biblioteca'],['tempo','Linha do tempo'],['lembrar','Pra lembrar'],['conversar','Pra conversar'],['sobre','Como usar o app']];
   const tot = LIVROS.reduce((s,b)=>s+b[2],0);
   const lib = G.grupos.map(g => { const caps = LIVROS.slice(g[2],g[3]+1).reduce((s,b)=>s+b[2],0); return {g, caps}; });
-  return `<div class="ph"><span class="k">pra entender a Bíblia</span><h1>Gui<i>a</i></h1><p>O básico pra ler, se localizar e conversar.</p></div>
+  return `<div class="ph"><span class="k">pra entender a Bíblia</span><h1>Gui<i>a</i></h1><p>O básico pra ler, se localizar e conversar. E a cada semana lida, um cartão novo.</p></div>
   <nav class="chips" aria-label="Seções do guia">${ch.map(([id,t])=>`<a href="#guia-${id}">${t}</a>`).join('')}</nav>
+  ${vJornada()}
 
   <section class="sec guia" id="g-ler"><h2>Como <i>ler</i></h2><p class="sub">Ela é uma biblioteca, não um livro só.</p>
     <div class="stack" style="margin-top:0">

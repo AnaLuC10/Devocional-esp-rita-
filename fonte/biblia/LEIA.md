@@ -16,3 +16,8 @@ Site: https://analuc10.github.io/Devocional-esp-rita-/biblia/
   - `chave` é o versículo-chave: "Livro cap:v" ou "Livro cap:v-v", com o nome do livro igual ao do app (ex.: Oseias, Cânticos). Precisa estar dentro da leitura do dia.
   - Um parágrafo que começa com `**Pra conversar:**` vira um quadro: como as igrejas evangélicas costumam ler o trecho e como o Espiritismo lê, com respeito.
 - `comentarios_mateus_marcos.py`: os Dias 1–14 (Mateus e Marcos).
+
+## Cartões semanais ("Sua jornada", na aba Guia)
+- Ficam em `/biblia/guia-semanal.json`: `{"semanas": [{"de": 1, "ate": 4, "titulo": "...", "ref": "Mateus 1–13", "resumo": "...", "personagens": [["Nome", "quem é / o que faz"], ...], "lugares": [["Lugar", "o que acontece lá"], ...], "ideia": "a ideia espírita da semana (aceita **negrito**)", "chave": "Mateus 5:3-12"}]}`.
+- Uma semana = os dias do cronograma de segunda a sexta da mesma semana do calendário (`de` = 1º dia, `ate` = último). 4 a 6 personagens e 4 a 6 lugares, todos que aparecem de fato no texto daquela semana.
+- O cartão só aparece pra quem já marcou como lido o dia `ate`.
