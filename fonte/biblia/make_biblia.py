@@ -6,7 +6,7 @@ import cronograma as C  # noqa: roda o cronograma e gera dias.json + textos/
 AQUI = os.path.dirname(os.path.abspath(__file__)); OUT = os.path.join(AQUI, '..', '..', 'biblia')
 os.makedirs(OUT, exist_ok=True)
 dias = json.load(open(os.path.join(AQUI, 'dias.json')))
-days = [{k: d[k] for k in ('n', 'fase', 'faseNome', 'ref', 'mins', 'livro')} for d in dias]
+days = [{k: d[k] for k in ('n', 'date', 'fase', 'faseNome', 'ref', 'mins', 'livro')} for d in dias]
 fases = [[f, ', '.join(C.nm(x) for x in l)] for f, l in C.FASES]
 # índice da Bíblia inteira (ordem dos livros da Bíblia) e arquivo de busca
 dia_de = {}

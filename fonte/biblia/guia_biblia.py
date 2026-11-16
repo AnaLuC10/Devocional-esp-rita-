@@ -104,8 +104,10 @@ LEMBRAR = [
  ('O hino ao amor', '“O amor é paciente, é bondoso…” Sem amor, nada vale.', '1 Coríntios 13', '#ler-45-13'),
  ('O fruto do Espírito', 'Amor, alegria, paz, paciência, benignidade, bondade, fidelidade, mansidão e domínio próprio.', 'Gálatas 5:22-23', '#ler-47-5-22-23'),
  ('Colhe o que planta', '“O que o ser humano semear, isso também colherá.” É a lei de causa e efeito.', 'Gálatas 6:7', '#ler-47-6-7'),
- ('As três revelações', 'Pro Espiritismo, Moisés trouxe a Lei (1ª revelação), Jesus trouxe o amor (2ª) e o Espiritismo é o Consolador prometido por Jesus (3ª), que explica e relembra o que ele ensinou.', 'João 14:15-17, 26', '#ler-42-14-15-26'),
- ('Ler com olhos espíritas', 'Kardec separa os ensinos morais de Jesus (que todos aceitam) dos trechos que geram polêmica (milagres, profecias, dogmas). O foco do Espiritismo é a moral: a transformação de cada um.', 'O Evangelho segundo o Espiritismo, Introdução', ''),
+ ('Na visão espírita: as três revelações', 'Moisés trouxe a Lei (1ª revelação), Jesus trouxe o amor (2ª) e o Espiritismo é o Consolador prometido por Jesus (3ª), que explica e relembra o que ele ensinou.', 'João 14:15-17, 26', '#ler-42-14-15-26'),
+ ('Na visão espírita: o foco é a moral', 'Kardec separa os ensinos morais de Jesus, que todos aceitam, dos trechos que geram polêmica (milagres, profecias, dogmas). O centro é a transformação de cada um.', 'O Evangelho segundo o Espiritismo, Introdução', ''),
+ ('Na visão evangélica: a Bíblia é a Palavra de Deus', 'Toda a Escritura é inspirada por Deus e é a autoridade final pra fé e pra vida.', '2 Timóteo 3:16-17', '#ler-54-3-16-17'),
+ ('Na visão evangélica: salvos pela graça', 'A salvação é presente de Deus, recebido pela fé em Jesus, e não vem das obras. As boas obras são o fruto dessa nova vida.', 'Efésios 2:8-10', '#ler-48-2-8-10'),
 ]
 
 # pontos que mais aparecem nas conversas: (tema, como o Espiritismo lê, versículos citados pelos espíritas, como as igrejas evangélicas costumam ler, versículos citados pelos evangélicos)

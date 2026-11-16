@@ -3,33 +3,33 @@
   {
    "de": 1,
    "ate": 4,
-   "titulo": "Jesus começa",
-   "ref": "Mateus 1–13",
-   "resumo": "Do nascimento em Belém ao começo da pregação na Galileia: o Sermão do Monte, as primeiras curas e as parábolas do Reino.",
+   "titulo": "Jesus chega",
+   "ref": "Mateus 1–6",
+   "resumo": "Do nascimento em Belém ao começo do Sermão do Monte: o batismo, a tentação, os primeiros discípulos, as bem-aventuranças e o Pai-Nosso.",
    "personagens": [
     [
      "Jesus",
-     "o Espírito mais elevado que já esteve na Terra, nosso guia e modelo"
+     "nasce em Belém e começa a ensinar"
     ],
     [
      "Maria e José",
      "José é guiado por sonhos o tempo todo"
     ],
     [
-     "João Batista",
-     "prepara o caminho; Jesus diz que ele é o Elias que havia de vir"
-    ],
-    [
-     "Pedro e André",
-     "pescadores, os primeiros chamados"
-    ],
-    [
-     "Mateus",
-     "cobrador de impostos que larga tudo pra seguir Jesus"
+     "Os magos",
+     "estrangeiros que vêm do Oriente pra adorar o menino"
     ],
     [
      "Herodes",
      "o rei que manda matar os meninos de Belém"
+    ],
+    [
+     "João Batista",
+     "prega o arrependimento e batiza Jesus"
+    ],
+    [
+     "Pedro e André",
+     "pescadores, os primeiros chamados"
     ]
    ],
    "lugares": [
@@ -54,134 +54,71 @@
      "os 40 dias e a tentação"
     ],
     [
-     "Cafarnaum e o mar da Galileia",
-     "a base de Jesus, onde chama os pescadores"
+     "O monte",
+     "o Sermão do Monte"
     ]
    ],
-   "ideia": "A lei de Deus começa por dentro: na intenção, no pensamento, no jeito de tratar o outro. E a reencarnação aparece com todas as letras quando Jesus diz que João Batista é Elias.",
-   "chave": "Mateus 5:3-12"
+   "espirita": "Jesus é o Espírito mais elevado que já veio à Terra e traz a lei de Deus pra dentro do coração: a intenção vale tanto quanto o ato.",
+   "evangelica": "Jesus é o Emanuel, Deus conosco, que veio salvar o seu povo dos pecados e chama cada um a segui-lo.",
+   "chave": "Mateus 5:3-10"
   },
   {
    "de": 5,
    "ate": 9,
-   "titulo": "Do monte à cruz",
-   "ref": "Mateus 14–28",
-   "resumo": "Pedro anda sobre as águas, Moisés e Elias aparecem na transfiguração, Jesus entra em Jerusalém, fala do fim dos tempos, é crucificado e ressuscita.",
+   "titulo": "O Reino começa a crescer",
+   "ref": "Mateus 7–13",
+   "resumo": "O fim do Sermão do Monte, muitas curas, o envio dos doze, o convite \"vinde a mim\" e as parábolas do Reino.",
    "personagens": [
-    [
-     "Pedro",
-     "anda sobre as águas, reconhece Jesus, nega três vezes e recomeça"
-    ],
-    [
-     "Moisés e Elias",
-     "aparecem conversando com Jesus no monte"
-    ],
-    [
-     "O jovem rico",
-     "cumpria a lei mas não conseguiu largar o apego"
-    ],
-    [
-     "Judas",
-     "entrega Jesus por trinta moedas"
-    ],
-    [
-     "Caifás e Pilatos",
-     "o sumo sacerdote e o governador romano no julgamento"
-    ],
-    [
-     "José de Arimateia",
-     "discípulo rico que dá o túmulo pra Jesus"
-    ]
-   ],
-   "lugares": [
-    [
-     "Um monte alto",
-     "a transfiguração"
-    ],
-    [
-     "Jerusalém e o templo",
-     "a entrada no jumentinho e os vendedores expulsos"
-    ],
-    [
-     "Monte das Oliveiras",
-     "o discurso sobre os sinais do fim"
-    ],
-    [
-     "Getsêmani",
-     "a oração angustiada: “seja feita a tua vontade”"
-    ],
-    [
-     "Gólgota",
-     "“o lugar da caveira”, onde Jesus é crucificado"
-    ],
-    [
-     "Galileia",
-     "onde Jesus ressuscitado reencontra os discípulos"
-    ]
-   ],
-   "ideia": "A vida continua depois da morte: Moisés e Elias aparecem e conversam, e Jesus volta e é reconhecido. No juízo final, o que conta é a caridade feita aos menores.",
-   "chave": "Mateus 25:40"
-  },
-  {
-   "de": 10,
-   "ate": 14,
-   "titulo": "Marcos: o Evangelho em movimento",
-   "ref": "Marcos 1–16",
-   "resumo": "O evangelho mais curto e mais antigo conta a mesma história com pressa e detalhes novos: o telhado aberto, o homem de Gerasa, a filha de Jairo, a viúva pobre e o túmulo vazio.",
-   "personagens": [
-    [
-     "O paralítico e os 4 amigos",
-     "descem o amigo pelo telhado: a fé deles também conta"
-    ],
-    [
-     "O homem de Gerasa",
-     "dominado por “Legião” e curado; volta pra casa pra contar"
-    ],
-    [
-     "Jairo e a filha",
-     "“a menina não morreu, está dormindo”"
-    ],
-    [
-     "Bartimeu",
-     "o cego de Jericó que grita até ser ouvido"
-    ],
-    [
-     "A viúva pobre",
-     "dá duas moedinhas, e Jesus diz que ela deu mais que todos"
-    ],
     [
      "O centurião",
-     "o estrangeiro que reconhece quem Jesus era, na cruz"
+     "estrangeiro com uma fé que impressiona Jesus"
+    ],
+    [
+     "Mateus",
+     "cobrador de impostos chamado pra seguir Jesus"
+    ],
+    [
+     "Os doze",
+     "enviados pra anunciar o Reino"
+    ],
+    [
+     "João Batista",
+     "na prisão, manda perguntar se Jesus é o esperado"
+    ],
+    [
+     "Os fariseus",
+     "discutem com Jesus sobre o sábado e Belzebu"
+    ],
+    [
+     "O semeador",
+     "o personagem da parábola mais famosa"
     ]
    ],
    "lugares": [
     [
      "Cafarnaum",
-     "a casa cheia e o telhado aberto"
+     "a cidade onde Jesus mora e cura muita gente"
     ],
     [
-     "Terra dos gerasenos",
-     "a cura do homem que vivia entre os túmulos"
+     "Mar da Galileia",
+     "a tempestade acalmada"
+    ],
+    [
+     "Terra dos gadarenos",
+     "os dois homens libertos"
+    ],
+    [
+     "As cidades da Galileia",
+     "Corazim, Betsaida e Cafarnaum, que não se arrependeram"
     ],
     [
      "Nazaré",
-     "Jesus é rejeitado na própria cidade"
-    ],
-    [
-     "Betsaida",
-     "o cego curado em duas etapas"
-    ],
-    [
-     "Jericó",
-     "Bartimeu volta a ver"
-    ],
-    [
-     "Jerusalém",
-     "o templo, a cruz e o túmulo vazio"
+     "onde Jesus é rejeitado no fim do capítulo 13"
     ]
    ],
-   "ideia": "O que suja a pessoa é o que sai do coração, e não o que entra. E o bem não tem dono: “quem não é contra nós é por nós”.",
-   "chave": "Marcos 7:15"
+   "espirita": "As curas mostram a força de um Espírito puro agindo por leis naturais, e João Batista é o Elias que voltou.",
+   "evangelica": "As curas e libertações mostram que o Reino de Deus chegou, e o convite é entregar a vida a Jesus e descansar nele.",
+   "chave": "Mateus 11:28-30"
   }
  ]
 }

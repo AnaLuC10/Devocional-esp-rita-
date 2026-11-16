@@ -1,4 +1,4 @@
-"""Monta o cronograma da Bíblia inteira (Bíblia Livre) em dias úteis.
+"""Divide a Bíblia inteira (Bíblia Livre) em leituras curtas, de 1 a 2 capítulos (sem datas no app).
 Saída: dias.json (n, data, referência, minutos) e textos/NNN.json (capítulos e versículos de cada dia)."""
 import json, ast, re, datetime as dt, os, sys
 SRC = sys.argv[1] if len(sys.argv) > 1 else '/home/claude/src/bibialivrejson/biblialivre.json'
@@ -37,10 +37,9 @@ def limpa(v):
     return v
 def cw(b, c): return sum(len(v.split()) for v in B[b][c])
 
-ALVO, MAX, MIN = 2400, 3300, 1100   # ~12 min (200 palavras/min), máx ~16 min
-PEQ = 6000   # livro "pequeno": pode dividir o dia com outro livro
-# Cortes manuais por tema (início de cada dia), quando o corte automático partiria um trecho conhecido
-MANUAL = {'Mateus': [1, 5, 8, 11, 14, 18, 21, 24, 26]}
+ALVO, MAX, MIN = 1000, 1750, 450   # ~5 min de texto (200 palavras/min), 1 a 2 capítulos
+PEQ = 1200   # livro "pequeno" (Filemom, 2 e 3 João, Judas, Obadias…): pode dividir a leitura com outro livro
+MANUAL = {}  # cortes manuais por tema (início de cada leitura), se precisar
 def particiona(items):
     """items: lista de (livro, cap, palavras). Programação dinâmica: dias perto de ALVO, nunca acima de MAX,
     e só mistura livros pequenos."""
@@ -54,7 +53,9 @@ def particiona(items):
             if len(livros) > 1 and any(TOT[x] > PEQ for x in livros): break
             if it[0] in MANUAL and i < j and any(items[k][1] in MANUAL[it[0]] for k in range(i, j) if items[k][0] == it[0]): break
             if it[0] in MANUAL and j < n and items[j][0] == it[0] and items[j][1] not in MANUAL[it[0]]: continue
-            c = best[i - 1] + (w - ALVO) ** 2 + (4 * (MIN - w) ** 2 if w < MIN else 0)
+            ncap = j - i + 1
+            c = best[i - 1] + (w - ALVO) ** 2 + (4 * (MIN - w) ** 2 if w < MIN else 0) \
+                + (10 ** 7 * (ncap - 2) if ncap > 2 and w > 1300 else 0)   # no máximo 2 capítulos (salvo salmos curtos)
             if c < best[j]: best[j] = c; prev[j] = i - 1
     out = []; j = n
     while j > 0:
