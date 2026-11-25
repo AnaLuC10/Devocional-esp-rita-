@@ -474,7 +474,7 @@ let JOR = [];
 fetch('jornada.json', {cache:'no-store'}).then(r => r.ok ? r.json() : {}).then(j => { JOR = (j && j.semanas) || []; if (/^#guia/.test(location.hash)) render(false); }).catch(() => {});
 function vJornada(){
   const sem = JOR.slice().sort((a,b)=>a.de-b.de);
-  const abertas = sem.filter(w => lidos.has(w.ate)), prox = sem.find(w => !lidos.has(w.ate));
+  const abertas = sem, prox = null;   // todos os cartões já escritos ficam liberados
   const lock = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg>';
   const card = (w,k) => `<article class="jc"><div class="top aura" style="${aura(k+1)};border-radius:0"><span class="k">semana ${k+1} · dias ${w.de} a ${w.ate} · ${esc(w.q)}</span><h3>${esc(w.titulo)}</h3><p>${esc(w.resumo)}</p></div>
     <div class="bd">
@@ -482,8 +482,8 @@ function vJornada(){
       ${w.frase?`<div><div class="hd">pra guardar</div><p class="fr">“${esc(w.frase[0])}”</p><p class="ref" style="margin:4px 0 0">${esc(w.frase[1])}</p></div>`:''}
       ${w.evangelho?`<div class="id"><div class="hd">no Evangelho</div>${esc(w.evangelho)}</div>`:''}
     </div></article>`;
-  return `<section class="sec" id="g-jornada"><h2>Sua <i>jornada</i></h2><p class="sub">A cada semana de estudo, um cartão novo com o que vocês aprenderam. Ele abre quando você marca a última leitura da semana.</p>
-    <div class="jor">${abertas.slice().reverse().map(w=>card(w, sem.indexOf(w))).join('')}
+  return `<section class="sec" id="g-jornada"><h2>Sua <i>jornada</i></h2><p class="sub">Um cartão por semana de estudo, com o que vocês aprendem. Todos os cartões já escritos ficam liberados.</p>
+    <div class="jor">${abertas.map(w=>card(w, sem.indexOf(w))).join('')}
     ${prox ? `<div class="trava">${lock}<span>${abertas.length?'Próximo cartão':'O primeiro cartão'} abre quando você terminar o <a href="#dia-${prox.ate}">Dia ${prox.ate}</a>.</span></div>` : ''}</div></section>`;
 }
 function vGuia(){

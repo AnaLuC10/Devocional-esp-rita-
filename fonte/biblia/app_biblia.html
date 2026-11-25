@@ -585,7 +585,7 @@ function vBusca(q){
 
 function vJornada(){
   const sem = SEM_G.slice().sort((a,b)=>a.de-b.de);
-  const abertas = sem.filter(w => lidos.has(w.ate)), prox = sem.find(w => !lidos.has(w.ate));
+  const abertas = sem, prox = null;   // todos os cartões já escritos ficam liberados
   const pin = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>';
   const card = (w,k) => { const r = parseRef(w.chave);
     const ln = r ? (() => { const i = LIVROS.findIndex(b=>b[0]===r.l); return i<0 ? '' : `<a href="#ler-${i}-${r.c}-${r.a}${r.z!==r.a?'-'+r.z:''}">${esc(w.chave)} ›</a>`; })() : '';
@@ -598,8 +598,8 @@ function vJornada(){
         ${ln?`<div style="font-size:13px;font-weight:600">Versículo da semana: ${ln}</div>`:''}
       </div></article>`; };
   const lock = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg>';
-  return `<section class="sec" id="g-jornada"><h2>Sua <i>jornada</i></h2><p class="sub">A cada semana de leitura, um cartão novo: quem aparece, onde acontece e o que cada visão destaca. Ele abre quando você marca a última leitura da semana.</p>
-    <div class="jor">${abertas.slice().reverse().map(w=>card(w, sem.indexOf(w))).join('')}
+  return `<section class="sec" id="g-jornada"><h2>Sua <i>jornada</i></h2><p class="sub">Um cartão por semana de leitura: quem aparece, onde acontece e o que cada visão destaca. Todos os cartões já escritos ficam liberados.</p>
+    <div class="jor">${abertas.map(w=>card(w, sem.indexOf(w))).join('')}
     ${prox ? `<div class="trava">${lock}<span>${abertas.length?'Próximo cartão':'O primeiro cartão'} abre quando você terminar o <a href="#dia-${prox.ate}">Dia ${prox.ate}</a>.</span></div>` : (sem.length ? '' : '<div class="trava">Os cartões aparecem conforme você lê.</div>')}</div></section>`;
 }
 function vGuia(){
