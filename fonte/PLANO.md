@@ -46,3 +46,6 @@ Cada livro tem sua própria "aura", sempre no mesmo estilo: três manchas em deg
 | A Gênese | rgb(160,200,160) verde-sálvia | rgb(220,200,150) areia | rgb(140,196,196) água | #E3E6D6 | #2E3A2C |
 
 O acento dos botões e links também segue a cor principal do livro (mancha 1, um tom mais escuro, com contraste AA, isto é, o nível mínimo de contraste das diretrizes WCAG de acessibilidade, sobre o fundo).
+
+## Leituras curtas (26/11/2026)
+A pedido da família, desde o Dia 17 cada dia tem até 6 perguntas (só as principais contam; subquestões vão junto). Os temas grandes viram partes (fonte/make_app.py, split_tema). Na 1ª parte do tema: versículo, outros olhares e podcast; na última: Evangelho, música e explicação simples; o "pra hoje" aparece em todas. O cronograma dia a dia fica em cronograma.txt. Os arquivos podcasts.json e conversar.json continuam com chave = número do TEMA (1–80). Os próximos livros também usam leituras curtas.
