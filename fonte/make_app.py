@@ -63,6 +63,91 @@ for d in B.days:
         simples=''.join(f'<p>{B.inline(x)}</p>' for x in EXPL[n].strip().split('\n') if x.strip()),
     ))
 
+# ---------- leituras curtas (pedido de 26/11/2026: até ~6 perguntas por dia) ----------
+import datetime as dt, math
+QMAX, WMAX, SPLIT_FROM = 6, 1300, 17
+def iwords(it):
+    return len(' '.join([it.get('text') or ''] + list(it.get('ans') or []) + list(it.get('com') or [])).split())
+def units_of(d):
+    us = []
+    for si, sg in enumerate(d['segs']):
+        for ii, it in enumerate(sg['items']):
+            sub = it['k'] == 'q' and '-' in str(it['num'])
+            if sub and us and us[-1]['si'] == si:
+                u = us[-1]; u['items'].append(ii); u['w'] += iwords(it)
+            else:
+                us.append(dict(si=si, items=[ii], q=1 if it['k'] == 'q' else 0, w=iwords(it)))
+    return us
+def cost(us):
+    return max(sum(u['q'] for u in us) / QMAX, sum(u['w'] for u in us) / WMAX)
+def best_split(us, m):
+    n = len(us); INF = 9e9
+    f = [[INF] * (n + 1) for _ in range(m + 1)]; cut = [[0] * (n + 1) for _ in range(m + 1)]
+    f[0][0] = 0
+    for k in range(1, m + 1):
+        for j in range(1, n + 1):
+            for i in range(k - 1, j):
+                v = max(f[k - 1][i], cost(us[i:j]))
+                if v < f[k][j]: f[k][j] = v; cut[k][j] = i
+    bounds = []; j = n
+    for k in range(m, 0, -1):
+        i = cut[k][j]; bounds.append((i, j)); j = i
+    return f[m][n], bounds[::-1]
+def split_tema(d):
+    us = units_of(d)
+    if d['n'] < SPLIT_FROM or len(us) <= 1: return [us]
+    m = 1
+    while m < len(us):
+        v, b = best_split(us, m)
+        if v <= 1.0001: break
+        m += 1
+    v, b = best_split(us, m)
+    return [us[i:j] for i, j in b]
+def part_body(d, us, multi):
+    o = []; segs = d['segs']
+    by = {}
+    for u in us: by.setdefault(u['si'], []).extend(u['items'])
+    first_si = us[0]['si']
+    for si, idxs in by.items():
+        sg = segs[si]
+        cont = (si == first_si and idxs[0] != 0)
+        if multi or cont:
+            o.append(f'<h3 class="st">{B.seg_title(sg)}{" <span class=\"pn\">(continuação)</span>" if cont else ""}</h3>')
+        o.append(''.join(B.render_item(sg['items'][i]) for i in idxs))
+        if idxs[-1] == len(sg['items']) - 1:
+            for nt in sg.get('notes', []):
+                o.append('<div class="nota"><span class="lbl">nota de Kardec</span>' + ''.join(
+                    f'<p>{B.inline(x)}</p>' for x in nt.split('\n') if x.strip()) + '</div>')
+    return ''.join(o)
+def qlabel(d, us):
+    nums = [d['segs'][u['si']]['items'][i]['num'] for u in us for i in u['items'] if d['segs'][u['si']]['items'][i]['k'] == 'q']
+    if not nums: return None
+    a, b = B.qint(nums[0]), B.qint(nums[-1])
+    return f'Q. {a}' if a == b else f'Q. {a}–{b}'
+hol = {dt.date(2026,11,20),dt.date(2026,12,25),dt.date(2027,1,1),dt.date(2027,2,8),dt.date(2027,2,9),dt.date(2027,3,26),
+       dt.date(2027,4,21),dt.date(2027,5,27),dt.date(2027,9,7),dt.date(2027,10,12),dt.date(2027,11,2),dt.date(2027,11,15),
+       dt.date(2027,12,25),dt.date(2028,1,1),dt.date(2028,2,28),dt.date(2028,2,29)}
+def next_wd(x):
+    x += dt.timedelta(days=1)
+    while x.weekday() > 4 or x in hol: x += dt.timedelta(days=1)
+    return x
+START = dt.date(2026, 11, 26)
+leit = []; cur = None
+for d, o in zip(B.days, out):
+    parts = split_tema(d)
+    o['np'] = len(parts)
+    for k, us in enumerate(parts, 1):
+        if d['n'] < SPLIT_FROM: date = d['date']
+        else:
+            cur = START if cur is None else next_wd(cur); date = cur.isoformat()
+        multi = len(d['segs']) > 1
+        ql = qlabel(d, us) or ('Conclusão' if not d['q'] else o['q'])
+        w = sum(u['w'] for u in us)
+        leit.append(dict(i=len(leit) + 1, t=d['n'], k=k, m=len(parts), date=date, q=ql,
+                         mins=max(1, round(w / 200)), body=o['body'] if len(parts) == 1 else part_body(d, us, multi)))
+for o in out: o.pop('body', None)
+print('leituras', len(leit), 'fim', leit[-1]['date'], file=__import__('sys').stderr)
+
 extras = []
 for i, e in enumerate(B.extras, 1):
     nm = ' + '.join(dict.fromkeys(s['sub'] or s['chap'] for s in e['segs']))
@@ -76,7 +161,7 @@ for i, e in enumerate(B.extras, 1):
     extras.append(dict(i=i, name=B.esc(nm), mins=max(1, round(e['words']/200)), body=body(segs, True)))
 
 parts = {k: v for k, v in B.PARTS.items()}
-data = json.dumps(dict(days=out, extras=extras, parts=parts, epi=B.EPIGRAFE), ensure_ascii=False, separators=(',', ':'))
+data = json.dumps(dict(days=out, leit=leit, extras=extras, parts=parts, epi=B.EPIGRAFE), ensure_ascii=False, separators=(',', ':'))
 data = data.replace('</', '<\\/')
 tpl = open('app_template.html').read()
 html_out = tpl.replace('__DATA__', data)

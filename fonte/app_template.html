@@ -260,7 +260,12 @@ h1,h2,h3{text-wrap:balance}
 <script>
 (function(){
 const DATA = JSON.parse(document.getElementById('data').textContent);
-const DAYS = DATA.days, EXTRAS = DATA.extras;
+const TEMAS = DATA.days, EXTRAS = DATA.extras;
+/* cada leitura (até ~6 perguntas) herda os dados do tema dela; n = número da leitura, t = número do tema */
+const DAYS = DATA.leit.map(r => Object.assign({}, TEMAS[r.t-1], r, {n: r.i}));
+const RT = {}; DAYS.forEach(d => (RT[d.t] = RT[d.t] || []).push(d));
+const parteTxt = d => d.m > 1 ? `parte ${d.k} de ${d.m}` : '';
+const migra = arr => { const o = []; (arr||[]).forEach(t => (RT[t]||[]).forEach(d => o.push(d.n))); return o; };
 let PODS = {}, CONV = {};
 fetch('conversar.json', {cache:'no-store'}).then(r => r.ok ? r.json() : {}).then(j => { CONV = j || {}; if (/^#dia-/.test(location.hash)) render(false); }).catch(() => {});
 const busca = d => 'https://open.spotify.com/search/' + encodeURIComponent('palestra espírita ' + d.tema.replace(/&amp;/g,'&')) + '/episodes';
@@ -283,13 +288,13 @@ const $app = document.getElementById('app');
 /* ---------- estado: lidos + tamanho da letra ---------- */
 const LS='lde-devocional-v1';
 let state = { lidos: [], extras: [], fs: 17, t: 0, nome: '' };
-try { const s = JSON.parse(localStorage.getItem(LS)||'null'); if (s && Array.isArray(s.lidos)) state = Object.assign(state, s); } catch(e){}
+try { const s = JSON.parse(localStorage.getItem(LS)||'null'); if (s && Array.isArray(s.lidos)) { state = Object.assign(state, s); if (state.v !== 2) { state.lidos = migra(state.lidos); state.v = 2; try { localStorage.setItem(LS, JSON.stringify(state)); } catch(e){} } } } catch(e){}
 let lidos = new Set(state.lidos), extrasLidos = new Set(state.extras||[]);
 let remote = null, syncMsg = 'Seu progresso fica salvo neste aparelho.';
 function persist(){
-  state.lidos=[...lidos].sort((a,b)=>a-b); state.extras=[...extrasLidos].sort((a,b)=>a-b); state.t=Date.now();
+  state.lidos=[...lidos].sort((a,b)=>a-b); state.extras=[...extrasLidos].sort((a,b)=>a-b); state.t=Date.now(); state.v=2;
   try { localStorage.setItem(LS, JSON.stringify(state)); } catch(e){}
-  if (remote) remote.set({lidos:state.lidos, extras:state.extras, fs:state.fs, t:state.t, nome:state.nome}).catch(()=>{});
+  if (remote) remote.set({lidos:state.lidos, extras:state.extras, fs:state.fs, t:state.t, nome:state.nome, v:2}).catch(()=>{});
 }
 function applyFs(){ document.documentElement.style.setProperty('--fs', state.fs+'px'); }
 applyFs();
@@ -302,11 +307,11 @@ applyFs();
     const id = await user.id(); if (!id) return;
     const dona = user.isOwner && user.isOwner();
     if (dona && !state.nome) state.nome = 'Ana';
-    if (dona && !state.t && !lidos.size) { DAYS.filter(d=>d.done).forEach(d=>lidos.add(d.n)); }
+    if (dona && !state.t && !lidos.size) { migra(TEMAS.filter(d=>d.done).map(d=>d.n)).forEach(n=>lidos.add(n)); }
     remote = db.doc('data/users/'+id+'/progresso');
     remote.onSnapshot(snap => {
       if (!snap.exists) { persist(); render(false); return; }
-      const r = snap.data();
+      const r = snap.data(); if (r.v !== 2) { r.lidos = migra(r.lidos); r.v = 2; }
       if ((r.t||0) > (state.t||0)) {
         state = Object.assign(state, r); lidos = new Set(r.lidos||[]); extrasLidos = new Set(r.extras||[]);
         try { localStorage.setItem(LS, JSON.stringify(state)); } catch(e){}
@@ -343,11 +348,11 @@ function vHoje(){
   if (alvo){
     o += `<section class="aura hero" style="${aura(alvo.n)}">
       <span class="k">${rot}</span>
-      <div><div class="dn">Dia ${alvo.n}</div><h2>${alvo.short}</h2></div>
+      <div><div class="dn">Dia ${alvo.n}${alvo.m>1?` · ${parteTxt(alvo)}`:''}</div><h2>${alvo.short}</h2></div>
       <div class="meta">${alvo.q} · ≈ ${alvo.mins} min de leitura</div>
       <div class="row"><a class="btn" href="#dia-${alvo.n}">Ler agora</a></div>
       <div class="row">
-        ${PODS[alvo.n] ? `<a class="chip" href="${esc(PODS[alvo.n].url)}" target="_blank" rel="noopener">${dot('fone')}<span><b>Podcast</b> · ${esc(PODS[alvo.n].nome)}</span></a>` : `<a class="chip" href="${busca(alvo)}" target="_blank" rel="noopener">${dot('fone')}<span><b>Podcast</b> · palestras sobre o tema</span></a>`}
+        ${PODS[alvo.t] ? `<a class="chip" href="${esc(PODS[alvo.t].url)}" target="_blank" rel="noopener">${dot('fone')}<span><b>Podcast</b> · ${esc(PODS[alvo.t].nome)}</span></a>` : `<a class="chip" href="${busca(alvo)}" target="_blank" rel="noopener">${dot('fone')}<span><b>Podcast</b> · palestras sobre o tema</span></a>`}
         <a class="chip" href="${alvo.musUrl}" target="_blank" rel="noopener">${dot('nota')}<span><b>Música</b> · ${alvo.mus} – ${alvo.art}</span></a>
       </div></section>`;
     if (hoje && lidos.has(hoje.n) && alvo.n!==hoje.n) o += `<p class="note">A leitura de hoje (Dia ${hoje.n}) já está feita ♡</p>`;
@@ -382,7 +387,7 @@ function semana(alvo){
 }
 
 function podBlk(d){
-  const p = PODS[d.n];
+  const p = PODS[d.t];
   if (p) return `<p><a href="${esc(p.url)}" target="_blank" rel="noopener"><strong>${esc(p.nome)}</strong></a></p><p class="ref">${esc(p.programa||'')}${p.min?` · ${esc(p.min)} min`:''}</p>${p.por?`<p>${esc(p.por)}</p>`:''}`;
   return `<p>A palestra do dia aparece aqui de manhã cedo.</p><p><a href="${busca(d)}" target="_blank" rel="noopener">Procurar palestras sobre “${d.tema}” no Spotify</a></p>`;
 }
@@ -391,27 +396,28 @@ function vDia(n){
   const lido = lidos.has(n), p = byN(n-1), nx = byN(n+1);
   return `<div class="rbar"><div class="in">
       <a class="ib" href="#cronograma" aria-label="Voltar ao cronograma"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></a>
-      <div class="t">Dia ${n} · ${curto(d.date)}</div>
+      <div class="t">Dia ${n} · ${curto(d.date)}${d.m>1?` · ${d.k}/${d.m}`:''}</div>
       <button class="ib" id="fsBtn" aria-label="Tamanho da letra">Aa</button>
       <button class="ib ${lido?'on':''}" id="chkTop" aria-pressed="${lido}" aria-label="Marcar como lido"><svg viewBox="0 0 24 24" fill="${lido?'currentColor':'none'}" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7.5-4.4-7.5-10A4.3 4.3 0 0 1 12 7.6 4.3 4.3 0 0 1 19.5 10c0 5.6-7.5 10-7.5 10z"/></svg></button>
     </div><div class="rprog"><i id="rp"></i></div></div>
     <header class="aura dh" style="${aura(n)}"><span class="k">${d.part==='5'?'Conclusão':DATA.parts[d.part][0]}</span><div class="dn">Dia ${n}</div><div class="dd">${longo(d.date)} · ≈ ${d.mins} min de leitura</div></header>
-    <h1 class="dt">${d.title}</h1><div class="dm">${d.meta}</div>
+    <h1 class="dt">${d.title}</h1><div class="dm">${d.m>1?`<b>${parteTxt(d)}</b> · ${d.q} · ${d.meta.replace(/ · Quest(ões|ão) .*$/,'')}`:d.meta}</div>
     <article class="reader">${d.body}</article>
     <section class="closing">
       <div class="blk"><div class="bh">${dot('flor')}<span>pra hoje</span></div><p>${d.hoje}</p></div>
-      ${d.ese?`<div class="blk"><div class="bh">${dot('livro')}<span>no Evangelho</span></div><p class="ref">O Evangelho segundo o Espiritismo · ${d.ese}</p><p>${d.liga}</p></div>`:''}
-      <div class="blk"><div class="bh">${dot('biblia')}<span>na Bíblia</span></div><p class="vs">“${d.bib}”</p><p class="ref">${d.bref} · Bíblia Livre</p></div>
-      ${CONV[d.n]?`<div class="blk"><div class="bh">${dot('biblia')}<span>outros olhares</span></div><p style="font-size:14.5px">${esc(CONV[d.n])}</p><p class="ref">Como outras tradições cristãs costumam ler esse versículo e como o Espiritismo lê.</p></div>`:''}
-      <div class="blk"><div class="bh">${dot('fone')}<span>podcast do dia</span></div>${podBlk(d)}</div>
-      <div class="blk"><div class="bh">${dot('nota')}<span>música do dia</span></div><p><a href="${d.musUrl}" target="_blank" rel="noopener"><strong>${d.mus}</strong> – ${d.art}</a> <span class="tag">${d.gen}</span></p>
-        <p class="ref">Também na <a href="https://open.spotify.com/playlist/3bJwoEHzmIxIKBF4450uU3" target="_blank" rel="noopener">sua playlist do devocional</a>.</p></div>
+      ${d.k<d.m?`<div class="blk"><div class="bh">${dot('livro')}<span>continua amanhã</span></div><p>Este tema tem ${d.m} partes e esta é a ${d.k}ª. ${d.k===1?'':'O versículo e o podcast do tema ficaram na 1ª parte. '}A ligação com o Evangelho, a música e a explicação simples vêm na última parte.</p></div>`:''}
+      ${d.k===d.m && d.ese?`<div class="blk"><div class="bh">${dot('livro')}<span>no Evangelho</span></div><p class="ref">O Evangelho segundo o Espiritismo · ${d.ese}</p><p>${d.liga}</p></div>`:''}
+      ${d.k===1?`<div class="blk"><div class="bh">${dot('biblia')}<span>na Bíblia</span></div><p class="vs">“${d.bib}”</p><p class="ref">${d.bref} · Bíblia Livre</p></div>
+      ${CONV[d.t]?`<div class="blk"><div class="bh">${dot('biblia')}<span>outros olhares</span></div><p style="font-size:14.5px">${esc(CONV[d.t])}</p><p class="ref">Como outras tradições cristãs costumam ler esse versículo e como o Espiritismo lê.</p></div>`:''}
+      <div class="blk"><div class="bh">${dot('fone')}<span>podcast ${d.m>1?'do tema':'do dia'}</span></div>${podBlk(d)}</div>`:''}
+      ${d.k===d.m?`<div class="blk"><div class="bh">${dot('nota')}<span>música ${d.m>1?'do tema':'do dia'}</span></div><p><a href="${d.musUrl}" target="_blank" rel="noopener"><strong>${d.mus}</strong> – ${d.art}</a> <span class="tag">${d.gen}</span></p>
+        <p class="ref">Também na <a href="https://open.spotify.com/playlist/3bJwoEHzmIxIKBF4450uU3" target="_blank" rel="noopener">sua playlist do devocional</a>.</p></div>`:''}
     </section>
-    <section class="simples"><span class="lbl">explicando de um jeito simples</span>${d.simples}</section>
+    ${d.k===d.m?`<section class="simples"><span class="lbl">explicando de um jeito simples</span>${d.simples}</section>`:''}
     <div class="markbox"><button class="btn ${lido?'done':''}" id="chkBig">${lido?'Lido ♡ · toque pra desmarcar':'Marcar como lido'}</button></div>
     <nav class="pager" aria-label="Outros dias">
-      ${p?`<a href="#dia-${p.n}"><small>‹ Dia ${p.n}</small><span>${p.short}</span></a>`:'<span></span>'}
-      ${nx?`<a class="nx" href="#dia-${nx.n}"><small>Dia ${nx.n} ›</small><span>${nx.short}</span></a>`:'<span></span>'}
+      ${p?`<a href="#dia-${p.n}"><small>‹ Dia ${p.n}${p.m>1?' · '+p.k+'/'+p.m:''}</small><span>${p.short}</span></a>`:'<span></span>'}
+      ${nx?`<a class="nx" href="#dia-${nx.n}"><small>Dia ${nx.n}${nx.m>1?' · '+nx.k+'/'+nx.m:''} ›</small><span>${nx.short}</span></a>`:'<span></span>'}
     </nav>`;
 }
 
@@ -438,14 +444,14 @@ function vCrono(){
     if (m!==mes){ if (mes) o += '</div>'; mes=m; const dd=pd(d.date); o += `<h2 class="mes">${MESES[dd.getMonth()]} ${dd.getFullYear()}</h2><div class="list">`; }
     const l = lidos.has(d.n), cls = ['it', l?'lido':'', d.date===t?'hoje':'', (!l && d.date<t)?'atraso':''].join(' ');
     o += `<div class="${cls}" id="c${d.n}"><button class="tg" data-n="${d.n}" aria-pressed="${l}" aria-label="Dia ${d.n}: ${l?'lido':'não lido'}"><i>${l?'✓':''}</i></button>
-      <a href="#dia-${d.n}"><span class="when"><b>Dia ${d.n}</b>${curto(d.date)} ${SEM[pd(d.date).getDay()].slice(0,3)}</span><span class="what">${d.short}<small>${d.q} · ${d.mins} min</small></span></a></div>`;
+      <a href="#dia-${d.n}"><span class="when"><b>Dia ${d.n}</b>${curto(d.date)} ${SEM[pd(d.date).getDay()].slice(0,3)}</span><span class="what">${d.short}<small>${d.m>1?parteTxt(d)+' · ':''}${d.q} · ${d.mins} min</small></span></a></div>`;
   });
   o += '</div>';
   o += `<h2 class="mes">leituras extras</h2><p class="note" style="margin:-4px 4px 10px">A Introdução e os Prolegômenos de Kardec, pra ler quando quiser.</p><div class="list">`;
   EXTRAS.forEach(e => { const l=extrasLidos.has(e.i);
     o += `<div class="it ${l?'lido':''}"><button class="tg" data-x="${e.i}" aria-pressed="${l}" aria-label="Extra ${e.i}: ${l?'lido':'não lido'}"><i>${l?'✓':''}</i></button>
       <a href="#extra-${e.i}"><span class="when"><b>E${e.i}</b></span><span class="what">${e.name}<small>${e.mins} min</small></span></a></div>`; });
-  o += '</div><p class="note">Sem leitura nos fins de semana e feriados nacionais (20/11, 25/12, 1º/01 e Carnaval). Se pular um dia, é só continuar de onde parou.</p>';
+  o += '</div><p class="note">Leituras curtas, de até 6 perguntas. Sem leitura nos fins de semana e feriados nacionais. Se pular um dia, é só continuar de onde parou.</p>';
   return o;
 }
 
@@ -455,7 +461,7 @@ function vSobre(){
   <div class="stack" style="margin-top:0">
   <section class="card"><div class="steps">
     <div class="step"><div class="sn">1</div><div><b>De manhã, o podcast.</b> Uma palestra ou conversa sobre o tema do dia, trazendo o Evangelho e um olhar diferente. A indicação aparece no dia, de manhã cedo.</div></div>
-    <div class="step"><div class="sn">2</div><div><b>À noite, a leitura.</b> O texto original do livro: perguntas de Kardec, respostas dos Espíritos (com a linha rosa) e comentários de Kardec (nos quadros lilás).</div></div>
+    <div class="step"><div class="sn">2</div><div><b>À noite, a leitura.</b> Curtinha, de até 6 perguntas. Os temas maiores são divididos em partes, um pouco por dia. O texto original do livro: perguntas de Kardec, respostas dos Espíritos (com a linha rosa) e comentários de Kardec (nos quadros lilás).</div></div>
     <div class="step"><div class="sn">3</div><div><b>Pra fechar.</b> Uma ideia pra hoje, a ligação com <i>O Evangelho segundo o Espiritismo</i>, um trecho da Bíblia e a música do dia.</div></div>
     <div class="step"><div class="sn">4</div><div><b>Ficou difícil?</b> No fim de cada dia tem a explicação simples, com as ideias principais em linguagem do dia a dia.</div></div>
     <div class="step"><div class="sn">5</div><div><b>Toque no ♡.</b> Marca a leitura como lida. A aba Hoje sempre abre na próxima leitura.</div></div>
@@ -476,13 +482,13 @@ function vJornada(){
   const sem = JOR.slice().sort((a,b)=>a.de-b.de);
   const abertas = sem, prox = null;   // todos os cartões já escritos ficam liberados
   const lock = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg>';
-  const card = (w,k) => `<article class="jc"><div class="top aura" style="${aura(k+1)};border-radius:0"><span class="k">semana ${k+1} · dias ${w.de} a ${w.ate} · ${esc(w.q)}</span><h3>${esc(w.titulo)}</h3><p>${esc(w.resumo)}</p></div>
+  const card = (w,k) => `<article class="jc"><div class="top aura" style="${aura(k+1)};border-radius:0"><span class="k">cartão ${k+1} · dias ${(RT[w.de]||[{n:w.de}])[0].n} a ${(RT[w.ate]||[{n:w.ate}]).slice(-1)[0].n} · ${esc(w.q)}</span><h3>${esc(w.titulo)}</h3><p>${esc(w.resumo)}</p></div>
     <div class="bd">
       ${w.conceitos&&w.conceitos.length?`<div><div class="hd">o que aprendemos</div><div class="pp">${w.conceitos.map(c=>`<div><b>${esc(c[0])}</b><span>${esc(c[1])}</span></div>`).join('')}</div></div>`:''}
       ${w.frase?`<div><div class="hd">pra guardar</div><p class="fr">“${esc(w.frase[0])}”</p><p class="ref" style="margin:4px 0 0">${esc(w.frase[1])}</p></div>`:''}
       ${w.evangelho?`<div class="id"><div class="hd">no Evangelho</div>${esc(w.evangelho)}</div>`:''}
     </div></article>`;
-  return `<section class="sec" id="g-jornada"><h2>Sua <i>jornada</i></h2><p class="sub">Um cartão por semana de estudo, com o que vocês aprendem. Todos os cartões já escritos ficam liberados.</p>
+  return `<section class="sec" id="g-jornada"><h2>Sua <i>jornada</i></h2><p class="sub">Um cartão por bloco de temas, com o que vocês aprendem. Todos os cartões já escritos ficam liberados.</p>
     <div class="jor">${abertas.map(w=>card(w, sem.indexOf(w))).join('')}
     ${prox ? `<div class="trava">${lock}<span>${abertas.length?'Próximo cartão':'O primeiro cartão'} abre quando você terminar o <a href="#dia-${prox.ate}">Dia ${prox.ate}</a>.</span></div>` : ''}</div></section>`;
 }
@@ -507,7 +513,7 @@ function vGuia(){
   ];
   const LV = [
     ['O Livro dos Espíritos','1857','rgb(240,150,178)','A base de tudo: 1.019 perguntas sobre Deus, os Espíritos, as leis morais e a vida futura.','lendo agora','now'],
-    ['O Evangelho segundo o Espiritismo','1864','rgb(244,201,120)','Os ensinos morais de Jesus explicados, com mensagens dos Espíritos.','próximo · março/2027',''],
+    ['O Evangelho segundo o Espiritismo','1864','rgb(244,201,120)','Os ensinos morais de Jesus explicados, com mensagens dos Espíritos.',(()=>{ const f=pd(DAYS[DAYS.length-1].date); f.setDate(f.getDate()+3); return 'próximo · '+MESES[f.getMonth()]+'/'+f.getFullYear(); })(),''],
     ['O Livro dos Médiuns','1861','rgb(150,136,226)','Como os Espíritos se comunicam, os tipos de mediunidade e os cuidados.','3º no estudo',''],
     ['O Céu e o Inferno','1865','rgb(140,190,236)','A justiça de Deus, sem penas eternas, com relatos de quem já morreu.','4º no estudo',''],
     ['A Gênese','1868','rgb(160,200,160)','A criação, os milagres e as profecias do Evangelho vistos pela ciência e pelo Espiritismo.','5º no estudo',''],
